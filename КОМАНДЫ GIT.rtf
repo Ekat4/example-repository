@@ -1,0 +1,992 @@
+{\rtf1\ansi\ansicpg1251\deff0\nouicompat\deflang1049{\fonttbl{\f0\fnil\fcharset204 Times New Roman;}{\f1\fnil\fcharset0 Times New Roman;}{\f2\fnil Times New Roman;}{\f3\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green77\blue187;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\f0\fs28\'ca\'ce\'cc\'c0\'cd\'c4\'db GIT\cf0\par
+\'cc\'fb \'e4\'e5\'eb\'e8\'ec Git \'ed\'e0 \'ea\'ee\'ec\'e0\'ed\'e4\'fb \'e2\'fb\'f1\'ee\'ea\'ee\'e3\'ee \'f3\'f0\'ee\'e2\'ed\'ff (\f1\lang1033\'ab\f0\lang1049\'f4\'e0\'f0\'f4\'ee\'f0\'ee\'e2\'fb\'e5\f1\lang1033\'bb) \f0\lang1049\'e8 \'ea\'ee\'ec\'e0\'ed\'e4\'fb \'ed\'e8\'e7\'ea\'ee\'e3\'ee \'f3\'f0\'ee\'e2\'ed\'ff (\f1\lang1033\'ab\f0\lang1049\'f1\'e0\'ed\'f2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'e8\'e5\f1\lang1033\'bb).\par
+\par
+\f0\lang1049\'c2\'fb\'f1\'ee\'ea\'ee\'f3\'f0\'ee\'e2\'ed\'e5\'e2\'fb\'e5 \'ea\'ee\'ec\'e0\'ed\'e4\'fb (\'f4\'e0\'f0\'f4\'ee\'f0)\par
+\'cc\'fb \'f0\'e0\'e7\'e4\'e5\'eb\'e8\'eb\'e8 \'ea\'ee\'ec\'e0\'ed\'e4\'fb \'ed\'e0 \'ee\'f1\'ed\'ee\'e2\'ed\'fb\'e5 \'e8 \'e2\'f1\'ef\'ee\'ec\'ee\'e3\'e0\'f2\'e5\'eb\'fc\'ed\'fb\'e5.\par
+\par
+\'ce\'f1\'ed\'ee\'e2\'ed\'fb\'e5 \'f4\'e0\'f0\'f4\'ee\'f0\'ee\'e2\'fb\'e5 \'ea\'ee\'ec\'e0\'ed\'e4\'fb\par
+git-add[1]\par
+\'c4\'ee\'e1\'e0\'e2\'e8\'f2\'fc \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'ee\'e5 \'f4\'e0\'e9\'eb\'e0 \'e2 \'e8\'ed\'e4\'e5\'ea\'f1\par
+\par
+git-am[1]\par
+\'cf\'f0\'e8\'ec\'e5\'ed\'e8\'f2\'e5 \'f1\'e5\'f0\'e8\'fe \'e8\'f1\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'e9 \'e8\'e7 \'ef\'ee\'f7\'f2\'ee\'e2\'ee\'e3\'ee \'ff\'f9\'e8\'ea\'e0\par
+\par
+git-\'e0\'f0\'f5\'e8\'e2[1]\par
+\'d1\'ee\'e7\'e4\'e0\'e9\'f2\'e5 \'e0\'f0\'f5\'e8\'e2 \'f4\'e0\'e9\'eb\'ee\'e2 \'e8\'e7 \'e8\'ec\'e5\'ed\'ee\'e2\'e0\'ed\'ed\'ee\'e3\'ee \'e4\'e5\'f0\'e5\'e2\'e0\par
+\par
+git-\'f0\'e0\'e7\'e4\'e5\'eb\'e8\'f2\'fc \'ef\'ee\'ef\'ee\'eb\'e0\'ec[1]\par
+\'c8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e9\'f2\'e5 \'e4\'e2\'ee\'e8\'f7\'ed\'fb\'e9 \'ef\'ee\'e8\'f1\'ea, \'f7\'f2\'ee\'e1\'fb \'ed\'e0\'e9\'f2\'e8 \'ea\'ee\'ec\'ec\'e8\'f2, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ef\'f0\'e8\'e2\'e5\'eb \'ea \'ee\'f8\'e8\'e1\'ea\'e5\par
+\par
+git-\'e2\'e5\'f2\'ea\'e0[1]\par
+\'d1\'ef\'e8\'f1\'ee\'ea, \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'e5 \'e8\'eb\'e8 \'f3\'e4\'e0\'eb\'e5\'ed\'e8\'e5 \'e2\'e5\'f2\'e2\'e5\'e9\par
+\par
+git-bundle[1]\par
+\'cf\'e5\'f0\'e5\'ec\'e5\'f9\'e5\'ed\'e8\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'e8 \'f1\'f1\'fb\'eb\'ee\'ea \'ef\'ee \'e0\'f0\'f5\'e8\'e2\'e0\'ec\par
+\par
+git-\'ef\'f0\'ee\'e2\'e5\'f0\'ea\'e0[1]\par
+\'cf\'e5\'f0\'e5\'ea\'eb\'fe\'f7\'e0\'f2\'fc \'e2\'e5\'f2\'e2\'e8 \'e8\'eb\'e8 \'e2\'ee\'f1\'f1\'f2\'e0\'ed\'e0\'e2\'eb\'e8\'e2\'e0\'f2\'fc \'f4\'e0\'e9\'eb\'fb \'f0\'e0\'e1\'ee\'f7\'e5\'e3\'ee \'e4\'e5\'f0\'e5\'e2\'e0\par
+\par
+git-cherry-pick[1]\par
+\'cf\'f0\'e8\'ec\'e5\'ed\'e8\'f2\'e5 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff, \'e2\'ed\'e5\'f1\'e5\'ed\'ed\'fb\'e5 \'ed\'e5\'ea\'ee\'f2\'ee\'f0\'fb\'ec\'e8 \'f1\'f3\'f9\'e5\'f1\'f2\'e2\'f3\'fe\'f9\'e8\'ec\'e8 \'ea\'ee\'ec\'ec\'e8\'f2\'e0\'ec\'e8\par
+\par
+git-citool[1]\par
+\'c3\'f0\'e0\'f4\'e8\'f7\'e5\'f1\'ea\'e0\'ff \'e0\'eb\'fc\'f2\'e5\'f0\'ed\'e0\'f2\'e8\'e2\'e0 git-commit\par
+\par
+git-clean[1]\par
+\'d3\'e4\'e0\'eb\'e5\'ed\'e8\'e5 \'ed\'e5\'ee\'f2\'f1\'eb\'e5\'e6\'e8\'e2\'e0\'e5\'ec\'fb\'f5 \'f4\'e0\'e9\'eb\'ee\'e2 \'e8\'e7 \'f0\'e0\'e1\'ee\'f7\'e5\'e3\'ee \'e4\'e5\'f0\'e5\'e2\'e0\par
+\par
+git-\'ea\'eb\'ee\'ed\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5[1]\par
+\'ca\'eb\'ee\'ed\'e8\'f0\'f3\'e9\'f2\'e5 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e9 \'e2 \'ed\'ee\'e2\'fb\'e9 \'ea\'e0\'f2\'e0\'eb\'ee\'e3\par
+\par
+git-\'f4\'e8\'ea\'f1\'e0\'f6\'e8\'ff[1]\par
+\'c7\'e0\'ef\'e8\'f1\'fc \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e9 \'e2 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e9\par
+\par
+git-\'ee\'ef\'e8\'f1\'e0\'ed\'e8\'e5[1]\par
+\'cf\'f0\'e8\'f1\'e2\'e0\'e8\'e2\'e0\'e9\'f2\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'f3 \'ef\'ee\'ed\'ff\'f2\'ed\'ee\'e5 \'e4\'eb\'ff \'f7\'e5\'eb\'ee\'e2\'e5\'ea\'e0 \'e8\'ec\'ff \'ed\'e0 \'ee\'f1\'ed\'ee\'e2\'e5 \'e4\'ee\'f1\'f2\'f3\'ef\'ed\'ee\'e9 \'f1\'f1\'fb\'eb\'ea\'e8\par
+\par
+git-diff[1]\par
+\'cf\'ee\'ea\'e0\'e7\'fb\'e2\'e0\'f2\'fc \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff \'ec\'e5\'e6\'e4\'f3 \'ea\'ee\'ec\'ec\'e8\'f2\'e0\'ec\'e8, \'f4\'e8\'ea\'f1\'e0\'f6\'e8\'e5\'e9 \'e8 \'f0\'e0\'e1\'ee\'f7\'e8\'ec \'e4\'e5\'f0\'e5\'e2\'ee\'ec \'e8 \'f2. \'c4\par
+\par
+git-fetch[1]\par
+\'c7\'e0\'e3\'f0\'f3\'e6\'e0\'e9\'f2\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'e8 \'f1\'f1\'fb\'eb\'ea\'e8 \'e8\'e7 \'e4\'f0\'f3\'e3\'ee\'e3\'ee \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff\par
+\par
+git-format-\'e8\'f1\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'e5[1]\par
+\'cf\'ee\'e4\'e3\'ee\'f2\'ee\'e2\'fc\'f2\'e5 \'e8\'f1\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'ff \'e4\'eb\'ff \'ee\'f2\'ef\'f0\'e0\'e2\'ea\'e8 \'ef\'ee \'fd\'eb\'e5\'ea\'f2\'f0\'ee\'ed\'ed\'ee\'e9 \'ef\'ee\'f7\'f2\'e5\par
+\par
+git-gc[1]\par
+\'ce\'f7\'e8\'f1\'f2\'ea\'e0 \'ed\'e5\'ed\'f3\'e6\'ed\'fb\'f5 \'f4\'e0\'e9\'eb\'ee\'e2 \'e8 \'ee\'ef\'f2\'e8\'ec\'e8\'e7\'e0\'f6\'e8\'ff \'eb\'ee\'ea\'e0\'eb\'fc\'ed\'ee\'e3\'ee \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff\par
+\par
+git-grep[1]\par
+\'c2\'fb\'e2\'ee\'e4\'e8\'f2\'e5 \'f1\'f2\'f0\'ee\'ea\'e8, \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e8\'e5 \'f8\'e0\'e1\'eb\'ee\'ed\'f3\par
+\par
+git-\'e3\'f0\'e0\'f4\'e8\'f7\'e5\'f1\'ea\'e8\'e9 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'ff[1]\par
+\'cf\'e5\'f0\'e5\'ed\'ee\'f1\'e8\'ec\'fb\'e9 \'e3\'f0\'e0\'f4\'e8\'f7\'e5\'f1\'ea\'e8\'e9 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'ea Git\par
+\par
+git-\'e8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'ff[1]\par
+\'d1\'ee\'e7\'e4\'e0\'e9\'f2\'e5 \'ef\'f3\'f1\'f2\'ee\'e9 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e9 Git \'e8\'eb\'e8 \'ef\'ee\'e2\'f2\'ee\'f0\'ed\'ee \'e8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e8\'f0\'f3\'e9\'f2\'e5 \'f1\'f3\'f9\'e5\'f1\'f2\'e2\'f3\'fe\'f9\'e8\'e9\par
+\par
+git-log[1]\par
+\'cf\'ee\'ea\'e0\'e7\'e0\'f2\'fc \'e6\'f3\'f0\'ed\'e0\'eb\'fb \'f4\'e8\'ea\'f1\'e0\'f6\'e8\'e8\par
+\par
+git-\'f1\'ee\'ef\'f0\'ee\'e2\'ee\'e6\'e4\'e5\'ed\'e8\'e5[1]\par
+\'c7\'e0\'ef\'f3\'f1\'ea\'e0\'e9\'f2\'e5 \'e7\'e0\'e4\'e0\'f7\'e8 \'e4\'eb\'ff \'ee\'ef\'f2\'e8\'ec\'e8\'e7\'e0\'f6\'e8\'e8 \'e4\'e0\'ed\'ed\'fb\'f5 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff Git\par
+\par
+git-\'f1\'eb\'e8\'ff\'ed\'e8\'e5[1]\par
+\'ce\'e1\'fa\'e5\'e4\'e8\'ed\'e5\'ed\'e8\'e5 \'e4\'e2\'f3\'f5 \'e8\'eb\'e8 \'e1\'ee\'eb\'e5\'e5 \'e8\'f1\'f2\'ee\'f0\'e8\'e9 \'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'ea\'e8 \'e2\'ec\'e5\'f1\'f2\'e5\par
+\par
+git-mv[1]\par
+\'cf\'e5\'f0\'e5\'ec\'e5\'f1\'f2\'e8\'f2\'fc \'e8\'eb\'e8 \'ef\'e5\'f0\'e5\'e8\'ec\'e5\'ed\'ee\'e2\'e0\'f2\'fc \'f4\'e0\'e9\'eb, \'ea\'e0\'f2\'e0\'eb\'ee\'e3 \'e8\'eb\'e8 \'f1\'e8\'ec\'e2\'ee\'eb\'e8\'f7\'e5\'f1\'ea\'f3\'fe \'f1\'f1\'fb\'eb\'ea\'f3\par
+\par
+git-\'ef\'f0\'e8\'ec\'e5\'f7\'e0\'ed\'e8\'ff[1]\par
+\'c4\'ee\'e1\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'e8\'eb\'e8 \'ef\'f0\'ee\'e2\'e5\'f0\'ea\'e0 \'ef\'f0\'e8\'ec\'e5\'f7\'e0\'ed\'e8\'e9 \'ea \'ee\'e1\'fa\'e5\'ea\'f2\'f3\par
+\par
+git-pull[1]\par
+\'c8\'e7\'e2\'eb\'e5\'ea\'e0\'f2\'fc \'e4\'e0\'ed\'ed\'fb\'e5 \'e8\'e7 \'e4\'f0\'f3\'e3\'ee\'e3\'ee \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff \'e8\'eb\'e8 \'eb\'ee\'ea\'e0\'eb\'fc\'ed\'ee\'e9 \'e2\'e5\'f2\'ea\'e8 \'e8 \'e8\'ed\'f2\'e5\'e3\'f0\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'f1 \'ed\'e8\'ec\'e8\par
+\par
+git-push[1]\par
+\'ce\'e1\'ed\'ee\'e2\'e8\'f2\'e5 \'f3\'e4\'e0\'eb\'e5\'ed\'ed\'fb\'e5 \'f1\'f1\'fb\'eb\'ea\'e8 \'e2\'ec\'e5\'f1\'f2\'e5 \'f1\'ee \'f1\'e2\'ff\'e7\'e0\'ed\'ed\'fb\'ec\'e8 \'ee\'e1\'fa\'e5\'ea\'f2\'e0\'ec\'e8\par
+\par
+git-range-diff[1]\par
+\'d1\'f0\'e0\'e2\'ed\'e8\'f2\'e5 \'e4\'e2\'e0 \'e4\'e8\'e0\'ef\'e0\'e7\'ee\'ed\'e0 \'f4\'e8\'ea\'f1\'e0\'f6\'e8\'e8 (\'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, \'e4\'e2\'e5 \'e2\'e5\'f0\'f1\'e8\'e8 \'e2\'e5\'f2\'ea\'e8)\par
+\par
+git-rebase[1]\par
+\'cf\'ee\'e2\'f2\'ee\'f0\'ed\'ee \'ef\'f0\'e8\'ec\'e5\'ed\'e8\'f2\'e5 \'ea\'ee\'ec\'ec\'e8\'f2\'fb \'ef\'ee\'e2\'e5\'f0\'f5 \'e4\'f0\'f3\'e3\'ee\'e3\'ee \'e1\'e0\'e7\'ee\'e2\'ee\'e3\'ee \'f1\'ee\'e2\'e5\'f2\'e0\par
+\par
+git-\'f1\'e1\'f0\'ee\'f1 \'ed\'e0\'f1\'f2\'f0\'ee\'e5\'ea[1]\par
+\'d1\'e1\'f0\'ee\'f1\'e8\'f2\'fc \'f2\'e5\'ea\'f3\'f9\'f3\'fe \'e3\'ee\'eb\'ee\'e2\'ea\'f3 \'e2 \'f3\'ea\'e0\'e7\'e0\'ed\'ed\'ee\'e5 \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'e5\par
+\par
+git-\'e2\'ee\'f1\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'e8\'e5[1]\par
+\'c2\'ee\'f1\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'e8\'e5 \'f4\'e0\'e9\'eb\'ee\'e2 \'f0\'e0\'e1\'ee\'f7\'e5\'e3\'ee \'e4\'e5\'f0\'e5\'e2\'e0\par
+\par
+git-revert[1]\par
+\'ce\'f2\'ec\'e5\'ed\'e8\'f2\'e5 \'ed\'e5\'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'f1\'f3\'f9\'e5\'f1\'f2\'e2\'f3\'fe\'f9\'e8\'e5 \'ea\'ee\'ec\'ec\'e8\'f2\'fb\par
+\par
+git-rm[1]\par
+\'d3\'e4\'e0\'eb\'e8\'f2\'fc \'f4\'e0\'e9\'eb\'fb \'e8\'e7 \'f0\'e0\'e1\'ee\'f7\'e5\'e3\'ee \'e4\'e5\'f0\'e5\'e2\'e0 \'e8 \'e8\'e7 \'e8\'ed\'e4\'e5\'ea\'f1\'e0\par
+\par
+git-\'ea\'f0\'e0\'f2\'ea\'e8\'e9 \'e6\'f3\'f0\'ed\'e0\'eb [1]\par
+\'ce\'e1\'ee\'e1\'f9\'e8\'f2\'e5 \'f0\'e5\'e7\'f3\'eb\'fc\'f2\'e0\'f2\'fb git log\par
+git-\'ef\'ee\'ea\'e0\'e7\'e0\'f2\'fc[1]\par
+\'cf\'ee\'ea\'e0\'e7\'fb\'e2\'e0\'f2\'fc \'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'e5 \'f2\'e8\'ef\'fb \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2\par
+\par
+git-sparse-\'ef\'f0\'ee\'e2\'e5\'f0\'ea\'e0[1]\par
+\'d1\'e2\'e5\'e4\'e8\'f2\'e5 \'f1\'e2\'ee\'e5 \'f0\'e0\'e1\'ee\'f7\'e5\'e5 \'e4\'e5\'f0\'e5\'e2\'ee \'ea \'ef\'ee\'e4\'ec\'ed\'ee\'e6\'e5\'f1\'f2\'e2\'f3 \'ee\'f2\'f1\'eb\'e5\'e6\'e8\'e2\'e0\'e5\'ec\'fb\'f5 \'f4\'e0\'e9\'eb\'ee\'e2\par
+\par
+git-stash[1]\par
+\'d1\'ee\'f5\'f0\'e0\'ed\'e8\'f2\'e5 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff \'e2 \'e3\'f0\'ff\'e7\'ed\'ee\'ec \'f0\'e0\'e1\'ee\'f7\'e5\'ec \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'e5\par
+\par
+git-status[1]\par
+\'cf\'ee\'ea\'e0\'e7\'e0\'f2\'fc \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'e5 \'f0\'e0\'e1\'ee\'f7\'e5\'e3\'ee \'e4\'e5\'f0\'e5\'e2\'e0\par
+\par
+git-\'ef\'ee\'e4\'ec\'ee\'e4\'f3\'eb\'fc[1]\par
+\'c8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'ff, \'ee\'e1\'ed\'ee\'e2\'eb\'e5\'ed\'e8\'e5 \'e8\'eb\'e8 \'ef\'f0\'ee\'e2\'e5\'f0\'ea\'e0 \'ef\'ee\'e4\'ec\'ee\'e4\'f3\'eb\'e5\'e9\par
+\par
+git-switch[1]\par
+\'cf\'e5\'f0\'e5\'ea\'eb\'fe\'f7\'e5\'ed\'e8\'e5 \'e2\'e5\'f2\'e2\'e5\'e9\par
+\par
+git-tag[1]\par
+Create, list, delete or verify a tag object signed with GPG\par
+\par
+git-worktree[1]\par
+Manage multiple working trees\par
+\par
+gitk[1]\par
+The Git repository browser\par
+\par
+scalar[1]\par
+A tool for managing large Git repositories\par
+\par
+Ancillary Commands\par
+Manipulators:\par
+\par
+git-config[1]\par
+Get and set repository or global options\par
+\par
+git-fast-export[1]\par
+Git data exporter\par
+\par
+git-\'e1\'fb\'f1\'f2\'f0\'fb\'e9 \'e8\'ec\'ef\'ee\'f0\'f2[1]\par
+\'d1\'e5\'f0\'e2\'e5\'f0\'ed\'e0\'ff \'f7\'e0\'f1\'f2\'fc \'e4\'eb\'ff \'e1\'fb\'f1\'f2\'f0\'ee\'e3\'ee \'e8\'ec\'ef\'ee\'f0\'f2\'e0 \'e4\'e0\'ed\'ed\'fb\'f5 \'e2 Git\par
+\par
+git-\'f4\'e8\'eb\'fc\'f2\'f0-\'e2\'e5\'f2\'ea\'e0[1]\par
+\'cf\'e5\'f0\'e5\'ef\'e8\'f1\'e0\'f2\'fc \'e2\'e5\'f2\'e2\'e8\par
+\par
+git-mergetool[1]\par
+\'c7\'e0\'ef\'f3\'f1\'f2\'e8\'f2\'e5 \'e8\'ed\'f1\'f2\'f0\'f3\'ec\'e5\'ed\'f2\'fb \'f0\'e0\'e7\'f0\'e5\'f8\'e5\'ed\'e8\'ff \'ea\'ee\'ed\'f4\'eb\'e8\'ea\'f2\'ee\'e2 \'f1\'eb\'e8\'ff\'ed\'e8\'ff, \'f7\'f2\'ee\'e1\'fb \'f0\'e0\'e7\'f0\'e5\'f8\'e8\'f2\'fc \'ea\'ee\'ed\'f4\'eb\'e8\'ea\'f2\'fb \'f1\'eb\'e8\'ff\'ed\'e8\'ff\par
+\par
+git-pack-\'f1\'f1\'fb\'eb\'ea\'e8[1]\par
+\'c7\'e0\'e3\'ee\'eb\'ee\'e2\'ea\'e8 \'ef\'e0\'ea\'e5\'f2\'ee\'e2 \'e8 \'f2\'e5\'e3\'e8 \'e4\'eb\'ff \'fd\'f4\'f4\'e5\'ea\'f2\'e8\'e2\'ed\'ee\'e3\'ee \'e4\'ee\'f1\'f2\'f3\'ef\'e0 \'ea \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'fe\par
+\par
+git-prune[1]\par
+\'d3\'e4\'e0\'eb\'e8\'f2\'e5 \'e2\'f1\'e5 \'ed\'e5\'e4\'ee\'f1\'f2\'f3\'ef\'ed\'fb\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'e8\'e7 \'e1\'e0\'e7\'fb \'e4\'e0\'ed\'ed\'fb\'f5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2\par
+\par
+git-reflog[1]\par
+\'d3\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e5\'e9 reflog\par
+\par
+git-\'f1\'f1\'fb\'eb\'ea\'e8[1]\par
+\'cd\'e8\'e7\'ea\'ee\'f3\'f0\'ee\'e2\'ed\'e5\'e2\'fb\'e9 \'e4\'ee\'f1\'f2\'f3\'ef \'ea \'f1\'f1\'fb\'eb\'ea\'e0\'ec\par
+\par
+git-remote[1]\par
+\'d3\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'ed\'e0\'e1\'ee\'f0\'ee\'ec \'ee\'f2\'f1\'eb\'e5\'e6\'e8\'e2\'e0\'e5\'ec\'fb\'f5 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e5\'e2\par
+\par
+git-repack[1]\par
+\'d3\'ef\'e0\'ea\'ee\'e2\'fb\'e2\'e0\'f2\'fc \'f0\'e0\'f1\'ef\'e0\'ea\'ee\'e2\'e0\'ed\'ed\'fb\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'e2 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e9\par
+\par
+git-\'e7\'e0\'ec\'e5\'ed\'e0[1]\par
+\'d1\'ee\'e7\'e4\'e0\'e2\'e0\'e9\'f2\'e5, \'ef\'e5\'f0\'e5\'f7\'e8\'f1\'eb\'ff\'e9\'f2\'e5, \'f3\'e4\'e0\'eb\'ff\'e9\'f2\'e5 \'f1\'f1\'fb\'eb\'ea\'e8 \'e4\'eb\'ff \'e7\'e0\'ec\'e5\'ed\'fb \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2\par
+\par
+\'c7\'e0\'ef\'f0\'ee\'f1\'f7\'e8\'ea\'e8:\par
+\par
+git-\'e0\'ed\'ed\'ee\'f2\'e8\'f0\'ee\'e2\'e0\'f2\'fc[1]\par
+\'c0\'ed\'ed\'ee\'f2\'e8\'f0\'f3\'e9\'f2\'e5 \'f1\'f2\'f0\'ee\'ea\'e8 \'f4\'e0\'e9\'eb\'e0 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e5\'e9 \'ee \'f4\'e8\'ea\'f1\'e0\'f6\'e8\'e8\par
+\par
+git-blame[1]\par
+\'cf\'ee\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2, \'ea\'e0\'ea\'e0\'ff \'f0\'e5\'e4\'e0\'ea\'f6\'e8\'ff \'e8 \'e0\'e2\'f2\'ee\'f0 \'e2 \'ef\'ee\'f1\'eb\'e5\'e4\'ed\'e8\'e9 \'f0\'e0\'e7 \'e8\'e7\'ec\'e5\'ed\'ff\'eb\'e8 \'ea\'e0\'e6\'e4\'f3\'fe \'f1\'f2\'f0\'ee\'ea\'f3 \'f4\'e0\'e9\'eb\'e0\par
+\par
+git-bugreport[1]\par
+\'d1\'e1\'ee\'f0 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8, \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee\'e9 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'fe \'e4\'eb\'ff \'ee\'f2\'ef\'f0\'e0\'e2\'ea\'e8 \'ee\'f2\'f7\'e5\'f2\'e0 \'ee\'e1 \'ee\'f8\'e8\'e1\'ea\'e5\par
+\par
+git-count-\'ee\'e1\'fa\'e5\'ea\'f2\'fb[1]\par
+\'cf\'ee\'e4\'f1\'f7\'e8\'f2\'e0\'e9\'f2\'e5 \'ea\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee \'f0\'e0\'f1\'ef\'e0\'ea\'ee\'e2\'e0\'ed\'ed\'fb\'f5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'e8 \'e8\'f5 \'ef\'ee\'f2\'f0\'e5\'e1\'eb\'e5\'ed\'e8\'e5 \'ed\'e0 \'e4\'e8\'f1\'ea\'e5\par
+\par
+git-\'e4\'e8\'e0\'e3\'ed\'ee\'f1\'f2\'e8\'ea\'e0[1]\par
+\'d1\'ee\'e7\'e4\'e0\'e9\'f2\'e5 zip-\'e0\'f0\'f5\'e8\'e2 \'e4\'e8\'e0\'e3\'ed\'ee\'f1\'f2\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8\par
+\par
+git-difftool[1]\par
+\'cf\'ee\'ea\'e0\'e7\'fb\'e2\'e0\'f2\'fc \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe \'ee\'e1\'fb\'f7\'ed\'fb\'f5 \'e8\'ed\'f1\'f2\'f0\'f3\'ec\'e5\'ed\'f2\'ee\'e2 diff\par
+\par
+git-fsck[1]\par
+\'cf\'f0\'ee\'e2\'e5\'f0\'ff\'e5\'f2 \'e2\'ee\'e7\'ec\'ee\'e6\'ed\'ee\'f1\'f2\'fc \'ef\'ee\'e4\'ea\'eb\'fe\'f7\'e5\'ed\'e8\'ff \'e8 \'e2\'e0\'eb\'e8\'e4\'ed\'ee\'f1\'f2\'fc \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'e2 \'e1\'e0\'e7\'e5 \'e4\'e0\'ed\'ed\'fb\'f5\par
+\par
+git-\'f1\'ef\'f0\'e0\'e2\'ea\'e0[1]\par
+\'ce\'f2\'ee\'e1\'f0\'e0\'e7\'e8\'f2\'fc \'f1\'ef\'f0\'e0\'e2\'ee\'f7\'ed\'f3\'fe \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'fe \'ee Git\par
+\par
+git-instaweb[1]\par
+\'cc\'e3\'ed\'ee\'e2\'e5\'ed\'ed\'fb\'e9 \'ef\'f0\'ee\'f1\'ec\'ee\'f2\'f0 \'e2\'e0\'f8\'e5\'e3\'ee \'f0\'e0\'e1\'ee\'f7\'e5\'e3\'ee \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff \'e2 gitweb\par
+\par
+git-merge-tree[1]\par
+\'c2\'fb\'ef\'ee\'eb\'ed\'e8\'f2\'e5 \'f1\'eb\'e8\'ff\'ed\'e8\'e5, \'ed\'e5 \'ea\'e0\'f1\'e0\'ff\'f1\'fc \'e8\'ed\'e4\'e5\'ea\'f1\'e0 \'e8\'eb\'e8 \'f0\'e0\'e1\'ee\'f7\'e5\'e3\'ee \'e4\'e5\'f0\'e5\'e2\'e0\par
+\par
+git-\'ef\'e5\'f0\'e5\'e7\'e0\'ef\'f3\'f1\'ea[1]\par
+\'cf\'ee\'e2\'f2\'ee\'f0\'ed\'ee\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5 \'e7\'e0\'ef\'e8\'f1\'e0\'ed\'ed\'ee\'e3\'ee \'f0\'e0\'e7\'f0\'e5\'f8\'e5\'ed\'e8\'ff \'ea\'ee\'ed\'f4\'eb\'e8\'ea\'f2\'f3\'fe\'f9\'e8\'f5 \'f1\'eb\'e8\'ff\'ed\'e8\'e9\par
+\par
+git-show-branch[1]\par
+\'cf\'ee\'ea\'e0\'e7\'fb\'e2\'e0\'f2\'fc \'e2\'e5\'f2\'ea\'e8 \'e8 \'e8\'f5 \'ea\'ee\'ec\'ec\'e8\'f2\'fb\par
+\par
+git-verify-commit[1]\par
+\'cf\'f0\'ee\'e2\'e5\'f0\'fc\'f2\'e5 GPG-\'ef\'ee\'e4\'ef\'e8\'f1\'fc \'ea\'ee\'ec\'ec\'e8\'f2\'ee\'e2\par
+\par
+git-verify-tag[1]\par
+\'cf\'f0\'ee\'e2\'e5\'f0\'fc\'f2\'e5 GPG-\'f1\'e8\'e3\'ed\'e0\'f2\'f3\'f0\'f3 \'f2\'e5\'e3\'ee\'e2\par
+\par
+git-\'e2\'e5\'f0\'f1\'e8\'ff[1]\par
+\'ce\'f2\'ee\'e1\'f0\'e0\'e6\'e0\'f2\'fc \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'fe \'ee \'e2\'e5\'f0\'f1\'e8\'e8 Git\par
+\par
+git-\'f7\'f2\'ee \'e8\'e7\'ec\'e5\'ed\'e8\'eb\'ee\'f1\'fc[1]\par
+\'cf\'ee\'ea\'e0\'e7\'fb\'e2\'e0\'f2\'fc \'e6\'f3\'f0\'ed\'e0\'eb\'fb \'f1 \'f0\'e0\'e7\'eb\'e8\'f7\'e8\'ff\'ec\'e8, \'e2\'ed\'ee\'f1\'e8\'ec\'fb\'ec\'e8 \'ea\'e0\'e6\'e4\'fb\'ec \'ea\'ee\'ec\'ec\'e8\'f2\'ee\'ec\par
+\par
+gitweb[1]\par
+\'c2\'e5\'e1-\'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 Git (\'e2\'e5\'e1-\'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'e4\'eb\'ff \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e5\'e2 Git)\par
+\par
+\'c2\'e7\'e0\'e8\'ec\'ee\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5 \'f1 \'e4\'f0\'f3\'e3\'e8\'ec\'e8 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'ff\'ec\'e8\par
+\'dd\'f2\'e8 \'ea\'ee\'ec\'e0\'ed\'e4\'fb \'ef\'f0\'e5\'e4\'ed\'e0\'e7\'ed\'e0\'f7\'e5\'ed\'fb \'e4\'eb\'ff \'e2\'e7\'e0\'e8\'ec\'ee\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'ff \'f1 \'e7\'e0\'f0\'f3\'e1\'e5\'e6\'ed\'fb\'ec\'e8 \'f1\'e8\'f1\'f2\'e5\'ec\'e0\'ec\'e8 \'ea\'ee\'ed\'f2\'f0\'ee\'eb\'ff \'e2\'e5\'f0\'f1\'e8\'e9 \'e8 \'f1 \'e4\'f0\'f3\'e3\'e8\'ec\'e8 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'ff\'ec\'e8 \'f7\'e5\'f0\'e5\'e7 \'ef\'e0\'f2\'f7 \'ef\'ee \'fd\'eb\'e5\'ea\'f2\'f0\'ee\'ed\'ed\'ee\'e9 \'ef\'ee\'f7\'f2\'e5.\par
+\par
+git-archimport[1]\par
+\'c8\'ec\'ef\'ee\'f0\'f2\'e8\'f0\'f3\'e9\'f2\'e5 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e9 GNU Arch \'e2 Git\par
+\par
+git-cvsexportcommit[1]\par
+\'dd\'ea\'f1\'ef\'ee\'f0\'f2\'e8\'f0\'f3\'e9\'f2\'e5 \'ee\'e4\'e8\'ed \'ea\'ee\'ec\'ec\'e8\'f2 \'e2 CVS checkout\par
+\par
+git-cvsimport[1]\par
+\'d1\'ef\'e0\'f1\'e8\'f2\'e5 \'f1\'e2\'ee\'e8 \'e4\'e0\'ed\'ed\'fb\'e5 \'e8\'e7 \'e4\'f0\'f3\'e3\'ee\'e3\'ee SCM, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'eb\'fe\'e4\'e8 \'eb\'fe\'e1\'ff\'f2 \'ed\'e5\'ed\'e0\'e2\'e8\'e4\'e5\'f2\'fc\par
+\par
+git-cvsserver[1]\par
+\'dd\'ec\'f3\'eb\'ff\'f2\'ee\'f0 \'f1\'e5\'f0\'e2\'e5\'f0\'e0 CVS \'e4\'eb\'ff Git\par
+\par
+git-imap-\'ee\'f2\'ef\'f0\'e0\'e2\'e8\'f2\'fc[1]\par
+\'ce\'f2\'ef\'f0\'e0\'e2\'fc\'f2\'e5 \'ea\'ee\'eb\'eb\'e5\'ea\'f6\'e8\'fe \'e8\'f1\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'e9 \'e8\'e7 stdin \'e2 \'ef\'e0\'ef\'ea\'f3 IMAP\par
+\par
+git-p4[1]\par
+\'c8\'ec\'ef\'ee\'f0\'f2\'e8\'f0\'f3\'e9\'f2\'e5 \'e8\'e7 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e5\'e2 Perforce \'e8 \'ee\'f2\'ef\'f0\'e0\'e2\'eb\'ff\'e9\'f2\'e5 \'e2 \'ed\'e8\'f5\par
+\par
+git-quiltimport[1]\par
+\'cf\'f0\'e8\'ec\'e5\'ed\'ff\'e5\'f2 \'ed\'e0\'e1\'ee\'f0 \'e8\'f1\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'e9 quilt \'ea \'f2\'e5\'ea\'f3\'f9\'e5\'e9 \'e2\'e5\'f2\'ea\'e5\par
+\par
+git-request-pull[1]\par
+\'c3\'e5\'ed\'e5\'f0\'e8\'f0\'f3\'e5\'f2 \'f1\'e2\'ee\'e4\'ea\'f3 \'ee\'e6\'e8\'e4\'e0\'fe\'f9\'e8\'f5 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e9\par
+\par
+git-\'ee\'f2\'ef\'f0\'e0\'e2\'e8\'f2\'fc \'ef\'ee \'fd\'eb\'e5\'ea\'f2\'f0\'ee\'ed\'ed\'ee\'e9 \'ef\'ee\'f7\'f2\'e5[1]\par
+\'ce\'f2\'ef\'f0\'e0\'e2\'eb\'ff\'e9\'f2\'e5 \'ef\'ee\'e4\'e1\'ee\'f0\'ea\'f3 \'e8\'f1\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'e9 \'ef\'ee \'fd\'eb\'e5\'ea\'f2\'f0\'ee\'ed\'ed\'ee\'e9 \'ef\'ee\'f7\'f2\'e5\par
+\par
+git-svn[1]\par
+\'c4\'e2\'f3\'ed\'e0\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'ed\'e0\'ff \'f0\'e0\'e1\'ee\'f2\'e0 \'ec\'e5\'e6\'e4\'f3 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e5\'ec Subversion \'e8 Git\par
+\par
+\'d1\'e1\'f0\'ee\'f1, \'e2\'ee\'f1\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'e8\'e5 \'e8 \'f0\'e5\'e2\'e5\'f0\'f1\par
+\'d1\'f3\'f9\'e5\'f1\'f2\'e2\'f3\'fe\'f2 \'f2\'f0\'e8 \'ea\'ee\'ec\'e0\'ed\'e4\'fb \'f1 \'ef\'ee\'f5\'ee\'e6\'e8\'ec\'e8 \'ed\'e0\'e7\'e2\'e0\'ed\'e8\'ff\'ec\'e8: git reset, git restore \'e8 git revert.\par
+\par
+git-revert[1] \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'f1\'ee\'e7\'e4\'e0\'f2\'fc \'ed\'ee\'e2\'fb\'e9 \'ea\'ee\'ec\'ec\'e8\'f2, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ee\'f2\'ec\'e5\'ed\'ff\'e5\'f2 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff, \'e2\'ed\'e5\'f1\'b8\'ed\'ed\'fb\'e5 \'e4\'f0\'f3\'e3\'e8\'ec\'e8 \'ea\'ee\'ec\'ec\'e8\'f2\'e0\'ec\'e8.\par
+\par
+git-restore[1] \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'e4\'eb\'ff \'e2\'ee\'f1\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'e8\'ff \'f4\'e0\'e9\'eb\'ee\'e2 \'e2 \'f0\'e0\'e1\'ee\'f7\'e5\'ec \'e4\'e5\'f0\'e5\'e2\'e5 \'e8\'e7 \'e8\'ed\'e4\'e5\'ea\'f1\'e0 \'e8\'eb\'e8 \'e4\'f0\'f3\'e3\'ee\'e3\'ee \'ea\'ee\'ec\'ec\'e8\'f2\'e0. \'dd\'f2\'e0 \'ea\'ee\'ec\'e0\'ed\'e4\'e0 \'ed\'e5 \'ee\'e1\'ed\'ee\'e2\'eb\'ff\'e5\'f2 \'e2\'e0\'f8\'f3 \'e2\'e5\'f2\'ea\'f3. \'ca\'ee\'ec\'e0\'ed\'e4\'f3 \'f2\'e0\'ea\'e6\'e5 \'ec\'ee\'e6\'ed\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'e4\'eb\'ff \'e2\'ee\'f1\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'e8\'ff \'f4\'e0\'e9\'eb\'ee\'e2 \'e2 \'e8\'ed\'e4\'e5\'ea\'f1\'e5 \'e8\'e7 \'e4\'f0\'f3\'e3\'ee\'e3\'ee \'ea\'ee\'ec\'ec\'e8\'f2\'e0.\par
+\par
+git-reset[1] \'ef\'f0\'e5\'e4\'ed\'e0\'e7\'ed\'e0\'f7\'e5\'ed \'e4\'eb\'ff \'ee\'e1\'ed\'ee\'e2\'eb\'e5\'ed\'e8\'ff \'e2\'e0\'f8\'e5\'e9 \'e2\'e5\'f2\'ea\'e8, \'ef\'e5\'f0\'e5\'ec\'e5\'f9\'e5\'ed\'e8\'ff \'ea\'ee\'ed\'f7\'e8\'ea\'e0 \'e2\'e5\'f2\'ea\'e8 \'e4\'eb\'ff \'e4\'ee\'e1\'e0\'e2\'eb\'e5\'ed\'e8\'ff \'e8\'eb\'e8 \'f3\'e4\'e0\'eb\'e5\'ed\'e8\'ff \'ea\'ee\'ec\'ec\'e8\'f2\'ee\'e2 \'e8\'e7 \'e2\'e5\'f2\'ea\'e8. \'dd\'f2\'e0 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'ff \'e8\'e7\'ec\'e5\'ed\'ff\'e5\'f2 \'e8\'f1\'f2\'ee\'f0\'e8\'fe \'ea\'ee\'ec\'ec\'e8\'f2\'ee\'e2.\par
+\par
+git reset \'f2\'e0\'ea\'e6\'e5 \'ec\'ee\'e6\'e5\'f2 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc\'f1\'ff \'e4\'eb\'ff \'e2\'ee\'f1\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'e8\'ff \'e8\'ed\'e4\'e5\'ea\'f1\'e0, \'ef\'e5\'f0\'e5\'ea\'f0\'fb\'e2\'e0\'fe\'f9\'e5\'e3\'ee\'f1\'ff \'f1 git restore.\par
+\par
+\'cd\'e8\'e7\'ea\'ee\'f3\'f0\'ee\'e2\'ed\'e5\'e2\'fb\'e5 \'ea\'ee\'ec\'e0\'ed\'e4\'fb (\'f1\'e0\'ed\'f2\'e5\'f5\'ed\'e8\'ea\'e0)\par
+\'d5\'ee\'f2\'ff Git \'e2\'ea\'eb\'fe\'f7\'e0\'e5\'f2 \'e2 \'f1\'e5\'e1\'ff \'f1\'ee\'e1\'f1\'f2\'e2\'e5\'ed\'ed\'fb\'e9 \'f3\'f0\'ee\'e2\'e5\'ed\'fc \f1\lang1033\'ab\f0\lang1049\'f4\'e0\'f0\'f4\'ee\'f0\'ee\'e2\'ee\'e3\'ee\f1\lang1033\'bb \f0\lang1049\'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'e0, \'e5\'e3\'ee \'ed\'e8\'e7\'ea\'ee\'f3\'f0\'ee\'e2\'ed\'e5\'e2\'fb\'f5 \'ea\'ee\'ec\'e0\'ed\'e4 \'e4\'ee\'f1\'f2\'e0\'f2\'ee\'f7\'ed\'ee \'e4\'eb\'ff \'ef\'ee\'e4\'e4\'e5\'f0\'e6\'ea\'e8 \'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'ea\'e8 \'e0\'eb\'fc\'f2\'e5\'f0\'ed\'e0\'f2\'e8\'e2\'ed\'fb\'f5 \f1\lang1033\'ab\f0\lang1049\'f4\'e0\'f0\'f4\'ee\'f0\'ee\'e2\'fb\'f5\f1\lang1033\'bb \f0\lang1049\'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'ee\'e2. \'d0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'f7\'e8\'ea\'e8 \'f2\'e0\'ea\'e8\'f5 \f1\lang1033\'ab\f0\lang1049\'f4\'e0\'f0\'f4\'ee\'f0\'ee\'e2\'fb\'f5\f1\lang1033\'bb \f0\lang1049\'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'ee\'e2 \'ec\'ee\'e3\'f3\'f2 \'ed\'e0\'f7\'e0\'f2\'fc \'f1 \'e8\'e7\'f3\'f7\'e5\'ed\'e8\'ff git-update-index[1] \'e8 git-read-tree[1].\par
+\par
+\'c8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 (\'e2\'e2\'ee\'e4, \'e2\'fb\'e2\'ee\'e4, \'ed\'e0\'e1\'ee\'f0 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2 \'e8 \'f1\'e5\'ec\'e0\'ed\'f2\'e8\'ea\'e0) \'fd\'f2\'e8\'f5 \'ed\'e8\'e7\'ea\'ee\'f3\'f0\'ee\'e2\'ed\'e5\'e2\'fb\'f5 \'ea\'ee\'ec\'e0\'ed\'e4 \'e4\'ee\'eb\'e6\'e5\'ed \'e1\'fb\'f2\'fc \'ed\'e0\'ec\'ed\'ee\'e3\'ee \'e1\'ee\'eb\'e5\'e5 \'f1\'f2\'e0\'e1\'e8\'eb\'fc\'ed\'fb\'ec, \'f7\'e5\'ec \'f3 \'ea\'ee\'ec\'e0\'ed\'e4 \'f3\'f0\'ee\'e2\'ed\'ff Porcelain, \'ef\'ee\'f1\'ea\'ee\'eb\'fc\'ea\'f3 \'fd\'f2\'e8 \'ea\'ee\'ec\'e0\'ed\'e4\'fb \'ef\'f0\'e5\'e4\'ed\'e0\'e7\'ed\'e0\'f7\'e5\'ed\'fb \'e2 \'ef\'e5\'f0\'e2\'f3\'fe \'ee\'f7\'e5\'f0\'e5\'e4\'fc \'e4\'eb\'ff \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'ff \'e2 \'f1\'f6\'e5\'ed\'e0\'f0\'e8\'ff\'f5. \'d1 \'e4\'f0\'f3\'e3\'ee\'e9 \'f1\'f2\'ee\'f0\'ee\'ed\'fb, \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'ea\'ee\'ec\'e0\'ed\'e4 \'f3\'f0\'ee\'e2\'ed\'ff Porcelain \'ec\'ee\'e6\'e5\'f2 \'ec\'e5\'ed\'ff\'f2\'fc\'f1\'ff, \'f7\'f2\'ee\'e1\'fb \'f3\'eb\'f3\'f7\'f8\'e8\'f2\'fc \'e2\'e7\'e0\'e8\'ec\'ee\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5 \'f1 \'ea\'ee\'ed\'e5\'f7\'ed\'fb\'ec \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'e5\'ec.\par
+\par
+\'c2 \'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e5\'ec \'ee\'ef\'e8\'f1\'e0\'ed\'e8\'e8 \'ed\'e8\'e7\'ea\'ee\'f3\'f0\'ee\'e2\'ed\'e5\'e2\'fb\'e5 \'ea\'ee\'ec\'e0\'ed\'e4\'fb \'f0\'e0\'e7\'e4\'e5\'eb\'e5\'ed\'fb \'ed\'e0 \'ea\'ee\'ec\'e0\'ed\'e4\'fb, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'f3\'ef\'f0\'e0\'e2\'eb\'ff\'fe\'f2 \'ee\'e1\'fa\'e5\'ea\'f2\'e0\'ec\'e8 (\'e2 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e8, \'e8\'ed\'e4\'e5\'ea\'f1\'e5 \'e8 \'f0\'e0\'e1\'ee\'f7\'e5\'ec \'e4\'e5\'f0\'e5\'e2\'e5), \'ea\'ee\'ec\'e0\'ed\'e4\'fb, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'e7\'e0\'ef\'f0\'e0\'f8\'e8\'e2\'e0\'fe\'f2 \'e8 \'f1\'f0\'e0\'e2\'ed\'e8\'e2\'e0\'fe\'f2 \'ee\'e1\'fa\'e5\'ea\'f2\'fb, \'e8 \'ea\'ee\'ec\'e0\'ed\'e4\'fb, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ef\'e5\'f0\'e5\'ec\'e5\'f9\'e0\'fe\'f2 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'e8 \'f1\'f1\'fb\'eb\'ea\'e8 \'ec\'e5\'e6\'e4\'f3 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff\'ec\'e8.\par
+\par
+\'ca\'ee\'ec\'e0\'ed\'e4\'fb \'ec\'e0\'ed\'e8\'ef\'f3\'eb\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff\par
+git-\'ef\'f0\'e8\'ec\'e5\'ed\'e8\'f2\'fc[1]\par
+\'cf\'f0\'e8\'ec\'e5\'ed\'e8\'f2\'e5 \'e8\'f1\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'ea \'f4\'e0\'e9\'eb\'e0\'ec \'e8 / \'e8\'eb\'e8 \'ea \'e8\'ed\'e4\'e5\'ea\'f1\'f3\par
+\par
+git-checkout-index[1]\par
+\'d1\'ea\'ee\'ef\'e8\'f0\'f3\'e9\'f2\'e5 \'f4\'e0\'e9\'eb\'fb \'e8\'e7 \'e8\'ed\'e4\'e5\'ea\'f1\'e0 \'e2 \'f0\'e0\'e1\'ee\'f7\'e5\'e5 \'e4\'e5\'f0\'e5\'e2\'ee\par
+\par
+git-commit-graph[1]\par
+\'c7\'e0\'ef\'e8\'f1\'fc \'e8 \'ef\'f0\'ee\'e2\'e5\'f0\'ea\'e0 \'f4\'e0\'e9\'eb\'ee\'e2 Git commit-graph\par
+\par
+git-commit-tree[1]\par
+\'d1\'ee\'e7\'e4\'e0\'e9\'f2\'e5 \'ed\'ee\'e2\'fb\'e9 \'ee\'e1\'fa\'e5\'ea\'f2 \'f4\'e8\'ea\'f1\'e0\'f6\'e8\'e8\par
+\par
+git-\'f5\'fd\'f8-\'ee\'e1\'fa\'e5\'ea\'f2[1]\par
+\'c2\'fb\'f7\'e8\'f1\'eb\'e8\'f2\'e5 \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0 \'ee\'e1\'fa\'e5\'ea\'f2\'e0 \'e8, \'ef\'f0\'e8 \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee\'f1\'f2\'e8, \'f1\'ee\'e7\'e4\'e0\'e9\'f2\'e5 \'ee\'e1\'fa\'e5\'ea\'f2 \'e8\'e7 \'f4\'e0\'e9\'eb\'e0\par
+\par
+git-index-pack[1]\par
+\'d1\'ee\'e7\'e4\'e0\'e9\'f2\'e5 \'e8\'ed\'e4\'e5\'ea\'f1\'ed\'fb\'e9 \'f4\'e0\'e9\'eb \'ef\'e0\'ea\'e5\'f2\'e0 \'e4\'eb\'ff \'f1\'f3\'f9\'e5\'f1\'f2\'e2\'f3\'fe\'f9\'e5\'e3\'ee \'f3\'ef\'e0\'ea\'ee\'e2\'e0\'ed\'ed\'ee\'e3\'ee \'e0\'f0\'f5\'e8\'e2\'e0\par
+\par
+git-merge-\'f4\'e0\'e9\'eb[1]\par
+\'c7\'e0\'ef\'f3\'f1\'f2\'e8\'f2\'e5 \'f2\'f0\'e5\'f5\'f1\'f2\'ee\'f0\'ee\'ed\'ed\'e5\'e5 \'ee\'e1\'fa\'e5\'e4\'e8\'ed\'e5\'ed\'e8\'e5 \'f4\'e0\'e9\'eb\'ee\'e2\par
+\par
+git-merge-index[1]\par
+\'c7\'e0\'ef\'f3\'f1\'f2\'e8\'f2\'e5 \'f1\'eb\'e8\'ff\'ed\'e8\'e5 \'e4\'eb\'ff \'f4\'e0\'e9\'eb\'ee\'e2, \'ed\'f3\'e6\'e4\'e0\'fe\'f9\'e8\'f5\'f1\'ff \'e2 \'f1\'eb\'e8\'ff\'ed\'e8\'e8\par
+\par
+git-mktag[1]\par
+\'d1\'ee\'e7\'e4\'e0\'e5\'f2 \'ee\'e1\'fa\'e5\'ea\'f2 \'f2\'e5\'e3\'e0 \'f1 \'e4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'e9 \'ef\'f0\'ee\'e2\'e5\'f0\'ea\'ee\'e9\par
+\par
+git-mktree[1]\par
+\'d1\'ee\'e7\'e4\'e0\'e9\'f2\'e5 \'e4\'f0\'e5\'e2\'ee\'e2\'e8\'e4\'ed\'fb\'e9 \'ee\'e1\'fa\'e5\'ea\'f2 \'e8\'e7 \'f2\'e5\'ea\'f1\'f2\'e0 \'e2 \'f4\'ee\'f0\'ec\'e0\'f2\'e5 ls-tree\par
+\par
+git-multi-pack-index[1]\par
+\'cd\'e0\'ef\'e8\'f1\'e0\'ed\'e8\'e5 \'e8 \'ef\'f0\'ee\'e2\'e5\'f0\'ea\'e0 \'e8\'ed\'e4\'e5\'ea\'f1\'ee\'e2 \'f1 \'ed\'e5\'f1\'ea\'ee\'eb\'fc\'ea\'e8\'ec\'e8 \'ef\'e0\'ea\'e5\'f2\'e0\'ec\'e8\par
+\par
+git-pack-\'ee\'e1\'fa\'e5\'ea\'f2\'fb[1]\par
+\'d1\'ee\'e7\'e4\'e0\'ed\'e8\'e5 \'f3\'ef\'e0\'ea\'ee\'e2\'e0\'ed\'ed\'ee\'e3\'ee \'e0\'f0\'f5\'e8\'e2\'e0 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2\par
+\par
+git-prune-packed[1]\par
+\'d3\'e4\'e0\'eb\'e8\'f2\'e5 \'e4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'f3\'e6\'e5 \'e5\'f1\'f2\'fc \'e2 \'f4\'e0\'e9\'eb\'e0\'f5 pack\par
+\par
+git-read-tree[1]\par
+\'d1\'f7\'e8\'f2\'fb\'e2\'e0\'e5\'f2 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'fe \'ee \'e4\'e5\'f0\'e5\'e2\'e5 \'e2 \'e8\'ed\'e4\'e5\'ea\'f1\par
+\par
+git-replay[1]\par
+\'dd\'ca\'d1\'cf\'c5\'d0\'c8\'cc\'c5\'cd\'d2\'c0\'cb\'dc\'cd\'db\'c9: \'ef\'ee\'e2\'f2\'ee\'f0\'ed\'e0\'ff \'ea\'ee\'ec\'ef\'e8\'eb\'ff\'f6\'e8\'ff \'ed\'e0 \'ed\'ee\'e2\'ee\'e9 \'ee\'f1\'ed\'ee\'e2\'e5, \'f0\'e0\'e1\'ee\'f2\'e0\'e5\'f2 \'e8 \'f1 \'ef\'f3\'f1\'f2\'fb\'ec\'e8 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff\'ec\'e8\par
+\par
+git-symbolic-ref[1]\par
+\'d7\'f2\'e5\'ed\'e8\'e5, \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e5 \'e8 \'f3\'e4\'e0\'eb\'e5\'ed\'e8\'e5 \'f1\'e8\'ec\'e2\'ee\'eb\'fc\'ed\'fb\'f5 \'f1\'f1\'fb\'eb\'ee\'ea\par
+\par
+git-\'f0\'e0\'f1\'ef\'e0\'ea\'ee\'e2\'ea\'e0-\'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2[1]\par
+\'d0\'e0\'f1\'ef\'e0\'ea\'ee\'e2\'ea\'e0 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'e8\'e7 \'f3\'ef\'e0\'ea\'ee\'e2\'e0\'ed\'ed\'ee\'e3\'ee \'e0\'f0\'f5\'e8\'e2\'e0\par
+\par
+git-update-index[1]\par
+\'c7\'e0\'f0\'e5\'e3\'e8\'f1\'f2\'f0\'e8\'f0\'f3\'e9\'f2\'e5 \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'ee\'e5 \'f4\'e0\'e9\'eb\'e0 \'e2 \'f0\'e0\'e1\'ee\'f7\'e5\'ec \'e4\'e5\'f0\'e5\'e2\'e5 \'e2 \'e8\'ed\'e4\'e5\'ea\'f1\'e5\par
+\par
+git-update-ref[1]\par
+\'c1\'e5\'e7\'ee\'ef\'e0\'f1\'ed\'ee \'ee\'e1\'ed\'ee\'e2\'e8\'f2\'e5 \'e8\'ec\'ff \'ee\'e1\'fa\'e5\'ea\'f2\'e0, \'f5\'f0\'e0\'ed\'ff\'f9\'e5\'e5\'f1\'ff \'e2 \'f1\'f1\'fb\'eb\'ea\'e5\par
+\par
+git-write-tree[1]\par
+\'d1\'ee\'e7\'e4\'e0\'e9\'f2\'e5 \'e4\'f0\'e5\'e2\'ee\'e2\'e8\'e4\'ed\'fb\'e9 \'ee\'e1\'fa\'e5\'ea\'f2 \'ed\'e0 \'ee\'f1\'ed\'ee\'e2\'e5 \'f2\'e5\'ea\'f3\'f9\'e5\'e3\'ee \'e8\'ed\'e4\'e5\'ea\'f1\'e0\par
+\par
+\'ca\'ee\'ec\'e0\'ed\'e4\'fb \'e7\'e0\'ef\'f0\'ee\'f1\'e0\par
+git-cat-\'f4\'e0\'e9\'eb[1]\par
+\'cf\'f0\'e5\'e4\'ee\'f1\'f2\'e0\'e2\'e8\'f2\'fc \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'ee\'e5 \'e8\'eb\'e8 \'ef\'ee\'e4\'f0\'ee\'e1\'ed\'fb\'e5 \'f1\'e2\'e5\'e4\'e5\'ed\'e8\'ff \'ee\'e1 \'ee\'e1\'fa\'e5\'ea\'f2\'e0\'f5 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff\par
+\par
+git-cherry[1]\par
+\'cd\'e0\'e9\'e4\'e8\'f2\'e5 \'ea\'ee\'ec\'ec\'e8\'f2\'fb, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'e5\'f9\'e5 \'ef\'f0\'e5\'e4\'f1\'f2\'ee\'e8\'f2 \'ef\'f0\'e8\'ec\'e5\'ed\'e8\'f2\'fc \'ea \'e2\'ee\'f1\'f5\'ee\'e4\'ff\'f9\'e5\'ec\'f3 \'ef\'ee\'f2\'ee\'ea\'f3\par
+\par
+git-diff-\'f4\'e0\'e9\'eb\'fb[1]\par
+\'d1\'f0\'e0\'e2\'ed\'e8\'e2\'e0\'e5\'f2 \'f4\'e0\'e9\'eb\'fb \'e2 \'f0\'e0\'e1\'ee\'f7\'e5\'ec \'e4\'e5\'f0\'e5\'e2\'e5 \'e8 \'e8\'ed\'e4\'e5\'ea\'f1\'e5\par
+\par
+git-diff-index[1]\par
+\'d1\'f0\'e0\'e2\'ed\'e8\'f2\'e5 \'e4\'e5\'f0\'e5\'e2\'ee \'f1 \'f0\'e0\'e1\'ee\'f7\'e8\'ec \'e4\'e5\'f0\'e5\'e2\'ee\'ec \'e8\'eb\'e8 \'e8\'ed\'e4\'e5\'ea\'f1\'ee\'ec\par
+\par
+git-diff-tree[1]\par
+\'d1\'f0\'e0\'e2\'ed\'e8\'e2\'e0\'e5\'f2 \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'ee\'e5 \'e8 \'f0\'e5\'e6\'e8\'ec \'e1\'ee\'eb\'fc\'f8\'e8\'f5 \'e4\'e2\'ee\'e8\'f7\'ed\'fb\'f5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2, \'ed\'e0\'e9\'e4\'e5\'ed\'ed\'fb\'f5 \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe \'e4\'e2\'f3\'f5 \'e4\'f0\'e5\'e2\'ee\'e2\'e8\'e4\'ed\'fb\'f5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2\par
+\par
+git-for-each-ref[1]\par
+\'c2\'fb\'e2\'ee\'e4\'e8\'f2\'e5 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'fe \'ef\'ee \'ea\'e0\'e6\'e4\'ee\'e9 \'f1\'f1\'fb\'eb\'ea\'e5\par
+\par
+git-\'e4\'eb\'ff-\'ea\'e0\'e6\'e4\'ee\'e3\'ee-\'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff[1]\par
+\'c7\'e0\'ef\'f3\'f1\'f2\'e8\'f2\'e5 \'ea\'ee\'ec\'e0\'ed\'e4\'f3 Git \'e2 \'f1\'ef\'e8\'f1\'ea\'e5 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e5\'e2\par
+\par
+git-get-tar-commit-id[1]\par
+\'c8\'e7\'e2\'eb\'e5\'ea\'e8\'f2\'e5 \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0 \'f4\'e8\'ea\'f1\'e0\'f6\'e8\'e8 \'e8\'e7 \'e0\'f0\'f5\'e8\'e2\'e0, \'f1\'ee\'e7\'e4\'e0\'ed\'ed\'ee\'e3\'ee \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe git-archive\par
+\par
+git-ls-\'f4\'e0\'e9\'eb\'fb[1]\par
+\'cf\'ee\'ea\'e0\'e7\'fb\'e2\'e0\'f2\'fc \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'fe \'ee \'f4\'e0\'e9\'eb\'e0\'f5 \'e2 \'e8\'ed\'e4\'e5\'ea\'f1\'e5 \'e8 \'f0\'e0\'e1\'ee\'f7\'e5\'ec \'e4\'e5\'f0\'e5\'e2\'e5\par
+\par
+git-ls-remote[1]\par
+\'d1\'ef\'e8\'f1\'ee\'ea \'f1\'f1\'fb\'eb\'ee\'ea \'e2 \'f3\'e4\'e0\'eb\'e5\'ed\'ed\'ee\'ec \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e8\par
+\par
+git-ls-tree[1]\par
+\'cf\'e5\'f0\'e5\'f7\'e8\'f1\'eb\'e8\'f2\'e5 \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'ee\'e5 \'e4\'f0\'e5\'e2\'ee\'e2\'e8\'e4\'ed\'ee\'e3\'ee \'ee\'e1\'fa\'e5\'ea\'f2\'e0\par
+\par
+git-merge-\'e1\'e0\'e7\'e0[1]\par
+\'cd\'e0\'e9\'e4\'e8\'f2\'e5 \'ea\'e0\'ea \'ec\'ee\'e6\'ed\'ee \'e1\'ee\'eb\'fc\'f8\'e5 \'ee\'e1\'f9\'e8\'f5 \'ef\'f0\'e5\'e4\'ea\'ee\'e2 \'e4\'eb\'ff \'f1\'eb\'e8\'ff\'ed\'e8\'ff\par
+\par
+git-name-rev[1]\par
+\'cd\'e0\'e9\'e4\'e8\'f2\'e5 \'f1\'e8\'ec\'e2\'ee\'eb\'e8\'f7\'e5\'f1\'ea\'e8\'e5 \'e8\'ec\'e5\'ed\'e0 \'e4\'eb\'ff \'e7\'e0\'e4\'e0\'ed\'ed\'fb\'f5 \'ee\'e1\'ee\'f0\'ee\'f2\'ee\'e2\par
+\par
+git-pack-\'e8\'e7\'e1\'fb\'f2\'ee\'f7\'ed\'fb\'e9[1]\par
+\'cf\'ee\'e8\'f1\'ea \'e8\'e7\'e1\'fb\'f2\'ee\'f7\'ed\'fb\'f5 \'f4\'e0\'e9\'eb\'ee\'e2 \'ef\'e0\'ea\'e5\'f2\'e0\par
+\par
+git-rev-list[1]\par
+\'cf\'e5\'f0\'e5\'f7\'e8\'f1\'eb\'ff\'e5\'f2 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'f4\'e8\'ea\'f1\'e0\'f6\'e8\'e8 \'e2 \'ee\'e1\'f0\'e0\'f2\'ed\'ee\'ec \'f5\'f0\'ee\'ed\'ee\'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'ec \'ef\'ee\'f0\'ff\'e4\'ea\'e5\par
+\par
+git-rev-parse[1]\par
+\'c2\'fb\'e1\'ee\'f0 \'e8 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e5 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2\par
+\par
+git-\'ef\'ee\'ea\'e0\'e7\'e0\'f2\'fc-\'e8\'ed\'e4\'e5\'ea\'f1[1]\par
+\'cf\'ee\'ea\'e0\'e7\'e0\'f2\'fc \'e8\'ed\'e4\'e5\'ea\'f1 \'f3\'ef\'e0\'ea\'ee\'e2\'e0\'ed\'ed\'ee\'e3\'ee \'e0\'f0\'f5\'e8\'e2\'e0\par
+\par
+git-show-ref[1]\par
+\'d1\'ef\'e8\'f1\'ee\'ea \'f1\'f1\'fb\'eb\'ee\'ea \'e2 \'eb\'ee\'ea\'e0\'eb\'fc\'ed\'ee\'ec \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e8\par
+\par
+git-unpack-\'f4\'e0\'e9\'eb[1]\par
+\'d1\'ee\'e7\'e4\'e0\'e5\'f2 \'e2\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'e9 \'f4\'e0\'e9\'eb \'f1 \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'fb\'ec \'e1\'ee\'eb\'fc\'f8\'ee\'e3\'ee \'e4\'e2\'ee\'e8\'f7\'ed\'ee\'e3\'ee \'ee\'e1\'fa\'e5\'ea\'f2\'e0\par
+\par
+git-var[1]\par
+\'cf\'ee\'ea\'e0\'e7\'e0\'f2\'fc \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'f3\'fe \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'f3\'fe Git\par
+\par
+git-verify-pack[1]\par
+\'cf\'f0\'ee\'e2\'e5\'f0\'ea\'e0 \'f3\'ef\'e0\'ea\'ee\'e2\'e0\'ed\'ed\'fb\'f5 \'f4\'e0\'e9\'eb\'ee\'e2 \'e0\'f0\'f5\'e8\'e2\'e0 Git\par
+\par
+\'ca\'e0\'ea \'ef\'f0\'e0\'e2\'e8\'eb\'ee, \'ea\'ee\'ec\'e0\'ed\'e4\'fb \'ee\'ef\'f0\'ee\'f1\'e0 \'ed\'e5 \'e7\'e0\'f2\'f0\'e0\'e3\'e8\'e2\'e0\'fe\'f2 \'f4\'e0\'e9\'eb\'fb \'e2 \'f0\'e0\'e1\'ee\'f7\'e5\'ec \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'e5.\par
+\par
+\'d1\'e8\'ed\'f5\'f0\'ee\'ed\'e8\'e7\'e0\'f6\'e8\'ff \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e5\'e2\par
+git-daemon[1]\par
+\'c4\'e5\'e9\'f1\'f2\'e2\'e8\'f2\'e5\'eb\'fc\'ed\'ee \'ef\'f0\'ee\'f1\'f2\'ee\'e9 \'f1\'e5\'f0\'e2\'e5\'f0 \'e4\'eb\'ff \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e5\'e2 Git\par
+\par
+git-fetch-pack[1]\par
+\'cf\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'e5 \'ed\'e5\'e4\'ee\'f1\'f2\'e0\'fe\'f9\'e8\'f5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'e8\'e7 \'e4\'f0\'f3\'e3\'ee\'e3\'ee \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff\par
+\par
+git-http-\'f1\'e5\'f0\'e2\'e5\'f0\'ed\'e0\'ff \'f7\'e0\'f1\'f2\'fc[1]\par
+\'d0\'e5\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'ff Git \'ed\'e0 \'f1\'f2\'ee\'f0\'ee\'ed\'e5 \'f1\'e5\'f0\'e2\'e5\'f0\'e0 \'ef\'ee \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'f3 HTTP\par
+\par
+git-send-pack[1]\par
+\'cf\'e5\'f0\'e5\'ed\'ee\'f1 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'ef\'ee \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'f3 Git \'e2 \'e4\'f0\'f3\'e3\'ee\'e9 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e9\par
+\par
+git-\'ee\'e1\'ed\'ee\'e2\'eb\'e5\'ed\'e8\'e5-\'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'ff \'ee \'f1\'e5\'f0\'e2\'e5\'f0\'e5[1]\par
+\'ce\'e1\'ed\'ee\'e2\'e8\'f2\'e5 \'e2\'f1\'ef\'ee\'ec\'ee\'e3\'e0\'f2\'e5\'eb\'fc\'ed\'fb\'e9 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'ee\'ed\'ed\'fb\'e9 \'f4\'e0\'e9\'eb, \'f7\'f2\'ee\'e1\'fb \'ef\'ee\'ec\'ee\'f7\'fc \'f2\'f3\'ef\'fb\'ec \'f1\'e5\'f0\'e2\'e5\'f0\'e0\'ec\par
+\par
+\'cd\'e8\'e6\'e5 \'ef\'f0\'e8\'e2\'e5\'e4\'e5\'ed\'fb \'e2\'f1\'ef\'ee\'ec\'ee\'e3\'e0\'f2\'e5\'eb\'fc\'ed\'fb\'e5 \'ea\'ee\'ec\'e0\'ed\'e4\'fb, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'fb\'e5 \'e2 \'ee\'ef\'e8\'f1\'e0\'ed\'ed\'ee\'ec \'e2\'fb\'f8\'e5 \'ef\'f0\'ee\'f6\'e5\'f1\'f1\'e5; \'ea\'ee\'ed\'e5\'f7\'ed\'fb\'e5 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'e8 \'ee\'e1\'fb\'f7\'ed\'ee \'ed\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'fe\'f2 \'e8\'f5 \'ed\'e0\'ef\'f0\'ff\'ec\'f3\'fe.\par
+\par
+git-http-\'e2\'fb\'e1\'ee\'f0\'ea\'e0[1]\par
+\'c7\'e0\'e3\'f0\'f3\'e7\'ea\'e0 \'e8\'e7 \'f3\'e4\'e0\'eb\'e5\'ed\'ed\'ee\'e3\'ee \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff Git \'ef\'ee HTTP\par
+\par
+git-http-push[1]\par
+\'cf\'e5\'f0\'e5\'e4\'e0\'f7\'e0 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'ef\'ee HTTP / DAV \'e2 \'e4\'f0\'f3\'e3\'ee\'e9 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e9\par
+\par
+git-receive-pack[1]\par
+\'cf\'ee\'eb\'f3\'f7\'e0\'f2\'fc \'f2\'ee, \'f7\'f2\'ee \'e7\'e0\'e3\'f0\'f3\'e6\'e0\'e5\'f2\'f1\'ff \'e2 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e9\par
+\par
+git-\'ee\'e1\'ee\'eb\'ee\'f7\'ea\'e0[1]\par
+\'ce\'e3\'f0\'e0\'ed\'e8\'f7\'e5\'ed\'ed\'e0\'ff \'ee\'e1\'ee\'eb\'ee\'f7\'ea\'e0 \'e2\'f5\'ee\'e4\'e0 \'e4\'eb\'ff SSH-\'e4\'ee\'f1\'f2\'f3\'ef\'e0 \'f2\'ee\'eb\'fc\'ea\'ee \'e4\'eb\'ff Git\par
+\par
+git-\'e7\'e0\'e3\'f0\'f3\'e7\'ea\'e0-\'e0\'f0\'f5\'e8\'e2[1]\par
+\'ce\'f2\'ef\'f0\'e0\'e2\'e8\'f2\'fc \'e0\'f0\'f5\'e8\'e2 \'ee\'e1\'f0\'e0\'f2\'ed\'ee \'e2 git-archive\par
+\par
+git-upload-pack[1]\par
+\'ce\'f2\'ef\'f0\'e0\'e2\'eb\'ff\'f2\'fc \'f3\'ef\'e0\'ea\'ee\'e2\'e0\'ed\'ed\'fb\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'ee\'e1\'f0\'e0\'f2\'ed\'ee \'e2 git-fetch-pack\par
+\par
+\'c2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e8\'e5 \'e2\'f1\'ef\'ee\'ec\'ee\'e3\'e0\'f2\'e5\'eb\'fc\'ed\'fb\'e5 \'ea\'ee\'ec\'e0\'ed\'e4\'fb\par
+\'dd\'f2\'ee \'e2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e8\'e5 \'e2\'f1\'ef\'ee\'ec\'ee\'e3\'e0\'f2\'e5\'eb\'fc\'ed\'fb\'e5 \'ea\'ee\'ec\'e0\'ed\'e4\'fb, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'fb\'e5 \'e4\'f0\'f3\'e3\'e8\'ec\'e8 \'ea\'ee\'ec\'e0\'ed\'e4\'e0\'ec\'e8; \'ea\'ee\'ed\'e5\'f7\'ed\'fb\'e5 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'e8 \'ee\'e1\'fb\'f7\'ed\'ee \'ed\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'fe\'f2 \'e8\'f5 \'ed\'e0\'ef\'f0\'ff\'ec\'f3\'fe.\par
+\par
+git-check-attr[1]\par
+\'ce\'f2\'ee\'e1\'f0\'e0\'e6\'e0\'f2\'fc \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'fe \'ee \'e0\'f2\'f0\'e8\'e1\'f3\'f2\'e0\'f5 gitattributes\par
+\par
+git-\'ef\'f0\'ee\'e2\'e5\'f0\'ea\'e0-\'e8\'e3\'ed\'ee\'f0\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5[1]\par
+\'ce\'f2\'eb\'e0\'e6\'e8\'e2\'e0\'f2\'fc gitignore / \'e8\'f1\'ea\'eb\'fe\'f7\'e0\'f2\'fc \'f4\'e0\'e9\'eb\'fb\par
+\par
+git-check-mailmap[1]\par
+\'cf\'ee\'ea\'e0\'e7\'fb\'e2\'e0\'f2\'fc \'ea\'e0\'ed\'ee\'ed\'e8\'f7\'e5\'f1\'ea\'e8\'e5 \'e8\'ec\'e5\'ed\'e0 \'e8 \'e0\'e4\'f0\'e5\'f1\'e0 \'fd\'eb\'e5\'ea\'f2\'f0\'ee\'ed\'ed\'ee\'e9 \'ef\'ee\'f7\'f2\'fb \'ea\'ee\'ed\'f2\'e0\'ea\'f2\'ee\'e2\par
+\par
+git-check-ref-format[1]\par
+\'c3\'e0\'f0\'e0\'ed\'f2\'e8\'f0\'f3\'e5\'f2 \'ef\'f0\'e0\'e2\'e8\'eb\'fc\'ed\'ee\'f1\'f2\'fc \'f4\'ee\'f0\'ec\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'f1\'f1\'fb\'eb\'ee\'f7\'ed\'ee\'e3\'ee \'e8\'ec\'e5\'ed\'e8\par
+\par
+git-\'f1\'f2\'ee\'eb\'e1\'e5\'f6[1]\par
+\'ce\'f2\'ee\'e1\'f0\'e0\'e6\'e0\'f2\'fc \'e4\'e0\'ed\'ed\'fb\'e5 \'e2 \'f1\'f2\'ee\'eb\'e1\'f6\'e0\'f5\par
+\par
+git-\'f3\'f7\'e5\'f2\'ed\'fb\'e5 \'e4\'e0\'ed\'ed\'fb\'e5[1]\par
+\'cf\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'e5 \'e8 \'f5\'f0\'e0\'ed\'e5\'ed\'e8\'e5 \'f3\'f7\'e5\'f2\'ed\'fb\'f5 \'e4\'e0\'ed\'ed\'fb\'f5 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'ff\par
+\par
+git-\'f3\'f7\'e5\'f2\'ed\'fb\'e5 \'e4\'e0\'ed\'ed\'fb\'e5-\'ea\'fd\'f8[1]\par
+\'cf\'ee\'ec\'ee\'f9\'ed\'e8\'ea \'e4\'eb\'ff \'e2\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e3\'ee \'f5\'f0\'e0\'ed\'e5\'ed\'e8\'ff \'ef\'e0\'f0\'ee\'eb\'e5\'e9 \'e2 \'ef\'e0\'ec\'ff\'f2\'e8\par
+\par
+git-\'f5\'f0\'e0\'ed\'e8\'eb\'e8\'f9\'e5 \'f3\'f7\'e5\'f2\'ed\'fb\'f5 \'e4\'e0\'ed\'ed\'fb\'f5[1]\par
+\'cf\'ee\'ec\'ee\'f9\'ed\'e8\'ea \'e4\'eb\'ff \'f5\'f0\'e0\'ed\'e5\'ed\'e8\'ff \'f3\'f7\'e5\'f2\'ed\'fb\'f5 \'e4\'e0\'ed\'ed\'fb\'f5 \'ed\'e0 \'e4\'e8\'f1\'ea\'e5\par
+\par
+git-fmt-merge-msg[1]\par
+\'d1\'ee\'e7\'e4\'e0\'e9\'f2\'e5 \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'e5 \'ee \'f4\'e8\'ea\'f1\'e0\'f6\'e8\'e8 \'f1\'eb\'e8\'ff\'ed\'e8\'ff\par
+\par
+git-hook[1]\par
+\'c7\'e0\'ef\'f3\'f1\'ea\'e0\'e5\'ec git-\'f5\'f3\'ea\'e8\par
+\par
+git-\'e8\'ed\'f2\'e5\'f0\'ef\'f0\'e5\'f2\'e0\'f6\'e8\'ff-\'f2\'f0\'e5\'e9\'eb\'e5\'f0\'fb[1]\par
+\'c4\'ee\'e1\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'e8\'eb\'e8 \'e0\'ed\'e0\'eb\'e8\'e7 \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'e8\'f0\'ee\'e2\'e0\'ed\'ed\'ee\'e9 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8 \'e2 \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff\'f5 \'ee \'f4\'e8\'ea\'f1\'e0\'f6\'e8\'e8\par
+\par
+git-mailinfo[1]\par
+\'c8\'e7\'e2\'eb\'e5\'ea\'e0\'e5\'f2 \'e8\'f1\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'e8 \'e0\'e2\'f2\'ee\'f0\'f1\'f2\'e2\'ee \'e8\'e7 \'ee\'e4\'ed\'ee\'e3\'ee \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'fd\'eb\'e5\'ea\'f2\'f0\'ee\'ed\'ed\'ee\'e9 \'ef\'ee\'f7\'f2\'fb\par
+\par
+git-mailsplit[1]\par
+\'cf\'f0\'ee\'f1\'f2\'e0\'ff \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'e0-\'f0\'e0\'e7\'e4\'e5\'eb\'e8\'f2\'e5\'eb\'fc UNIX mbox\par
+\par
+git-merge-one-file[1]\par
+\'d1\'f2\'e0\'ed\'e4\'e0\'f0\'f2\'ed\'e0\'ff \'e2\'f1\'ef\'ee\'ec\'ee\'e3\'e0\'f2\'e5\'eb\'fc\'ed\'e0\'ff \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'e0 \'e4\'eb\'ff \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'ff \'f1 git-merge-index\par
+\par
+git-patch-id[1]\par
+\'c2\'fb\'f7\'e8\'f1\'eb\'e8\'f2\'fc \'f3\'ed\'e8\'ea\'e0\'eb\'fc\'ed\'fb\'e9 \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0 \'e4\'eb\'ff \'ef\'e0\'f2\'f7\'e0\par
+\par
+git-sh-i18n[1]\par
+\'d3\'f1\'f2\'e0\'ed\'ee\'e2\'ee\'f7\'ed\'fb\'e9 \'ea\'ee\'e4 Git i18n \'e4\'eb\'ff \'f1\'f6\'e5\'ed\'e0\'f0\'e8\'e5\'e2 \'ee\'e1\'ee\'eb\'ee\'f7\'ea\'e8\par
+\par
+git-sh-setup[1]\par
+\'ce\'e1\'f9\'e8\'e9 \'ea\'ee\'e4 \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e8 \'f1\'ea\'f0\'e8\'ef\'f2\'e0 \'ee\'e1\'ee\'eb\'ee\'f7\'ea\'e8 Git\par
+\par
+git-stripspace[1]\par
+\'d3\'e4\'e0\'eb\'e8\'f2\'e5 \'ed\'e5\'ed\'f3\'e6\'ed\'fb\'e5 \'ef\'f0\'ee\'e1\'e5\'eb\'fb\par
+\par
+\'d0\'f3\'ea\'ee\'e2\'ee\'e4\'f1\'f2\'e2\'ee\par
+\'d1\'eb\'e5\'e4\'f3\'fe\'f9\'e8\'e5 \'f1\'f2\'f0\'e0\'ed\'e8\'f6\'fb \'e4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\'e0\'f6\'e8\'e8 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'ff\'fe\'f2 \'f1\'ee\'e1\'ee\'e9 \'f0\'f3\'ea\'ee\'e2\'ee\'e4\'f1\'f2\'e2\'e0 \'ef\'ee \'ea\'ee\'ed\'f6\'e5\'ef\'f6\'e8\'ff\'ec Git.\par
+\par
+gitcore-\'f3\'f7\'e5\'e1\'ed\'ee\'e5 \'ef\'ee\'f1\'ee\'e1\'e8\'e5 [7]\par
+\'d0\'f3\'ea\'ee\'e2\'ee\'e4\'f1\'f2\'e2\'ee \'ef\'ee Git core \'e4\'eb\'ff \'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'f7\'e8\'ea\'ee\'e2\par
+\par
+gitcredentials[7]\par
+\'cf\'f0\'e5\'e4\'ee\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'e8\'ec\'e5\'ed \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'e5\'e9 \'e8 \'ef\'e0\'f0\'ee\'eb\'e5\'e9 \'e4\'eb\'ff Git\par
+\par
+gitcvs-\'ec\'e8\'e3\'f0\'e0\'f6\'e8\'ff[7]\par
+Git \'e4\'eb\'ff \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'e5\'e9 CVS\par
+\par
+gitdiffcore[7]\par
+\'cd\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e0 \'e2\'fb\'e2\'ee\'e4\'e0 \'f0\'e0\'e7\'eb\'e8\'f7\'e8\'e9\par
+\par
+giteveryday[7]\par
+\'cf\'ee\'eb\'e5\'e7\'ed\'fb\'e9 \'ec\'e8\'ed\'e8\'ec\'e0\'eb\'fc\'ed\'fb\'e9 \'ed\'e0\'e1\'ee\'f0 \'ea\'ee\'ec\'e0\'ed\'e4 \'e4\'eb\'ff \'ef\'ee\'e2\'f1\'e5\'e4\'ed\'e5\'e2\'ed\'ee\'e9 \'f0\'e0\'e1\'ee\'f2\'fb \'f1 Git\par
+\par
+gitfaq[7]\par
+\'d7\'e0\'f1\'f2\'ee \'e7\'e0\'e4\'e0\'e2\'e0\'e5\'ec\'fb\'e5 \'e2\'ee\'ef\'f0\'ee\'f1\'fb \'ee\'e1 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e8 Git\par
+\par
+gitglossary[7]\par
+\'c3\'eb\'ee\'f1\'f1\'e0\'f0\'e8\'e9 \'ef\'ee Git\par
+\par
+gitnamespaces[7]\par
+\'cf\'f0\'ee\'f1\'f2\'f0\'e0\'ed\'f1\'f2\'e2\'e0 \'e8\'ec\'e5\'ed Git\par
+\par
+gitremote-\'ef\'ee\'ec\'ee\'f9\'ed\'e8\'ea\'e8[7]\par
+\'c2\'f1\'ef\'ee\'ec\'ee\'e3\'e0\'f2\'e5\'eb\'fc\'ed\'fb\'e5 \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'fb \'e4\'eb\'ff \'e2\'e7\'e0\'e8\'ec\'ee\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'ff \'f1 \'f3\'e4\'e0\'eb\'e5\'ed\'ed\'fb\'ec\'e8 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff\'ec\'e8\par
+\par
+gitsubmodules[7]\par
+\'cc\'ee\'ed\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5 \'ee\'e4\'ed\'ee\'e3\'ee \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff \'e2\'ed\'f3\'f2\'f0\'e8 \'e4\'f0\'f3\'e3\'ee\'e3\'ee\par
+\par
+gittutorial[7]\par
+\'d3\'f7\'e5\'e1\'ed\'ee\'e5 \'ef\'ee\'f1\'ee\'e1\'e8\'e5 \'ef\'ee Git\par
+\par
+gittutorial-2[7]\par
+\'d3\'f7\'e5\'e1\'ed\'ee\'e5 \'ef\'ee\'f1\'ee\'e1\'e8\'e5 \'ef\'ee Git: \'f7\'e0\'f1\'f2\'fc \'e2\'f2\'ee\'f0\'e0\'ff\par
+\par
+gitworkflows[7]\par
+\'ce\'e1\'e7\'ee\'f0 \'f0\'e5\'ea\'ee\'ec\'e5\'ed\'e4\'f3\'e5\'ec\'fb\'f5 \'f0\'e0\'e1\'ee\'f7\'e8\'f5 \'ef\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'e2 \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe Git\par
+\par
+\'d0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e9, \'ea\'ee\'ec\'e0\'ed\'e4\'ed\'fb\'e5 \'e8 \'f4\'e0\'e9\'eb\'ee\'e2\'fb\'e5 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'fb\par
+\'c2 \'fd\'f2\'ee\'e9 \'e4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\'e0\'f6\'e8\'e8 \'f0\'e0\'f1\'f1\'ec\'e0\'f2\'f0\'e8\'e2\'e0\'fe\'f2\'f1\'ff \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e8 \'e8 \'ea\'ee\'ec\'e0\'ed\'e4\'ed\'fb\'e5 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'fb, \'f1 \'ea\'ee\'f2\'ee\'f0\'fb\'ec\'e8 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'e8 \'e4\'ee\'eb\'e6\'ed\'fb \'e2\'e7\'e0\'e8\'ec\'ee\'e4\'e5\'e9\'f1\'f2\'e2\'ee\'e2\'e0\'f2\'fc \'ed\'e0\'ef\'f0\'ff\'ec\'f3\'fe. \'c4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'e5 \'f1\'e2\'e5\'e4\'e5\'ed\'e8\'ff \'ee \'ea\'f0\'e8\'f2\'e5\'f0\'e8\'ff\'f5 \'f1\'ec. --user-formats \'e2 git-help[1].\par
+\par
+\'c0\'f2\'f0\'e8\'e1\'f3\'f2\'fb gitattributes[5]\par
+\'ce\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'e8\'e5 \'e0\'f2\'f0\'e8\'e1\'f3\'f2\'ee\'e2 \'e4\'eb\'ff \'ea\'e0\'e6\'e4\'ee\'e3\'ee \'ef\'f3\'f2\'e8\par
+\par
+gitcli[7]\par
+\'c8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'ea\'ee\'ec\'e0\'ed\'e4\'ed\'ee\'e9 \'f1\'f2\'f0\'ee\'ea\'e8 Git \'e8 \'f1\'ee\'e3\'eb\'e0\'f8\'e5\'ed\'e8\'ff\par
+\par
+githooks[5]\par
+\'d5\'f3\'ea\'e8, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'fb\'e5 Git\par
+\par
+gitignore[5]\par
+\'d3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'ed\'e0\'ec\'e5\'f0\'e5\'ed\'ed\'ee \'ed\'e5 \'ee\'f2\'f1\'eb\'e5\'e6\'e8\'e2\'e0\'e5\'ec\'fb\'e5 \'f4\'e0\'e9\'eb\'fb, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'f1\'eb\'e5\'e4\'f3\'e5\'f2 \'e8\'e3\'ed\'ee\'f0\'e8\'f0\'ee\'e2\'e0\'f2\'fc\par
+\par
+gitmailmap[5]\par
+\'c8\'ec\'e5\'ed\'e0 \'e0\'e2\'f2\'ee\'f0\'ee\'e2 / \'ea\'ee\'ec\'ec\'e8\'f2\'f2\'e5\'f0\'ee\'e2 \'ea\'e0\'f0\'f2\'fb \'e8 / \'e8\'eb\'e8 \'e0\'e4\'f0\'e5\'f1\'e0 \'fd\'eb\'e5\'ea\'f2\'f0\'ee\'ed\'ed\'ee\'e9 \'ef\'ee\'f7\'f2\'fb\par
+\par
+gitmodules[5]\par
+\'ce\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'e8\'e5 \'f1\'e2\'ee\'e9\'f1\'f2\'e2 \'ef\'ee\'e4\'ec\'ee\'e4\'f3\'eb\'ff\par
+\par
+gitrepository-\'ec\'e0\'ea\'e5\'f2[5]\par
+\'cc\'e0\'ea\'e5\'f2 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff Git\par
+\par
+gitrevisions[7]\par
+\'d3\'ea\'e0\'e7\'e0\'ed\'e8\'e5 \'f0\'e5\'e2\'e8\'e7\'e8\'e9 \'e8 \'e4\'e8\'e0\'ef\'e0\'e7\'ee\'ed\'ee\'e2 \'e4\'eb\'ff Git\par
+\par
+\'d4\'ee\'f0\'ec\'e0\'f2\'fb \'f4\'e0\'e9\'eb\'ee\'e2, \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'fb \'e8 \'e4\'f0\'f3\'e3\'e8\'e5 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'fb \'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'f7\'e8\'ea\'e0\par
+\'c2 \'fd\'f2\'ee\'e9 \'e4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\'e0\'f6\'e8\'e8 \'f0\'e0\'f1\'f1\'ec\'e0\'f2\'f0\'e8\'e2\'e0\'fe\'f2\'f1\'ff \'f4\'ee\'f0\'ec\'e0\'f2\'fb \'f4\'e0\'e9\'eb\'ee\'e2, \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'fb \'ef\'e5\'f0\'e5\'e4\'e0\'f7\'e8 \'e4\'e0\'ed\'ed\'fb\'f5 \'e8 \'e4\'f0\'f3\'e3\'e8\'e5 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'fb \'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'f7\'e8\'ea\'ee\'e2 git. \'d1\'ec. --developer-interfaces \'e2 git-help[1].\par
+\par
+gitformat-bundle[5]\par
+\'d4\'ee\'f0\'ec\'e0\'f2 \'f4\'e0\'e9\'eb\'e0 \'ef\'e0\'ea\'e5\'f2\'e0\par
+\par
+gitformat-\'f4\'f0\'e0\'e3\'ec\'e5\'ed\'f2[5]\par
+\'d4\'ee\'f0\'ec\'e0\'f2\'fb \'f4\'e0\'e9\'eb\'ee\'e2 \'ed\'e0 \'ee\'f1\'ed\'ee\'e2\'e5 \'e1\'eb\'ee\'ea\'ee\'e2\par
+\par
+gitformat-commit-graph[5]\par
+\'d4\'ee\'f0\'ec\'e0\'f2 Git commit-graph\par
+\par
+gitformat-\'e8\'ed\'e4\'e5\'ea\'f1[5]\par
+\'d4\'ee\'f0\'ec\'e0\'f2 \'e8\'ed\'e4\'e5\'ea\'f1\'e0 Git\par
+\par
+gitformat-pack[5]\par
+\'d4\'ee\'f0\'ec\'e0\'f2 \'ef\'e0\'ea\'e5\'f2\'e0 Git\par
+\par
+gitformat-\'ef\'ee\'e4\'ef\'e8\'f1\'fc[5]\par
+\'d4\'ee\'f0\'ec\'e0\'f2\'fb \'ea\'f0\'e8\'ef\'f2\'ee\'e3\'f0\'e0\'f4\'e8\'f7\'e5\'f1\'ea\'e8\'f5 \'ef\'ee\'e4\'ef\'e8\'f1\'e5\'e9 Git\par
+\par
+gitprotocol-\'e2\'ee\'e7\'ec\'ee\'e6\'ed\'ee\'f1\'f2\'e8[5]\par
+\'c2\'ee\'e7\'ec\'ee\'e6\'ed\'ee\'f1\'f2\'e8 \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'ee\'e2 v0 \'e8 v1\par
+\par
+gitprotocol-\'ee\'e1\'f9\'e8\'e9[5]\par
+\'ce\'e1\'f9\'e8\'e5 \'ec\'ee\'ec\'e5\'ed\'f2\'fb \'e4\'eb\'ff \'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'f5 \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'ee\'e2\par
+\par
+gitprotocol-http[5]\par
+\'cf\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'fb \'ed\'e0 \'ee\'f1\'ed\'ee\'e2\'e5 Git HTTP\par
+\par
+gitprotocol-pack[5]\par
+\'ca\'e0\'ea \'ef\'e0\'ea\'e5\'f2\'fb \'ef\'e5\'f0\'e5\'e4\'e0\'fe\'f2\'f1\'ff \'ef\'ee \'ef\'f0\'ee\'e2\'ee\'e4\'e0\'ec\par
+\par
+gitprotocol-v2[5]\par
+\'cf\'f0\'ee\'f2\'ee\'ea\'ee\'eb Git Wire, \'e2\'e5\'f0\'f1\'e8\'ff 2\par
+\par
+\'cc\'e5\'f5\'e0\'ed\'e8\'e7\'ec \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e8\par
+Git \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2 \'ef\'f0\'ee\'f1\'f2\'ee\'e9 \'f2\'e5\'ea\'f1\'f2\'ee\'e2\'fb\'e9 \'f4\'ee\'f0\'ec\'e0\'f2 \'e4\'eb\'ff \'f5\'f0\'e0\'ed\'e5\'ed\'e8\'ff \'ed\'e0\'f1\'f2\'f0\'ee\'e5\'ea, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ee\'f2\'ed\'ee\'f1\'ff\'f2\'f1\'ff \'ea \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'fe \'e8 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'fe. \'d2\'e0\'ea\'ee\'e9 \'f4\'e0\'e9\'eb \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8 \'ec\'ee\'e6\'e5\'f2 \'e2\'fb\'e3\'eb\'ff\'e4\'e5\'f2\'fc \'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e8\'ec \'ee\'e1\'f0\'e0\'e7\'ee\'ec:\par
+\par
+#\par
+# \'d1\'e8\'ec\'e2\'ee\'eb '#' \'e8\'eb\'e8 ';' \'f3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'ed\'e0 \'ea\'ee\'ec\'ec\'e5\'ed\'f2\'e0\'f0\'e8\'e9.\par
+#\par
+\par
+; \'ee\'f1\'ed\'ee\'e2\'ed\'fb\'e5 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'e5\par
+[core]\par
+ ; \'cd\'e5 \'e4\'ee\'e2\'e5\'f0\'ff\'e9\'f2\'e5 \'f0\'e5\'e6\'e8\'ec\'e0\'ec \'f4\'e0\'e9\'eb\'ee\'e2\par
+ filemode = false\par
+\par
+; \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'ff\par
+[user]\par
+ \'e8\'ec\'ff = "\'c4\'e6\'f3\'ed\'e8\'ee \'d1. \'d5\'e0\'ec\'e0\'ed\'ee"\par
+ \'fd\'eb\'e5\'ea\'f2\'f0\'ee\'ed\'ed\'e0\'ff \'ef\'ee\'f7\'f2\'e0 = "gitster@pobox.com"\par
+\'d0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'e5 \'ea\'ee\'ec\'e0\'ed\'e4\'fb \'f1\'f7\'e8\'f2\'fb\'e2\'e0\'fe\'f2 \'e4\'e0\'ed\'ed\'fb\'e5 \'e8\'e7 \'f4\'e0\'e9\'eb\'e0 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8 \'e8 \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e8\'ec \'ee\'e1\'f0\'e0\'e7\'ee\'ec \'ed\'e0\'f1\'f2\'f0\'e0\'e8\'e2\'e0\'fe\'f2 \'f1\'e2\'ee\'fe \'f0\'e0\'e1\'ee\'f2\'f3. \'d1\'ec. git-config[1] \'e4\'eb\'ff \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'ff \'f1\'ef\'e8\'f1\'ea\'e0 \'e8 \'e1\'ee\'eb\'e5\'e5 \'ef\'ee\'e4\'f0\'ee\'e1\'ed\'ee\'e9 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8 \'ee \'ec\'e5\'f5\'e0\'ed\'e8\'e7\'ec\'e5 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8.\par
+\par
+\'d2\'e5\'f0\'ec\'e8\'ed\'ee\'eb\'ee\'e3\'e8\'ff \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0\'ee\'e2\par
+<\'ee\'e1\'fa\'e5\'ea\'f2>\par
+\'d3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'e8\'ec\'ff \'ee\'e1\'fa\'e5\'ea\'f2\'e0 \'e4\'eb\'ff \'eb\'fe\'e1\'ee\'e3\'ee \'f2\'e8\'ef\'e0 \'ee\'e1\'fa\'e5\'ea\'f2\'e0.\par
+\par
+<\'e1\'ee\'eb\'fc\'f8\'ee\'e9 \'e4\'e2\'ee\'e8\'f7\'ed\'fb\'e9 \'ee\'e1\'fa\'e5\'ea\'f2>\par
+\'d3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'e8\'ec\'ff \'ee\'e1\'fa\'e5\'ea\'f2\'e0 blob.\par
+\par
+<\'e4\'e5\'f0\'e5\'e2\'ee>\par
+\'d3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'e8\'ec\'ff \'ee\'e1\'fa\'e5\'ea\'f2\'e0 \'e2 \'e2\'e8\'e4\'e5 \'e4\'e5\'f0\'e5\'e2\'e0.\par
+\par
+<\'f4\'e8\'ea\'f1\'e0\'f6\'e8\'ff>\par
+\'d3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'e8\'ec\'ff \'ee\'e1\'fa\'e5\'ea\'f2\'e0 \'f4\'e8\'ea\'f1\'e0\'f6\'e8\'e8.\par
+\par
+<\'e4\'f0\'e5\'e2\'ee\'e2\'e8\'e4\'ed\'fb\'e9 \'f4\'ee\'f0\'ec\'e0\'f2>\par
+\'d3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'e8\'ec\'ff \'ee\'e1\'fa\'e5\'ea\'f2\'e0 \'e4\'e5\'f0\'e5\'e2\'e0, \'f4\'e8\'ea\'f1\'e0\'f6\'e8\'e8 \'e8\'eb\'e8 \'f2\'e5\'e3\'e0. \'ca\'ee\'ec\'e0\'ed\'e4\'e0, \'ea\'ee\'f2\'ee\'f0\'e0\'ff \'ef\'f0\'e8\'ed\'e8\'ec\'e0\'e5\'f2 \'e0\'f0\'e3\'f3\'ec\'e5\'ed\'f2 <tree-ish>, \'e2 \'ea\'ee\'ed\'e5\'f7\'ed\'ee\'ec \'e8\'f2\'ee\'e3\'e5 \'f5\'ee\'f7\'e5\'f2 \'f0\'e0\'e1\'ee\'f2\'e0\'f2\'fc \'f1 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'ec <tree>, \'ed\'ee \'e0\'e2\'f2\'ee\'ec\'e0\'f2\'e8\'f7\'e5\'f1\'ea\'e8 \'f0\'e0\'e7\'fb\'ec\'e5\'ed\'ee\'e2\'fb\'e2\'e0\'e5\'f2 \'ee\'e1\'fa\'e5\'ea\'f2\'fb <commit> \'e8 <tag>, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'f3\'ea\'e0\'e7\'fb\'e2\'e0\'fe\'f2 \'ed\'e0 <tree>.\par
+\par
+<commit-ish>\par
+\'d3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'e8\'ec\'ff \'ea\'ee\'ec\'ec\'e8\'f2\'e0 \'e8\'eb\'e8 \'f2\'e5\'e3\'e0. \'ca\'ee\'ec\'e0\'ed\'e4\'e0, \'ea\'ee\'f2\'ee\'f0\'e0\'ff \'ef\'f0\'e8\'ed\'e8\'ec\'e0\'e5\'f2 \'e0\'f0\'e3\'f3\'ec\'e5\'ed\'f2 <\'ea\'ee\'ec\'ec\'e8\'f2-\'e8\'f8>, \'e2 \'ea\'ee\'ed\'e5\'f7\'ed\'ee\'ec \'e8\'f2\'ee\'e3\'e5 \'f5\'ee\'f7\'e5\'f2 \'f0\'e0\'e1\'ee\'f2\'e0\'f2\'fc \'f1 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'ec <\'ea\'ee\'ec\'ec\'e8\'f2>, \'ed\'ee \'e0\'e2\'f2\'ee\'ec\'e0\'f2\'e8\'f7\'e5\'f1\'ea\'e8 \'f0\'e0\'e7\'fb\'ec\'e5\'ed\'ee\'e2\'fb\'e2\'e0\'e5\'f2 \'ee\'e1\'fa\'e5\'ea\'f2\'fb <\'f2\'e5\'e3>, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'f3\'ea\'e0\'e7\'fb\'e2\'e0\'fe\'f2 \'ed\'e0 <\'ea\'ee\'ec\'ec\'e8\'f2>.\par
+\par
+<\'f2\'e8\'ef>\par
+\'d3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'ed\'e0 \'f2\'ee, \'f7\'f2\'ee \'f2\'f0\'e5\'e1\'f3\'e5\'f2\'f1\'ff \'f2\'e8\'ef \'ee\'e1\'fa\'e5\'ea\'f2\'e0. \'c2 \'ed\'e0\'f1\'f2\'ee\'ff\'f9\'e5\'e5 \'e2\'f0\'e5\'ec\'ff \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'ee\'e4\'e8\'ed \'e8\'e7 \'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e8\'f5 \'e2\'e0\'f0\'e8\'e0\'ed\'f2\'ee\'e2: blob, tree, commit \'e8\'eb\'e8 tag.\par
+\par
+<\'f4\'e0\'e9\'eb>\par
+\'d3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'e8\'ec\'ff \'f4\'e0\'e9\'eb\'e0 \f2\emdash  \f0\'ef\'ee\'f7\'f2\'e8 \'e2\'f1\'e5\'e3\'e4\'e0 \'ee\'f2\'ed\'ee\'f1\'e8\'f2\'e5\'eb\'fc\'ed\'ee \'ea\'ee\'f0\'ed\'ff \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'e4\'e5\'f0\'e5\'e2\'e0, \'ea\'ee\'f2\'ee\'f0\'f3\'fe \'ee\'ef\'e8\'f1\'fb\'e2\'e0\'e5\'f2 GIT_INDEX_FILE .\par
+\par
+\'d1\'e8\'ec\'e2\'ee\'eb\'e8\'f7\'e5\'f1\'ea\'e8\'e5 \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0\'fb\par
+\'cb\'fe\'e1\'e0\'ff \'ea\'ee\'ec\'e0\'ed\'e4\'e0 Git, \'ef\'f0\'e8\'ed\'e8\'ec\'e0\'fe\'f9\'e0\'ff \'eb\'fe\'e1\'ee\'e9 <\'ee\'e1\'fa\'e5\'ea\'f2>, \'f2\'e0\'ea\'e6\'e5 \'ec\'ee\'e6\'e5\'f2 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e8\'e5 \'f1\'e8\'ec\'e2\'ee\'eb\'fc\'ed\'fb\'e5 \'ee\'e1\'ee\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff:\par
+\par
+\'c3\'cb\'c0\'c2\'c0\par
+\'f3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'f0\'f3\'ea\'ee\'e2\'ee\'e4\'e8\'f2\'e5\'eb\'ff \'f2\'e5\'ea\'f3\'f9\'e5\'e9 \'e2\'e5\'f2\'ea\'e8.\par
+\par
+<\'f2\'e5\'e3>\par
+\'e4\'ee\'ef\'f3\'f1\'f2\'e8\'ec\'ee\'e5 \'e8\'ec\'ff \'f2\'e5\'e3\'e0 (\'f2.\'e5. refs/tags/<tag> \'d1\'f1\'fb\'eb\'ea\'e0).\par
+\par
+<\'e3\'eb\'e0\'e2\'e0>\par
+\'e4\'ee\'ef\'f3\'f1\'f2\'e8\'ec\'ee\'e5 \'e8\'ec\'ff \'e7\'e0\'e3\'ee\'eb\'ee\'e2\'ea\'e0 (\'f2.\'e5. refs/heads/<head> \'d1\'f1\'fb\'eb\'ea\'e0).\par
+\par
+\'c1\'ee\'eb\'e5\'e5 \'ef\'ee\'eb\'ed\'fb\'e9 \'f1\'ef\'e8\'f1\'ee\'ea \'e2\'e0\'f0\'e8\'e0\'ed\'f2\'ee\'e2 \'ed\'e0\'ef\'e8\'f1\'e0\'ed\'e8\'ff \'e8\'ec\'b8\'ed \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'f1\'ec. \'e2 \'f0\'e0\'e7\'e4\'e5\'eb\'e5 \f1\lang1033\'ab\f0\lang1049\'d3\'ca\'c0\'c7\'c0\'cd\'c8\'c5 \'d0\'c5\'c2\'c8\'c7\'c8\'c9\f1\lang1033\'bb \f0\lang1049\'e2 gitrevisions[7].\par
+\par
+\'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'e0 \'f4\'e0\'e9\'eb\'ee\'e2 / \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'ee\'e2\par
+\'cf\'ee\'e6\'e0\'eb\'f3\'e9\'f1\'f2\'e0, \'ee\'e7\'ed\'e0\'ea\'ee\'ec\'fc\'f2\'e5\'f1\'fc \'f1 \'e4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\'ee\'ec gitrepository-layout[5].\par
+\par
+\'cf\'f0\'ee\'f7\'e8\'f2\'e0\'e9\'f2\'e5 githooks[5] \'e4\'eb\'ff \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'ff \'e1\'ee\'eb\'e5\'e5 \'ef\'ee\'e4\'f0\'ee\'e1\'ed\'ee\'e9 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8 \'ee \'ea\'e0\'e6\'e4\'ee\'ec \'f5\'f3\'ea\'e5.\par
+\par
+SCMS \'e1\'ee\'eb\'e5\'e5 \'e2\'fb\'f1\'ee\'ea\'ee\'e3\'ee \'f3\'f0\'ee\'e2\'ed\'ff \'ec\'ee\'e3\'f3\'f2 \'ef\'f0\'e5\'e4\'ee\'f1\'f2\'e0\'e2\'eb\'ff\'f2\'fc \'e4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'f3\'fe \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'fe \'e2 $GIT_DIR \'e8 \'f3\'ef\'f0\'e0\'e2\'eb\'ff\'f2\'fc \'e5\'fe.\par
+\par
+\'d2\'e5\'f0\'ec\'e8\'ed\'ee\'eb\'ee\'e3\'e8\'ff\par
+\'cf\'ee\'e6\'e0\'eb\'f3\'e9\'f1\'f2\'e0, \'ee\'e7\'ed\'e0\'ea\'ee\'ec\'fc\'f2\'e5\'f1\'fc \'f1 gitglossary[7].\par
+\par
+\'cf\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'e5 \'f1\'f0\'e5\'e4\'fb\par
+\'d0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'e5 \'ea\'ee\'ec\'e0\'ed\'e4\'fb Git \'ee\'e1\'f0\'e0\'f9\'e0\'fe\'f2 \'e2\'ed\'e8\'ec\'e0\'ed\'e8\'e5 \'ed\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'e5 \'f1\'f0\'e5\'e4\'fb \'e8 \'e8\'e7\'ec\'e5\'ed\'ff\'fe\'f2 \'e8\'f5 \'ef\'ee\'e2\'e5\'e4\'e5\'ed\'e8\'e5. \'cf\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'e5 \'f1\'f0\'e5\'e4\'fb, \'ef\'ee\'ec\'e5\'f7\'e5\'ed\'ed\'fb\'e5 \'ea\'e0\'ea \f1\lang1033\'ab\f0\lang1049\'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'e8\'e5\f1\lang1033\'bb, \f0\lang1049\'ef\'f0\'e8\'ed\'e8\'ec\'e0\'fe\'f2 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff \'f2\'e0\'ea \'e6\'e5, \'ea\'e0\'ea \'e8 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'e8\'e5 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'e5 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8, \'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0 \f1\lang1033\'ab\f0\lang1049\'e8\'f1\'f2\'e8\'ed\'e0\f1\lang1033\'bb, \'ab\f0\lang1049\'e4\'e0\f1\lang1033\'bb, \'ab\f0\lang1049\'e2\'ea\'eb\'fe\'f7\'e5\'ed\'ee\f1\lang1033\'bb \f0\lang1049\'e8 \'ef\'ee\'eb\'ee\'e6\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'e5 \'f7\'e8\'f1\'eb\'e0 \'ef\'f0\'e8\'ed\'e8\'ec\'e0\'fe\'f2\'f1\'ff \'ea\'e0\'ea \f1\lang1033\'ab\f0\lang1049\'e4\'e0\f1\lang1033\'bb.\par
+\par
+\f0\lang1049\'c2\'ee\'f2 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'e5:\par
+\par
+\'d0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e9 Git\par
+\'dd\'f2\'e8 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'e5 \'f1\'f0\'e5\'e4\'fb \'ef\'f0\'e8\'ec\'e5\'ed\'ff\'fe\'f2\'f1\'ff \'ea\'ee \'e2\'f1\'e5\'ec \'ee\'f1\'ed\'ee\'e2\'ed\'fb\'ec \'ea\'ee\'ec\'e0\'ed\'e4\'e0\'ec Git. \'cf\'f0\'e8\'ec\'e5\'f7\'e0\'ed\'e8\'e5: \'f1\'f2\'ee\'e8\'f2 \'ee\'f2\'ec\'e5\'f2\'e8\'f2\'fc, \'f7\'f2\'ee \'ee\'ed\'e8 \'ec\'ee\'e3\'f3\'f2 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc\'f1\'ff/\'ef\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'f2\'fc\'f1\'ff \'f1\'e8\'f1\'f2\'e5\'ec\'e0\'ec\'e8 \'ea\'ee\'ed\'f2\'f0\'ee\'eb\'ff \'e2\'e5\'f0\'f1\'e8\'e9, \'f0\'e0\'f1\'ef\'ee\'eb\'ee\'e6\'e5\'ed\'ed\'fb\'ec\'e8 \'e2\'fb\'f8\'e5 Git, \'ef\'ee\'fd\'f2\'ee\'ec\'f3 \'e1\'f3\'e4\'fc\'f2\'e5 \'e2\'ed\'e8\'ec\'e0\'f2\'e5\'eb\'fc\'ed\'fb \'ef\'f0\'e8 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e8 \'e2\'ed\'e5\'f8\'ed\'e5\'e3\'ee \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'e0.\par
+\par
+GIT_INDEX_FILE\par
+\'dd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f1\'f0\'e5\'e4\'fb \'f3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'ed\'e0 \'e0\'eb\'fc\'f2\'e5\'f0\'ed\'e0\'f2\'e8\'e2\'ed\'fb\'e9 \'e8\'ed\'e4\'e5\'ea\'f1\'ed\'fb\'e9 \'f4\'e0\'e9\'eb. \'c5\'f1\'eb\'e8 \'ee\'ed\'e0 \'ed\'e5 \'f3\'ea\'e0\'e7\'e0\'ed\'e0, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe $GIT_DIR/index\par
+GIT_INDEX_VERSION\par
+\'dd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f1\'f0\'e5\'e4\'fb \'f3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2, \'ea\'e0\'ea\'e0\'ff \'e2\'e5\'f0\'f1\'e8\'ff \'e8\'ed\'e4\'e5\'ea\'f1\'e0 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'ef\'f0\'e8 \'e7\'e0\'ef\'e8\'f1\'e8 \'e8\'ed\'e4\'e5\'ea\'f1\'ed\'ee\'e3\'ee \'f4\'e0\'e9\'eb\'e0. \'ce\'ed\'e0 \'ed\'e5 \'ef\'ee\'e2\'eb\'e8\'ff\'e5\'f2 \'ed\'e0 \'f1\'f3\'f9\'e5\'f1\'f2\'e2\'f3\'fe\'f9\'e8\'e5 \'e8\'ed\'e4\'e5\'ea\'f1\'ed\'fb\'e5 \'f4\'e0\'e9\'eb\'fb. \'cf\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'e2\'e5\'f0\'f1\'e8\'ff \'e8\'ed\'e4\'e5\'ea\'f1\'ed\'ee\'e3\'ee \'f4\'e0\'e9\'eb\'e0 2 \'e8\'eb\'e8 3. \'c4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'e5 \'f1\'e2\'e5\'e4\'e5\'ed\'e8\'ff \'f1\'ec. \'e2 git-update-index[1].\par
+\par
+GIT_OBJECT_DIRECTORY\par
+\'c5\'f1\'eb\'e8 \'ea\'e0\'f2\'e0\'eb\'ee\'e3 \'f5\'f0\'e0\'ed\'e8\'eb\'e8\'f9\'e0 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'f3\'ea\'e0\'e7\'e0\'ed \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe \'fd\'f2\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb, \'f2\'ee \'ef\'ee\'e4 \'ed\'e8\'ec \'f1\'ee\'e7\'e4\'e0\'fe\'f2\'f1\'ff \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'e8 sha1. \'c2 \'ef\'f0\'ee\'f2\'e8\'e2\'ed\'ee\'ec \'f1\'eb\'f3\'f7\'e0\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'ea\'e0\'f2\'e0\'eb\'ee\'e3 $GIT_DIR/objects \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe.\par
+\par
+GIT_ALTERNATE_OBJECT_DIRECTORIES\par
+\'c8\'e7-\'e7\'e0 \'ed\'e5\'e8\'e7\'ec\'e5\'ed\'ff\'e5\'ec\'ee\'e9 \'ef\'f0\'e8\'f0\'ee\'e4\'fb \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 Git \'f1\'f2\'e0\'f0\'fb\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'ec\'ee\'e6\'ed\'ee \'e0\'f0\'f5\'e8\'e2\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'e2 \'ee\'e1\'f9\'e8\'e5 \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'e8, \'e4\'ee\'f1\'f2\'f3\'ef\'ed\'fb\'e5 \'f2\'ee\'eb\'fc\'ea\'ee \'e4\'eb\'ff \'f7\'f2\'e5\'ed\'e8\'ff. \'dd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'f0\'e0\'e7\'e4\'e5\'eb\'b8\'ed\'ed\'fb\'e9 \'e4\'e2\'ee\'e5\'f2\'ee\'f7\'e8\'ff\'ec\'e8 (\'e2 Windows \'f0\'e0\'e7\'e4\'e5\'eb\'b8\'ed\'ed\'fb\'e9 \'f2\'ee\'f7\'ea\'ee\'e9 \'f1 \'e7\'e0\'ef\'ff\'f2\'ee\'e9) \'f1\'ef\'e8\'f1\'ee\'ea \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'ee\'e2 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 Git, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ec\'ee\'e6\'ed\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'e4\'eb\'ff \'ef\'ee\'e8\'f1\'ea\'e0 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 Git. \'cd\'ee\'e2\'fb\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'ed\'e5 \'e1\'f3\'e4\'f3\'f2 \'e7\'e0\'ef\'e8\'f1\'fb\'e2\'e0\'f2\'fc\'f1\'ff \'e2 \'fd\'f2\'e8 \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'e8.\par
+\par
+\'c7\'e0\'ef\'e8\'f1\'e8, \'ed\'e0\'f7\'e8\'ed\'e0\'fe\'f9\'e8\'e5\'f1\'ff \'f1 " (\'e4\'e2\'ee\'e9\'ed\'fb\'f5 \'ea\'e0\'e2\'fb\'f7\'e5\'ea), \'e1\'f3\'e4\'f3\'f2 \'e8\'ed\'f2\'e5\'f0\'ef\'f0\'e5\'f2\'e8\'f0\'ee\'e2\'e0\'f2\'fc\'f1\'ff \'ea\'e0\'ea \'ef\'f3\'f2\'e8 \'e2 \'ea\'e0\'e2\'fb\'f7\'ea\'e0\'f5 \'e2 \'f1\'f2\'e8\'eb\'e5 C, \'f1 \'f3\'e4\'e0\'eb\'e5\'ed\'e8\'e5\'ec \'ed\'e0\'f7\'e0\'eb\'fc\'ed\'fb\'f5 \'e8 \'ea\'ee\'ed\'e5\'f7\'ed\'fb\'f5 \'e4\'e2\'ee\'e9\'ed\'fb\'f5 \'ea\'e0\'e2\'fb\'f7\'e5\'ea \'e8 \'f1\'ee\'f5\'f0\'e0\'ed\'e5\'ed\'e8\'e5\'ec \'ee\'e1\'f0\'e0\'f2\'ed\'ee\'e9 \'ea\'ee\'f1\'ee\'e9 \'f7\'e5\'f0\'f2\'fb. \'cd\'e0\'ef\'f0\'e8\'ec\'e5\'f0, \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 "path-with-\\"-and-:-in-it":vanilla-path \'e8\'ec\'e5\'e5\'f2 \'e4\'e2\'e0 \'ef\'f3\'f2\'e8: path-with-"-and-:-in-it \'e8 vanilla-path.\par
+\par
+GIT_DIR\par
+\'c5\'f1\'eb\'e8 \'e7\'e0\'e4\'e0\'ed\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f1\'f0\'e5\'e4\'fb GIT_DIR , \'f2\'ee \'ee\'ed\'e0 \'f3\'ea\'e0\'e7\'fb\'e2\'e0\'e5\'f2 \'ef\'f3\'f2\'fc, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'f1\'eb\'e5\'e4\'f3\'e5\'f2 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'e2\'ec\'e5\'f1\'f2\'ee .git \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \'e4\'eb\'ff \'e1\'e0\'e7\'fb \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff. \'cf\'e0\'f0\'e0\'ec\'e5\'f2\'f0 --git-dir \'ea\'ee\'ec\'e0\'ed\'e4\'ed\'ee\'e9 \'f1\'f2\'f0\'ee\'ea\'e8 \'f2\'e0\'ea\'e6\'e5 \'f3\'f1\'f2\'e0\'ed\'e0\'e2\'eb\'e8\'e2\'e0\'e5\'f2 \'fd\'f2\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5.\par
+\par
+GIT_WORK_TREE\par
+\'c7\'e0\'e4\'e0\'e9\'f2\'e5 \'ef\'f3\'f2\'fc \'ea \'ea\'ee\'f0\'ed\'fe \'f0\'e0\'e1\'ee\'f7\'e5\'e3\'ee \'e4\'e5\'f0\'e5\'e2\'e0. \'dd\'f2\'ee \'f2\'e0\'ea\'e6\'e5 \'ec\'ee\'e6\'ed\'ee \'ed\'e0\'f1\'f2\'f0\'ee\'e8\'f2\'fc \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0 --work-tree \'ea\'ee\'ec\'e0\'ed\'e4\'ed\'ee\'e9 \'f1\'f2\'f0\'ee\'ea\'e8 \'e8 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8 core.worktree.\par
+\par
+GIT_NAMESPACE\par
+\'c7\'e0\'e4\'e0\'e9\'f2\'e5 \'ef\'f0\'ee\'f1\'f2\'f0\'e0\'ed\'f1\'f2\'e2\'ee \'e8\'ec\'b8\'ed Git; \'ef\'ee\'e4\'f0\'ee\'e1\'ed\'ee\'f1\'f2\'e8 \'f1\'ec. \'e2 gitnamespaces[7]. \'cf\'e0\'f0\'e0\'ec\'e5\'f2\'f0 --namespace \'ea\'ee\'ec\'e0\'ed\'e4\'ed\'ee\'e9 \'f1\'f2\'f0\'ee\'ea\'e8 \'f2\'e0\'ea\'e6\'e5 \'f3\'f1\'f2\'e0\'ed\'e0\'e2\'eb\'e8\'e2\'e0\'e5\'f2 \'fd\'f2\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5.\par
+\par
+GIT_CEILING_DIRECTORIES\par
+\'dd\'f2\'ee \'e4\'ee\'eb\'e6\'e5\'ed \'e1\'fb\'f2\'fc \'f1\'ef\'e8\'f1\'ee\'ea \'e0\'e1\'f1\'ee\'eb\'fe\'f2\'ed\'fb\'f5 \'ef\'f3\'f2\'e5\'e9, \'f0\'e0\'e7\'e4\'e5\'eb\'b8\'ed\'ed\'fb\'f5 \'e4\'e2\'ee\'e5\'f2\'ee\'f7\'e8\'ff\'ec\'e8. \'c5\'f1\'eb\'e8 \'ee\'ed \'e7\'e0\'e4\'e0\'ed, \'f2\'ee \'fd\'f2\'ee \'f1\'ef\'e8\'f1\'ee\'ea \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'ee\'e2, \'e2 \'ea\'ee\'f2\'ee\'f0\'fb\'e5 Git \'ed\'e5 \'e4\'ee\'eb\'e6\'e5\'ed \'ef\'e5\'f0\'e5\'f5\'ee\'e4\'e8\'f2\'fc \'ef\'f0\'e8 \'ef\'ee\'e8\'f1\'ea\'e5 \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'e0 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff (\'ef\'ee\'eb\'e5\'e7\'ed\'ee \'e4\'eb\'ff \'e8\'f1\'ea\'eb\'fe\'f7\'e5\'ed\'e8\'ff \'ec\'e5\'e4\'eb\'e5\'ed\'ed\'ee \'e7\'e0\'e3\'f0\'f3\'e6\'e0\'fe\'f9\'e8\'f5\'f1\'ff \'f1\'e5\'f2\'e5\'e2\'fb\'f5 \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'ee\'e2). \'ce\'ed \'ed\'e5 \'e1\'f3\'e4\'e5\'f2 \'e8\'f1\'ea\'eb\'fe\'f7\'e0\'f2\'fc \'f2\'e5\'ea\'f3\'f9\'e8\'e9 \'f0\'e0\'e1\'ee\'f7\'e8\'e9 \'ea\'e0\'f2\'e0\'eb\'ee\'e3 \'e8\'eb\'e8 GIT_DIR, \'e7\'e0\'e4\'e0\'ed\'ed\'fb\'e9 \'e2 \'ea\'ee\'ec\'e0\'ed\'e4\'ed\'ee\'e9 \'f1\'f2\'f0\'ee\'ea\'e5 \'e8\'eb\'e8 \'e2 \'f1\'f0\'e5\'e4\'e5. \'ce\'e1\'fb\'f7\'ed\'ee Git \'e4\'ee\'eb\'e6\'e5\'ed \'f1\'f7\'e8\'f2\'fb\'e2\'e0\'f2\'fc \'e7\'e0\'ef\'e8\'f1\'e8 \'e2 \'fd\'f2\'ee\'ec \'f1\'ef\'e8\'f1\'ea\'e5 \'e8 \'f0\'e0\'e7\'f0\'e5\'f8\'e0\'f2\'fc \'eb\'fe\'e1\'fb\'e5 \'e2\'ee\'e7\'ec\'ee\'e6\'ed\'fb\'e5 \'f1\'e8\'ec\'e2\'ee\'eb\'e8\'f7\'e5\'f1\'ea\'e8\'e5 \'f1\'f1\'fb\'eb\'ea\'e8, \'f7\'f2\'ee\'e1\'fb \'f1\'f0\'e0\'e2\'ed\'e8\'f2\'fc \'e8\'f5 \'f1 \'f2\'e5\'ea\'f3\'f9\'e8\'ec \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'ee\'ec. \'ce\'e4\'ed\'e0\'ea\'ee, \'e5\'f1\'eb\'e8 \'e4\'e0\'e6\'e5 \'fd\'f2\'ee\'f2 \'e4\'ee\'f1\'f2\'f3\'ef \'ec\'e5\'e4\'eb\'e5\'ed\'ed\'fb\'e9, \'e2\'fb \'ec\'ee\'e6\'e5\'f2\'e5 \'e4\'ee\'e1\'e0\'e2\'e8\'f2\'fc \'e2 \'f1\'ef\'e8\'f1\'ee\'ea \'ef\'f3\'f1\'f2\'f3\'fe \'e7\'e0\'ef\'e8\'f1\'fc, \'f7\'f2\'ee\'e1\'fb \'f1\'ee\'ee\'e1\'f9\'e8\'f2\'fc Git, \'f7\'f2\'ee \'ef\'ee\'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e8\'e5 \'e7\'e0\'ef\'e8\'f1\'e8 \'ed\'e5 \'ff\'e2\'eb\'ff\'fe\'f2\'f1\'ff \'f1\'e8\'ec\'e2\'ee\'eb\'e8\'f7\'e5\'f1\'ea\'e8\'ec\'e8 \'f1\'f1\'fb\'eb\'ea\'e0\'ec\'e8 \'e8 \'ed\'e5 \'ed\'f3\'e6\'e4\'e0\'fe\'f2\'f1\'ff \'e2 \'f0\'e0\'e7\'f0\'e5\'f8\'e5\'ed\'e8\'e8; \'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, GIT_CEILING_DIRECTORIES=/maybe/symlink::/very/slow/non/symlink.\par
+\par
+GIT_DISCOVERY_ACROSS_FILESYSTEM\par
+\'cf\'f0\'e8 \'e7\'e0\'ef\'f3\'f1\'ea\'e5 \'e2 \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'e5, \'e2 \'ea\'ee\'f2\'ee\'f0\'ee\'ec \'ed\'e5\'f2 \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'e0 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff ".git", Git \'ef\'fb\'f2\'e0\'e5\'f2\'f1\'ff \'ed\'e0\'e9\'f2\'e8 \'f2\'e0\'ea\'ee\'e9 \'ea\'e0\'f2\'e0\'eb\'ee\'e3 \'e2 \'f0\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'f1\'ea\'e8\'f5 \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'e0\'f5, \'f7\'f2\'ee\'e1\'fb \'ed\'e0\'e9\'f2\'e8 \'ed\'e0\'f7\'e0\'eb\'ee \'f0\'e0\'e1\'ee\'f7\'e5\'e3\'ee \'e4\'e5\'f0\'e5\'e2\'e0, \'ed\'ee \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \'ee\'ed \'ed\'e5 \'ef\'e5\'f0\'e5\'f1\'e5\'ea\'e0\'e5\'f2 \'e3\'f0\'e0\'ed\'e8\'f6\'fb \'f4\'e0\'e9\'eb\'ee\'e2\'ee\'e9 \'f1\'e8\'f1\'f2\'e5\'ec\'fb. \'dd\'f2\'f3 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'f3\'fe \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'f3\'fe \'f1\'f0\'e5\'e4\'fb \'ec\'ee\'e6\'ed\'ee \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'e2 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 true, \'f7\'f2\'ee\'e1\'fb \'f3\'ea\'e0\'e7\'e0\'f2\'fc Git \'ed\'e5 \'ee\'f1\'f2\'e0\'ed\'e0\'e2\'eb\'e8\'e2\'e0\'f2\'fc\'f1\'ff \'ed\'e0 \'e3\'f0\'e0\'ed\'e8\'f6\'e0\'f5 \'f4\'e0\'e9\'eb\'ee\'e2\'ee\'e9 \'f1\'e8\'f1\'f2\'e5\'ec\'fb. \'ca\'e0\'ea \'e8 \'e2 \'f1\'eb\'f3\'f7\'e0\'e5 \'f1 GIT_CEILING_DIRECTORIES, \'fd\'f2\'ee \'ed\'e5 \'ef\'ee\'e2\'eb\'e8\'ff\'e5\'f2 \'ed\'e0 \'ff\'e2\'ed\'fb\'e9 \'ea\'e0\'f2\'e0\'eb\'ee\'e3 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff, \'e7\'e0\'e4\'e0\'ed\'ed\'fb\'e9 \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe GIT_DIR \'e8\'eb\'e8 \'e2 \'ea\'ee\'ec\'e0\'ed\'e4\'ed\'ee\'e9 \'f1\'f2\'f0\'ee\'ea\'e5.\par
+\par
+GIT_COMMON_DIR\par
+\'c5\'f1\'eb\'e8 \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'e7\'e0\'e4\'e0\'ed \'ef\'f3\'f2\'fc, \'f2\'ee \'f4\'e0\'e9\'eb\'fb, \'ed\'e5 \'ee\'f2\'ed\'ee\'f1\'ff\'f9\'e8\'e5\'f1\'ff \'ea \'f0\'e0\'e1\'ee\'f7\'e5\'ec\'f3 \'e4\'e5\'f0\'e5\'e2\'f3, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ee\'e1\'fb\'f7\'ed\'ee \'ed\'e0\'f5\'ee\'e4\'ff\'f2\'f1\'ff \'e2 $GIT_DIR, \'e1\'f3\'e4\'f3\'f2 \'e1\'f0\'e0\'f2\'fc\'f1\'ff \'e8\'e7 \'fd\'f2\'ee\'e3\'ee \'ef\'f3\'f2\'e8. \'d4\'e0\'e9\'eb\'fb, \'ee\'f2\'ed\'ee\'f1\'ff\'f9\'e8\'e5\'f1\'ff \'ea \'f0\'e0\'e1\'ee\'f7\'e5\'ec\'f3 \'e4\'e5\'f0\'e5\'e2\'f3, \'f2\'e0\'ea\'e8\'e5 \'ea\'e0\'ea HEAD \'e8\'eb\'e8 \'e8\'ed\'e4\'e5\'ea\'f1, \'e1\'e5\'f0\'f3\'f2\'f1\'ff \'e8\'e7 $GIT_DIR. \'cf\'ee\'e4\'f0\'ee\'e1\'ed\'ee\'f1\'f2\'e8 \'f1\'ec. \'e2 gitrepository-layout[5] \'e8 git-worktree[1]. \'dd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'e8\'ec\'e5\'e5\'f2 \'e1\'ee\'eb\'e5\'e5 \'ed\'e8\'e7\'ea\'e8\'e9 \'ef\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2, \'f7\'e5\'ec \'e4\'f0\'f3\'e3\'e8\'e5 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'e5 \'ef\'f3\'f2\'e8, \'f2\'e0\'ea\'e8\'e5 \'ea\'e0\'ea GIT_INDEX_FILE, GIT_OBJECT_DIRECTORY\'85\u8203?\par
+\par
+GIT_DEFAULT_HASH\par
+\'c5\'f1\'eb\'e8 \'fd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'e7\'e0\'e4\'e0\'ed\'e0, \'e0\'eb\'e3\'ee\'f0\'e8\'f2\'ec \'f5\'e5\'f8\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \'e4\'eb\'ff \'ed\'ee\'e2\'fb\'f5 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e5\'e2 \'e1\'f3\'e4\'e5\'f2 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed \'ed\'e0 \'fd\'f2\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5. \'dd\'f2\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'e8\'e3\'ed\'ee\'f0\'e8\'f0\'f3\'e5\'f2\'f1\'ff \'ef\'f0\'e8 \'ea\'eb\'ee\'ed\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e8, \'e8 \'e2\'f1\'e5\'e3\'e4\'e0 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e0 \'f3\'e4\'e0\'eb\'b8\'ed\'ed\'ee\'e3\'ee \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff. \'c7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \f2\emdash  \f1\lang1033\'absha1\'bb. \f0\lang1049\'d1\'ec. --object-format \'e2 git-init[1].\par
+\par
+GIT_DEFAULT_REF_FORMAT\par
+\'c5\'f1\'eb\'e8 \'fd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'e7\'e0\'e4\'e0\'ed\'e0, \'f4\'ee\'f0\'ec\'e0\'f2 \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \'e4\'eb\'ff \'ed\'ee\'e2\'fb\'f5 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e5\'e2 \'e1\'f3\'e4\'e5\'f2 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed \'ed\'e0 \'fd\'f2\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5. \'cf\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \f1\lang1033\'ab\f0\lang1049\'f4\'e0\'e9\'eb\'fb\f1\lang1033\'bb. \f0\lang1049\'d1\'ec. --ref-format \'e2 git-init[1].\par
+\par
+\'ca\'ee\'ec\'ec\'e8\'f2\'fb Git\par
+GIT_AUTHOR_NAME\par
+\'d7\'e5\'eb\'ee\'e2\'e5\'ea\'ee\'f7\'e8\'f2\'e0\'e5\'ec\'ee\'e5 \'e8\'ec\'ff, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'ee\'e5 \'e2 \'ea\'e0\'f7\'e5\'f1\'f2\'e2\'e5 \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0\'e0 \'e0\'e2\'f2\'ee\'f0\'e0 \'ef\'f0\'e8 \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'e8 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'ea\'ee\'ec\'ec\'e8\'f2\'e0 \'e8\'eb\'e8 \'f2\'e5\'e3\'e0, \'e0 \'f2\'e0\'ea\'e6\'e5 \'ef\'f0\'e8 \'e7\'e0\'ef\'e8\'f1\'e8 \'e6\'f3\'f0\'ed\'e0\'eb\'ee\'e2 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e9. \'cf\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e8 user.name \'e8 author.name \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8.\par
+\par
+GIT_AUTHOR_EMAIL\par
+\'c0\'e4\'f0\'e5\'f1 \'fd\'eb\'e5\'ea\'f2\'f0\'ee\'ed\'ed\'ee\'e9 \'ef\'ee\'f7\'f2\'fb, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'fb\'e9 \'e2 \'ea\'e0\'f7\'e5\'f1\'f2\'e2\'e5 \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0\'e0 \'e0\'e2\'f2\'ee\'f0\'e0 \'ef\'f0\'e8 \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'e8 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'ea\'ee\'ec\'ec\'e8\'f2\'e0 \'e8\'eb\'e8 \'f2\'e5\'e3\'e0, \'e0 \'f2\'e0\'ea\'e6\'e5 \'ef\'f0\'e8 \'ed\'e0\'ef\'e8\'f1\'e0\'ed\'e8\'e8 \'e6\'f3\'f0\'ed\'e0\'eb\'ee\'e2 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e9. \'cf\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e8 user.email \'e8 author.email \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8.\par
+\par
+GIT_AUTHOR_DATE\par
+\'c4\'e0\'f2\'e0, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'e0\'ff \'e4\'eb\'ff \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f6\'e8\'e8 \'e0\'e2\'f2\'ee\'f0\'e0 \'ef\'f0\'e8 \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'e8 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'ea\'ee\'ec\'ec\'e8\'f2\'e0 \'e8\'eb\'e8 \'f2\'e5\'e3\'e0, \'e0 \'f2\'e0\'ea\'e6\'e5 \'ef\'f0\'e8 \'ed\'e0\'ef\'e8\'f1\'e0\'ed\'e8\'e8 \'e6\'f3\'f0\'ed\'e0\'eb\'ee\'e2 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e9. \'d1\'ec. git-commit[1] \'e4\'eb\'ff \'ee\'e7\'ed\'e0\'ea\'ee\'ec\'eb\'e5\'ed\'e8\'ff \'f1 \'e4\'ee\'ef\'f3\'f1\'f2\'e8\'ec\'fb\'ec\'e8 \'f4\'ee\'f0\'ec\'e0\'f2\'e0\'ec\'e8.\par
+\par
+GIT_COMMITTER_NAME\par
+\'d7\'e5\'eb\'ee\'e2\'e5\'ea\'ee\'f7\'e8\'f2\'e0\'e5\'ec\'ee\'e5 \'e8\'ec\'ff, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'ee\'e5 \'e2 \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0\'e5 \'ea\'ee\'ec\'ec\'e8\'f2\'f2\'e5\'f0\'e0 \'ef\'f0\'e8 \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'e8 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'ea\'ee\'ec\'ec\'e8\'f2\'e0 \'e8\'eb\'e8 \'f2\'e5\'e3\'e0, \'e0 \'f2\'e0\'ea\'e6\'e5 \'ef\'f0\'e8 \'e7\'e0\'ef\'e8\'f1\'e8 \'e6\'f3\'f0\'ed\'e0\'eb\'ee\'e2 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e9. \'cf\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e8 user.name \'e8 committer.name \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8.\par
+\par
+GIT_COMMITTER_EMAIL\par
+\'c0\'e4\'f0\'e5\'f1 \'fd\'eb\'e5\'ea\'f2\'f0\'ee\'ed\'ed\'ee\'e9 \'ef\'ee\'f7\'f2\'fb, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'fb\'e9 \'e2 \'ea\'e0\'f7\'e5\'f1\'f2\'e2\'e5 \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0\'e0 \'e0\'e2\'f2\'ee\'f0\'e0 \'ef\'f0\'e8 \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'e8 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'ea\'ee\'ec\'ec\'e8\'f2\'e0 \'e8\'eb\'e8 \'f2\'e5\'e3\'e0, \'e0 \'f2\'e0\'ea\'e6\'e5 \'ef\'f0\'e8 \'ed\'e0\'ef\'e8\'f1\'e0\'ed\'e8\'e8 \'e6\'f3\'f0\'ed\'e0\'eb\'ee\'e2 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e9. \'cf\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e8 user.email \'e8 committer.email \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8.\par
+\par
+GIT_COMMITTER_DATE\par
+\'c4\'e0\'f2\'e0, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'e0\'ff \'e4\'eb\'ff \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f6\'e8\'e8 \'e0\'e2\'f2\'ee\'f0\'e0 \'ea\'ee\'ec\'ec\'e8\'f2\'e0 \'ef\'f0\'e8 \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'e8 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'ea\'ee\'ec\'ec\'e8\'f2\'e0 \'e8\'eb\'e8 \'f2\'e5\'e3\'e0 \'e8\'eb\'e8 \'ef\'f0\'e8 \'e7\'e0\'ef\'e8\'f1\'e8 \'e6\'f3\'f0\'ed\'e0\'eb\'ee\'e2 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e9. \'d1\'ec. git-commit[1] \'e4\'eb\'ff \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'ff \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8 \'ee \'e4\'ee\'ef\'f3\'f1\'f2\'e8\'ec\'fb\'f5 \'f4\'ee\'f0\'ec\'e0\'f2\'e0\'f5.\par
+\par
+EMAIL\par
+\'c0\'e4\'f0\'e5\'f1 \'fd\'eb\'e5\'ea\'f2\'f0\'ee\'ed\'ed\'ee\'e9 \'ef\'ee\'f7\'f2\'fb, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'fb\'e9 \'e2 \'ea\'e0\'f7\'e5\'f1\'f2\'e2\'e5 \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0\'e0 \'e0\'e2\'f2\'ee\'f0\'e0 \'e8 \'ea\'ee\'ec\'ec\'e8\'f2\'f2\'e5\'f0\'e0, \'e5\'f1\'eb\'e8 \'ed\'e5 \'e7\'e0\'e4\'e0\'ed\'e0 \'e4\'f0\'f3\'e3\'e0\'ff \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e0\'ff \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f1\'f0\'e5\'e4\'fb \'e8\'eb\'e8 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8.\par
+\par
+\'d0\'e0\'e7\'eb\'e8\'f7\'e8\'ff \'e2 Git\par
+GIT_DIFF_OPTS\par
+\'c4\'eb\'ff \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'ea\'e8 \'ea\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'e0 \'f1\'f2\'f0\'ee\'ea \'ea\'ee\'ed\'f2\'e5\'ea\'f1\'f2\'e0, \'ee\'f2\'ee\'e1\'f0\'e0\'e6\'e0\'e5\'ec\'fb\'f5 \'ef\'f0\'e8 \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'e8 \'ee\'e1\'fa\'e5\'e4\'e8\'ed\'b8\'ed\'ed\'ee\'e3\'ee \'f1\'f0\'e0\'e2\'ed\'e5\'ed\'e8\'ff, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'f2\'ee\'eb\'fc\'ea\'ee \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0 "--unified=??" \'e8\'eb\'e8 "-u??". \'ce\'ed \'e8\'ec\'e5\'e5\'f2 \'ef\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2 \'ed\'e0\'e4 \'eb\'fe\'e1\'fb\'ec \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5\'ec \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0 "-U" \'e8\'eb\'e8 "--unified", \'ef\'e5\'f0\'e5\'e4\'e0\'ed\'ed\'fb\'ec \'e2 \'ea\'ee\'ec\'e0\'ed\'e4\'ed\'ee\'e9 \'f1\'f2\'f0\'ee\'ea\'e5 Git diff.\par
+\par
+GIT_EXTERNAL_DIFF\par
+\'ca\'ee\'e3\'e4\'e0 \'e7\'e0\'e4\'e0\'ed\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f1\'f0\'e5\'e4\'fb GIT_EXTERNAL_DIFF, \'e4\'eb\'ff \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'ff \'f0\'e0\'e7\'eb\'e8\'f7\'e8\'e9 \'e2\'fb\'e7\'fb\'e2\'e0\'e5\'f2\'f1\'ff \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'e0, \'f3\'ea\'e0\'e7\'e0\'ed\'ed\'e0\'ff \'e2 \'ed\'e5\'e9, \'e8 Git \'ed\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2 \'f1\'e2\'ee\'e9 \'e2\'f1\'f2\'f0\'ee\'e5\'ed\'ed\'fb\'e9 \'ec\'e5\'f5\'e0\'ed\'e8\'e7\'ec \'f1\'f0\'e0\'e2\'ed\'e5\'ed\'e8\'ff. \'c4\'eb\'ff \'ef\'f3\'f2\'e8, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'e4\'ee\'e1\'e0\'e2\'eb\'ff\'e5\'f2\'f1\'ff, \'f3\'e4\'e0\'eb\'ff\'e5\'f2\'f1\'ff \'e8\'eb\'e8 \'e8\'e7\'ec\'e5\'ed\'ff\'e5\'f2\'f1\'ff, GIT_EXTERNAL_DIFF \'e2\'fb\'e7\'fb\'e2\'e0\'e5\'f2\'f1\'ff \'f1 7 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0\'ec\'e8:\par
+\par
+\'ef\'f3\'f2\'fc \'f1\'f2\'e0\'f0\'fb\'e9 \'f4\'e0\'e9\'eb \'f1\'f2\'e0\'f0\'fb\'e9 \'f8\'e5\'f1\'f2\'ed\'e0\'e4\'f6\'e0\'f2\'e5\'f0\'e8\'f7\'ed\'fb\'e9 \'ea\'ee\'e4 \'f1\'f2\'e0\'f0\'fb\'e9 \'f0\'e5\'e6\'e8\'ec \'ed\'ee\'e2\'fb\'e9 \'f4\'e0\'e9\'eb \'ed\'ee\'e2\'fb\'e9 \'f8\'e5\'f1\'f2\'ed\'e0\'e4\'f6\'e0\'f2\'e5\'f0\'e8\'f7\'ed\'fb\'e9 \'ea\'ee\'e4 \'ed\'ee\'e2\'fb\'e9 \'f0\'e5\'e6\'e8\'ec\par
+\'e3\'e4\'e5:\par
+\par
+<\'f1\'f2\'e0\'f0\'fb\'e9 |\'ed\'ee\'e2\'fb\'e9>-\'f4\'e0\'e9\'eb\par
+\'ea\'e0\'ea\'e8\'e5 \'f4\'e0\'e9\'eb\'fb GIT_EXTERNAL_DIFF \'ec\'ee\'e6\'e5\'f2 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'e4\'eb\'ff \'f7\'f2\'e5\'ed\'e8\'ff \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'ee\'e3\'ee <old | new>,\par
+\par
+<\'f1\'f2\'e0\'f0\'fb\'e9 | \'ed\'ee\'e2\'fb\'e9>-hex\par
+\'fd\'f2\'ee 40-\'f8\'e5\'f1\'f2\'ed\'e0\'e4\'f6\'e0\'f2\'e8\'f0\'e8\'f7\'ed\'fb\'e5 \'f5\'fd\'f8\'e8 SHA-1,\par
+\par
+<\'f1\'f2\'e0\'f0\'fb\'e9 | \'ed\'ee\'e2\'fb\'e9>-\'f0\'e5\'e6\'e8\'ec\par
+\'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'ff\'fe\'f2 \'f1\'ee\'e1\'ee\'e9 \'e2\'ee\'f1\'fc\'ec\'e5\'f0\'e8\'f7\'ed\'ee\'e5 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'f4\'e0\'e9\'eb\'ee\'e2\'fb\'f5 \'f0\'e5\'e6\'e8\'ec\'ee\'e2.\par
+\par
+\'cf\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb \'f4\'e0\'e9\'eb\'e0 \'ec\'ee\'e3\'f3\'f2 \'f3\'ea\'e0\'e7\'fb\'e2\'e0\'f2\'fc \'ed\'e0 \'f0\'e0\'e1\'ee\'f7\'e8\'e9 \'f4\'e0\'e9\'eb \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'ff (\'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, new-file \'e2 \f1\lang1033\'abgit-diff-files\'bb), /dev/null (\f0\lang1049\'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, old-file \'ef\'f0\'e8 \'e4\'ee\'e1\'e0\'e2\'eb\'e5\'ed\'e8\'e8 \'ed\'ee\'e2\'ee\'e3\'ee \'f4\'e0\'e9\'eb\'e0) \'e8\'eb\'e8 \'e2\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'e9 \'f4\'e0\'e9\'eb (\'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, old-file \'e2 \'e8\'ed\'e4\'e5\'ea\'f1\'e5). GIT_EXTERNAL_DIFF \'ed\'e5 \'ed\'f3\'e6\'ed\'ee \'e1\'e5\'f1\'ef\'ee\'ea\'ee\'e8\'f2\'fc\'f1\'ff \'ee\'e1 \'f3\'e4\'e0\'eb\'e5\'ed\'e8\'e8 \'e2\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e3\'ee \'f4\'e0\'e9\'eb\'e0 \f2\emdash  \f0\'ee\'ed \'f3\'e4\'e0\'eb\'ff\'e5\'f2\'f1\'ff \'ef\'f0\'e8 \'e2\'fb\'f5\'ee\'e4\'e5 \'e8\'e7 GIT_EXTERNAL_DIFF\par
+\'c4\'eb\'ff \'ed\'e5\'f1\'ec\'e5\'f8\'e0\'ed\'ed\'ee\'e3\'ee \'ef\'f3\'f2\'e8 GIT_EXTERNAL_DIFF \'e2\'fb\'e7\'fb\'e2\'e0\'e5\'f2\'f1\'ff \'f1 \'ee\'e4\'ed\'e8\'ec \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'ec <\'ef\'f3\'f2\'fc>.\par
+\par
+\'c4\'eb\'ff \'ea\'e0\'e6\'e4\'ee\'e3\'ee \'ef\'f3\'f2\'e8 GIT_EXTERNAL_DIFF \'e2\'fb\'e7\'fb\'e2\'e0\'fe\'f2\'f1\'ff \'e4\'e2\'e5 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'e5 \'f1\'f0\'e5\'e4\'fb GIT_DIFF_PATH_COUNTER \'e8 GIT_DIFF_PATH_TOTAL.\par
+\par
+GIT_EXTERNAL_DIFF_TRUST_EXIT_CODE\par
+\'c5\'f1\'eb\'e8 \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 true, \'f2\'ee \'ee\'e6\'e8\'e4\'e0\'e5\'f2\'f1\'ff, \'f7\'f2\'ee \'ea\'ee\'ec\'e0\'ed\'e4\'e0 GIT_EXTERNAL_DIFF \'e2\'e5\'f0\'ed\'b8\'f2 \'ea\'ee\'e4 \'e7\'e0\'e2\'e5\'f0\'f8\'e5\'ed\'e8\'ff 0, \'e5\'f1\'eb\'e8 \'e2\'f5\'ee\'e4\'ed\'fb\'e5 \'f4\'e0\'e9\'eb\'fb \'f1\'f7\'e8\'f2\'e0\'fe\'f2\'f1\'ff \'f0\'e0\'e2\'ed\'fb\'ec\'e8, \'e8\'eb\'e8 1, \'e5\'f1\'eb\'e8 \'ee\'ed\'e8 \'f1\'f7\'e8\'f2\'e0\'fe\'f2\'f1\'ff \'f0\'e0\'e7\'ed\'fb\'ec\'e8, \'ea\'e0\'ea \'e2 diff(1). \'c5\'f1\'eb\'e8 \'e4\'eb\'ff \'ed\'e5\'b8 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 false, \'ea\'ee\'f2\'ee\'f0\'ee\'e5 \'ff\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5\'ec \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe, \'f2\'ee \'ee\'e6\'e8\'e4\'e0\'e5\'f2\'f1\'ff, \'f7\'f2\'ee \'ea\'ee\'ec\'e0\'ed\'e4\'e0 \'e2\'e5\'f0\'ed\'b8\'f2 \'ea\'ee\'e4 \'e7\'e0\'e2\'e5\'f0\'f8\'e5\'ed\'e8\'ff 0 \'ed\'e5\'e7\'e0\'e2\'e8\'f1\'e8\'ec\'ee \'ee\'f2 \'f0\'e0\'e2\'e5\'ed\'f1\'f2\'e2\'e0. \'cb\'fe\'e1\'ee\'e9 \'e4\'f0\'f3\'e3\'ee\'e9 \'ea\'ee\'e4 \'e7\'e0\'e2\'e5\'f0\'f8\'e5\'ed\'e8\'ff \'ef\'f0\'e8\'e2\'ee\'e4\'e8\'f2 \'ea \'f2\'ee\'ec\'f3, \'f7\'f2\'ee Git \'f1\'ee\'ee\'e1\'f9\'e0\'e5\'f2 \'ee \'f4\'e0\'f2\'e0\'eb\'fc\'ed\'ee\'e9 \'ee\'f8\'e8\'e1\'ea\'e5.\par
+\par
+GIT_DIFF_PATH_COUNTER\par
+\'d1\'f7\'e5\'f2\'f7\'e8\'ea \'ed\'e0 \'ee\'f1\'ed\'ee\'e2\'e5 1, \'f3\'e2\'e5\'eb\'e8\'f7\'e5\'ed\'ed\'fb\'e9 \'ed\'e0 \'e5\'e4\'e8\'ed\'e8\'f6\'f3 \'e4\'eb\'ff \'ea\'e0\'e6\'e4\'ee\'e3\'ee \'ef\'f3\'f2\'e8.\par
+\par
+GIT_DIFF_PATH_TOTAL\par
+\'ce\'e1\'f9\'e5\'e5 \'ea\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee \'ef\'f3\'f2\'e5\'e9.\par
+\par
+\'c4\'f0\'f3\'e3\'ee\'e5\par
+GIT_MERGE_VERBOSITY\par
+\'d7\'e8\'f1\'eb\'ee, \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'fe\'f9\'e5\'e5 \'ee\'e1\'fa\'b8\'ec \'e2\'fb\'e2\'ee\'e4\'e0, \'ee\'f2\'ee\'e1\'f0\'e0\'e6\'e0\'e5\'ec\'ee\'e3\'ee \'f1\'f2\'f0\'e0\'f2\'e5\'e3\'e8\'e5\'e9 \'f0\'e5\'ea\'f3\'f0\'f1\'e8\'e2\'ed\'ee\'e3\'ee \'f1\'eb\'e8\'ff\'ed\'e8\'ff. \'cf\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 merge.verbosity. \'d1\'ec. git-merge[1]\par
+\par
+GIT_PAGER\par
+\'dd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f1\'f0\'e5\'e4\'fb \'ef\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 $PAGER. \'c5\'f1\'eb\'e8 \'ee\'ed\'e0 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'e0 \'ed\'e0 \'ef\'f3\'f1\'f2\'f3\'fe \'f1\'f2\'f0\'ee\'ea\'f3 \'e8\'eb\'e8 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \f1\lang1033\'abcat\'bb, Git \f0\lang1049\'ed\'e5 \'e1\'f3\'e4\'e5\'f2 \'e7\'e0\'ef\'f3\'f1\'ea\'e0\'f2\'fc \'ef\'e5\'e9\'e4\'e6\'e5\'f0. \'d1\'ec. \'f2\'e0\'ea\'e6\'e5 \'ee\'ef\'f6\'e8\'fe core.pager \'e2 git-config[1].\par
+\par
+GIT_PROGRESS_DELAY\par
+\'d7\'e8\'f1\'eb\'ee, \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'fe\'f9\'e5\'e5 \'ea\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee \'f1\'e5\'ea\'f3\'ed\'e4 \'e7\'e0\'e4\'e5\'f0\'e6\'ea\'e8 \'ef\'e5\'f0\'e5\'e4 \'ee\'f2\'ee\'e1\'f0\'e0\'e6\'e5\'ed\'e8\'e5\'ec \'e4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'f5 \'e8\'ed\'e4\'e8\'ea\'e0\'f2\'ee\'f0\'ee\'e2 \'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff. \'cf\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \'f0\'e0\'e2\'ed\'ee 2.\par
+\par
+GIT_EDITOR\par
+\'dd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f1\'f0\'e5\'e4\'fb \'ef\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 $EDITOR \'e8 $VISUAL. \'ce\'ed\'e0 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'ed\'e5\'f1\'ea\'ee\'eb\'fc\'ea\'e8\'ec\'e8 \'ea\'ee\'ec\'e0\'ed\'e4\'e0\'ec\'e8 Git \'ef\'f0\'e8 \'e7\'e0\'ef\'f3\'f1\'ea\'e5 \'f0\'e5\'e4\'e0\'ea\'f2\'ee\'f0\'e0 \'e2 \'e8\'ed\'f2\'e5\'f0\'e0\'ea\'f2\'e8\'e2\'ed\'ee\'ec \'f0\'e5\'e6\'e8\'ec\'e5. \'d1\'ec. \'f2\'e0\'ea\'e6\'e5 git-var[1] \'e8 \'ee\'ef\'f6\'e8\'fe core.editor \'e2 git-config[1].\par
+\par
+GIT_SEQUENCE_EDITOR\par
+\'dd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f1\'f0\'e5\'e4\'fb \'ef\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'ed\'fb\'e9 \'f0\'e5\'e4\'e0\'ea\'f2\'ee\'f0 Git \'ef\'f0\'e8 \'f0\'e5\'e4\'e0\'ea\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e8 \'f1\'ef\'e8\'f1\'ea\'e0 \'e7\'e0\'e4\'e0\'f7 \'e8\'ed\'f2\'e5\'f0\'e0\'ea\'f2\'e8\'e2\'ed\'ee\'e9 \'ef\'e5\'f0\'e5\'e1\'e0\'e7\'e8\'f0\'ee\'e2\'ea\'e8. \'d1\'ec. \'f2\'e0\'ea\'e6\'e5 git-rebase[1] \'e8 \'ee\'ef\'f6\'e8\'fe sequence.editor \'e2 git-config[1].\par
+\par
+GIT_SSH\par
+GIT_SSH_COMMAND\par
+\'c5\'f1\'eb\'e8 \'e7\'e0\'e4\'e0\'ed\'e0 \'eb\'fe\'e1\'e0\'ff \'e8\'e7 \'fd\'f2\'e8\'f5 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'f5 \'f1\'f0\'e5\'e4\'fb, \'f2\'ee git fetch \'e8 git push \'e1\'f3\'e4\'f3\'f2 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'f3\'ea\'e0\'e7\'e0\'ed\'ed\'f3\'fe \'ea\'ee\'ec\'e0\'ed\'e4\'f3 \'e2\'ec\'e5\'f1\'f2\'ee ssh \'ef\'f0\'e8 \'ef\'ee\'e4\'ea\'eb\'fe\'f7\'e5\'ed\'e8\'e8 \'ea \'f3\'e4\'e0\'eb\'b8\'ed\'ed\'ee\'e9 \'f1\'e8\'f1\'f2\'e5\'ec\'e5. \'cf\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb \'ea\'ee\'ec\'e0\'ed\'e4\'ed\'ee\'e9 \'f1\'f2\'f0\'ee\'ea\'e8, \'ef\'e5\'f0\'e5\'e4\'e0\'e2\'e0\'e5\'ec\'fb\'e5 \'ed\'e0\'f1\'f2\'f0\'ee\'e5\'ed\'ed\'ee\'e9 \'ea\'ee\'ec\'e0\'ed\'e4\'e5, \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'fe\'f2\'f1\'ff \'e2\'e0\'f0\'e8\'e0\'ed\'f2\'ee\'ec ssh. \'cf\'ee\'e4\'f0\'ee\'e1\'ed\'e5\'e5 \'f1\'ec. \'ee\'ef\'f6\'e8\'fe ssh.variant \'e2 git-config[1].\par
+\par
+$GIT_SSH_COMMAND \'e8\'ec\'e5\'e5\'f2 \'ef\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2 \'ed\'e0\'e4 $GIT_SSH \'e8 \'e8\'ed\'f2\'e5\'f0\'ef\'f0\'e5\'f2\'e8\'f0\'f3\'e5\'f2\'f1\'ff \'ee\'e1\'ee\'eb\'ee\'f7\'ea\'ee\'e9, \'f7\'f2\'ee \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'e2\'ea\'eb\'fe\'f7\'e0\'f2\'fc \'e4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'e5 \'e0\'f0\'e3\'f3\'ec\'e5\'ed\'f2\'fb. $GIT_SSH, \'f1 \'e4\'f0\'f3\'e3\'ee\'e9 \'f1\'f2\'ee\'f0\'ee\'ed\'fb, \'e4\'ee\'eb\'e6\'e5\'ed \'e1\'fb\'f2\'fc \'ef\'f0\'ee\'f1\'f2\'ee \'ef\'f3\'f2\'b8\'ec \'ea \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'e5 (\'ea\'ee\'f2\'ee\'f0\'e0\'ff \'ec\'ee\'e6\'e5\'f2 \'e1\'fb\'f2\'fc \'f1\'ea\'f0\'e8\'ef\'f2\'ee\'ec \'ee\'e1\'ee\'eb\'ee\'f7\'ea\'e8-\'ee\'e1\'b8\'f0\'f2\'ea\'ee\'e9, \'e5\'f1\'eb\'e8 \'f2\'f0\'e5\'e1\'f3\'fe\'f2\'f1\'ff \'e4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'e5 \'e0\'f0\'e3\'f3\'ec\'e5\'ed\'f2\'fb).\par
+\par
+\'ce\'e1\'fb\'f7\'ed\'ee \'ef\'f0\'ee\'f9\'e5 \'ed\'e0\'f1\'f2\'f0\'ee\'e8\'f2\'fc \'eb\'fe\'e1\'fb\'e5 \'ed\'f3\'e6\'ed\'fb\'e5 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb \'e2 \'e2\'e0\'f8\'e5\'ec \'eb\'e8\'f7\'ed\'ee\'ec \'f4\'e0\'e9\'eb\'e5 .ssh/config . \'cf\'ee\'e6\'e0\'eb\'f3\'e9\'f1\'f2\'e0, \'ee\'e1\'f0\'e0\'f2\'e8\'f2\'e5\'f1\'fc \'ea \'e4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\'e0\'f6\'e8\'e8 \'ef\'ee ssh \'e4\'eb\'ff \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'ff \'e1\'ee\'eb\'e5\'e5 \'ef\'ee\'e4\'f0\'ee\'e1\'ed\'ee\'e9 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8.\par
+\par
+GIT_SSH_VARIANT\par
+\'c5\'f1\'eb\'e8 \'e7\'e0\'e4\'e0\'ed\'e0 \'fd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f1\'f0\'e5\'e4\'fb, \'ee\'ed\'e0 \'ef\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'e0\'e2\'f2\'ee\'ec\'e0\'f2\'e8\'f7\'e5\'f1\'ea\'ee\'e5 \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'e8\'e5 Git, \'ed\'e5\'e7\'e0\'e2\'e8\'f1\'e8\'ec\'ee \'ee\'f2 \'f2\'ee\'e3\'ee, \'ee\'f2\'ed\'ee\'f1\'e8\'f2\'f1\'ff \'eb\'e8 GIT_SSH/GIT_SSH_COMMAND/core.sshCommand \'ea OpenSSH, plink \'e8\'eb\'e8 tortoiseplink. \'dd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'ef\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8 ssh.variant, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'f1\'eb\'f3\'e6\'e8\'f2 \'f2\'ee\'e9 \'e6\'e5 \'f6\'e5\'eb\'e8.\par
+\par
+GIT_SSL_NO_VERIFY\par
+\'c5\'f1\'eb\'e8 \'e7\'e0\'e4\'e0\'f2\'fc \'e8 \'fd\'ea\'f1\'ef\'ee\'f0\'f2\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'fd\'f2\'f3 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'f3\'fe \'f1\'f0\'e5\'e4\'fb \'f1 \'eb\'fe\'e1\'fb\'ec \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5\'ec, Git \'ed\'e5 \'e1\'f3\'e4\'e5\'f2 \'ef\'f0\'ee\'e2\'e5\'f0\'ff\'f2\'fc \'f1\'e5\'f0\'f2\'e8\'f4\'e8\'ea\'e0\'f2 SSL \'ef\'f0\'e8 \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'e8 \'e8\'eb\'e8 \'ee\'f2\'ef\'f0\'e0\'e2\'ea\'e5 \'e4\'e0\'ed\'ed\'fb\'f5 \'ef\'ee \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'f3 HTTPS.\par
+\par
+GIT_ATTR_SOURCE\par
+\'c7\'e0\'e4\'e0\'e5\'f2 \'e4\'e5\'f0\'e5\'e2\'ee, \'e8\'e7 \'ea\'ee\'f2\'ee\'f0\'ee\'e3\'ee \'e1\'f3\'e4\'f3\'f2 \'f1\'f7\'e8\'f2\'fb\'e2\'e0\'f2\'fc\'f1\'ff \'e0\'f2\'f0\'e8\'e1\'f3\'f2\'fb gitattributes.\par
+\par
+GIT_ASKPASS\par
+\'c5\'f1\'eb\'e8 \'fd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f1\'f0\'e5\'e4\'fb \'e7\'e0\'e4\'e0\'ed\'e0, \'f2\'ee \'ea\'ee\'ec\'e0\'ed\'e4\'fb Git, \'ea\'ee\'f2\'ee\'f0\'fb\'ec \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee \'ef\'ee\'eb\'f3\'f7\'e8\'f2\'fc \'ef\'e0\'f0\'ee\'eb\'e8 \'e8\'eb\'e8 \'ea\'ee\'e4\'ee\'e2\'fb\'e5 \'f4\'f0\'e0\'e7\'fb (\'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, \'e4\'eb\'ff \'e0\'f3\'f2\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f6\'e8\'e8 \'ef\'ee HTTP \'e8\'eb\'e8 IMAP), \'e1\'f3\'e4\'f3\'f2 \'e2\'fb\'e7\'fb\'e2\'e0\'f2\'fc \'fd\'f2\'f3 \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'f3 \'f1 \'ef\'ee\'e4\'f5\'ee\'e4\'ff\'f9\'e8\'ec \'e7\'e0\'ef\'f0\'ee\'f1\'ee\'ec \'e2 \'ea\'e0\'f7\'e5\'f1\'f2\'e2\'e5 \'e0\'f0\'e3\'f3\'ec\'e5\'ed\'f2\'e0 \'ea\'ee\'ec\'e0\'ed\'e4\'ed\'ee\'e9 \'f1\'f2\'f0\'ee\'ea\'e8 \'e8 \'f1\'f7\'e8\'f2\'fb\'e2\'e0\'f2\'fc \'ef\'e0\'f0\'ee\'eb\'fc \'e8\'e7 \'e5\'b8 \'f1\'f2\'e0\'ed\'e4\'e0\'f0\'f2\'ed\'ee\'e3\'ee \'e2\'fb\'e2\'ee\'e4\'e0. \'d1\'ec. \'f2\'e0\'ea\'e6\'e5 \'ee\'ef\'f6\'e8\'fe core.askPass \'e2 git-config[1].\par
+\par
+GIT_TERMINAL_PROMPT\par
+\'c5\'f1\'eb\'e8 \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 false, git \'ed\'e5 \'e1\'f3\'e4\'e5\'f2 \'e7\'e0\'ef\'f0\'e0\'f8\'e8\'e2\'e0\'f2\'fc \'ef\'ee\'e4\'f2\'e2\'e5\'f0\'e6\'e4\'e5\'ed\'e8\'e5 \'e2 \'f2\'e5\'f0\'ec\'e8\'ed\'e0\'eb\'e5 (\'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, \'ef\'f0\'e8 \'e7\'e0\'ef\'f0\'ee\'f1\'e5 \'e0\'f3\'f2\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f6\'e8\'e8 \'ef\'ee HTTP).\par
+\par
+GIT_CONFIG_GLOBAL\par
+GIT_CONFIG_SYSTEM\par
+\'c8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e9\'f2\'e5 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'fe \'e8\'e7 \'f3\'ea\'e0\'e7\'e0\'ed\'ed\'fb\'f5 \'f4\'e0\'e9\'eb\'ee\'e2 \'e2\'ec\'e5\'f1\'f2\'ee \'e3\'eb\'ee\'e1\'e0\'eb\'fc\'ed\'fb\'f5 \'e8\'eb\'e8 \'f1\'e8\'f1\'f2\'e5\'ec\'ed\'fb\'f5 \'f4\'e0\'e9\'eb\'ee\'e2 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8. \'c5\'f1\'eb\'e8 GIT_CONFIG_SYSTEM \'e7\'e0\'e4\'e0\'ed\'ee, \'f4\'e0\'e9\'eb \'f1\'e8\'f1\'f2\'e5\'ec\'ed\'ee\'e9 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8, \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'ed\'fb\'e9 \'e2\'ee \'e2\'f0\'e5\'ec\'ff \'f1\'e1\'ee\'f0\'ea\'e8 (\'ee\'e1\'fb\'f7\'ed\'ee /etc/gitconfig), \'ed\'e5 \'e1\'f3\'e4\'e5\'f2 \'ef\'f0\'ee\'f7\'e8\'f2\'e0\'ed. \'c0\'ed\'e0\'eb\'ee\'e3\'e8\'f7\'ed\'ee, \'e5\'f1\'eb\'e8 GIT_CONFIG_GLOBAL \'e7\'e0\'e4\'e0\'ed\'ee, \'ed\'e5 \'e1\'f3\'e4\'f3\'f2 \'ef\'f0\'ee\'f7\'e8\'f2\'e0\'ed\'fb \'ed\'e8 $HOME/.gitconfig \'ed\'e8 $XDG_CONFIG_HOME/git/config . \'cc\'ee\'e6\'ed\'ee \'e7\'e0\'e4\'e0\'f2\'fc /dev/null \'e4\'eb\'ff \'ef\'f0\'ee\'ef\'f3\'f1\'ea\'e0 \'f7\'f2\'e5\'ed\'e8\'ff \'f4\'e0\'e9\'eb\'ee\'e2 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8 \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e5\'e3\'ee \'f3\'f0\'ee\'e2\'ed\'ff.\par
+\par
+GIT_CONFIG_NOSYSTEM\par
+\'d1\'eb\'e5\'e4\'f3\'e5\'f2 \'eb\'e8 \'ef\'f0\'ee\'ef\'f3\'f1\'f2\'e8\'f2\'fc \'f7\'f2\'e5\'ed\'e8\'e5 \'ed\'e0\'f1\'f2\'f0\'ee\'e5\'ea \'e8\'e7 \'ee\'e1\'f9\'e5\'f1\'e8\'f1\'f2\'e5\'ec\'ed\'ee\'e3\'ee \'f4\'e0\'e9\'eb\'e0 $(prefix)/etc/gitconfig? \'dd\'f2\'f3 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'f3\'fe \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'f3\'fe \'f1\'f0\'e5\'e4\'fb \'ec\'ee\'e6\'ed\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'e2\'ec\'e5\'f1\'f2\'e5 \'f1 $HOME \'e8 $XDG_CONFIG_HOME \'e4\'eb\'ff \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'ff \'ef\'f0\'e5\'e4\'f1\'ea\'e0\'e7\'f3\'e5\'ec\'ee\'e9 \'f1\'f0\'e5\'e4\'fb \'e4\'eb\'ff \'ef\'f0\'e8\'e4\'e8\'f0\'f7\'e8\'e2\'ee\'e3\'ee \'f1\'ea\'f0\'e8\'ef\'f2\'e0, \'e8\'eb\'e8 \'e2\'fb \'ec\'ee\'e6\'e5\'f2\'e5 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'e4\'eb\'ff \'ed\'e5\'b8 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 true, \'f7\'f2\'ee\'e1\'fb \'e2\'f0\'e5\'ec\'e5\'ed\'ed\'ee \'ed\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'ef\'f0\'ee\'e1\'eb\'e5\'ec\'ed\'fb\'e9 \'f4\'e0\'e9\'eb /etc/gitconfig \'e2 \'ee\'e6\'e8\'e4\'e0\'ed\'e8\'e8, \'ef\'ee\'ea\'e0 \'ea\'f2\'ee-\'ed\'e8\'e1\'f3\'e4\'fc \'f1 \'e4\'ee\'f1\'f2\'e0\'f2\'ee\'f7\'ed\'fb\'ec\'e8 \'ef\'f0\'e0\'e2\'e0\'ec\'e8 \'e5\'e3\'ee \'e8\'f1\'ef\'f0\'e0\'e2\'e8\'f2.\par
+\par
+GIT_FLUSH\par
+\'c5\'f1\'eb\'e8 \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 true, \'f2\'ee \'f2\'e0\'ea\'e8\'e5 \'ea\'ee\'ec\'e0\'ed\'e4\'fb, \'ea\'e0\'ea git blame (\'e2 \'e8\'ed\'ea\'f0\'e5\'ec\'e5\'ed\'f2\'e0\'eb\'fc\'ed\'ee\'ec \'f0\'e5\'e6\'e8\'ec\'e5), git rev-list, git log, git check-attr \'e8 git check-ignore, \'e1\'f3\'e4\'f3\'f2 \'ef\'f0\'e8\'ed\'f3\'e4\'e8\'f2\'e5\'eb\'fc\'ed\'ee \'ee\'f7\'e8\'f9\'e0\'f2\'fc \'e2\'fb\'f5\'ee\'e4\'ed\'ee\'e9 \'ef\'ee\'f2\'ee\'ea \'ef\'ee\'f1\'eb\'e5 \'ea\'e0\'e6\'e4\'ee\'e9 \'e7\'e0\'ef\'e8\'f1\'e8. \'c5\'f1\'eb\'e8 \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 false, \'f2\'ee \'e2\'fb\'e2\'ee\'e4 \'fd\'f2\'e8\'f5 \'ea\'ee\'ec\'e0\'ed\'e4 \'e1\'f3\'e4\'e5\'f2 \'ee\'f1\'f3\'f9\'e5\'f1\'f2\'e2\'eb\'ff\'f2\'fc\'f1\'ff \'f1 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\'ec \'ef\'ee\'eb\'ed\'ee\'f1\'f2\'fc\'fe \'e1\'f3\'f4\'e5\'f0\'e8\'e7\'ee\'e2\'e0\'ed\'ed\'ee\'e3\'ee \'e2\'e2\'ee\'e4\'e0-\'e2\'fb\'e2\'ee\'e4\'e0. \'c5\'f1\'eb\'e8 \'fd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f1\'f0\'e5\'e4\'fb \'ed\'e5 \'e7\'e0\'e4\'e0\'ed\'e0, Git \'e1\'f3\'e4\'e5\'f2 \'e2\'fb\'e1\'e8\'f0\'e0\'f2\'fc \'e1\'f3\'f4\'e5\'f0\'e8\'e7\'ee\'e2\'e0\'ed\'ed\'f3\'fe \'e8\'eb\'e8 \'ee\'f0\'e8\'e5\'ed\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'ed\'f3\'fe \'ed\'e0 \'e7\'e0\'ef\'e8\'f1\'fc \'ee\'f7\'e8\'f1\'f2\'ea\'f3 \'e2 \'e7\'e0\'e2\'e8\'f1\'e8\'ec\'ee\'f1\'f2\'e8 \'ee\'f2 \'f2\'ee\'e3\'ee, \'ef\'e5\'f0\'e5\'ed\'e0\'ef\'f0\'e0\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'eb\'e8 \'f1\'f2\'e0\'ed\'e4\'e0\'f0\'f2\'ed\'fb\'e9 \'e2\'fb\'e2\'ee\'e4 \'e2 \'f4\'e0\'e9\'eb.\par
+\par
+GIT_TRACE\par
+\'c2\'ea\'eb\'fe\'f7\'e0\'e5\'f2 \'ee\'e1\'f9\'e8\'e5 \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'ee \'f2\'f0\'e0\'f1\'f1\'e8\'f0\'ee\'e2\'ea\'e5, \'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, \'ef\'f0\'e8 \'f0\'e0\'f1\'ea\'f0\'fb\'f2\'e8\'e8 \'ef\'f1\'e5\'e2\'e4\'ee\'ed\'e8\'ec\'ee\'e2, \'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'e8 \'e2\'f1\'f2\'f0\'ee\'e5\'ed\'ed\'fb\'f5 \'e8 \'e2\'ed\'e5\'f8\'ed\'e8\'f5 \'ea\'ee\'ec\'e0\'ed\'e4.\par
+\par
+\'c5\'f1\'eb\'e8 \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'e7\'e0\'e4\'e0\'ed\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \f1\lang1033\'ab1\'bb, \'ab2\'bb \f0\lang1049\'e8\'eb\'e8 \f1\lang1033\'ab\f0\lang1049\'e8\'f1\'f2\'e8\'ed\'e0\f1\lang1033\'bb (\f0\lang1049\'f1\'f0\'e0\'e2\'ed\'e5\'ed\'e8\'e5 \'e1\'e5\'e7 \'f3\'f7\'b8\'f2\'e0 \'f0\'e5\'e3\'e8\'f1\'f2\'f0\'e0), \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'f2\'f0\'e0\'f1\'f1\'e8\'f0\'ee\'e2\'ea\'e8 \'e1\'f3\'e4\'f3\'f2 \'e2\'fb\'e2\'ee\'e4\'e8\'f2\'fc\'f1\'ff \'e2 stderr.\par
+\par
+\'c5\'f1\'eb\'e8 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'ef\'f0\'e8\'f1\'e2\'ee\'e5\'ed\'ee \'f6\'e5\'eb\'ee\'f7\'e8\'f1\'eb\'e5\'ed\'ed\'ee\'e5 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'e1\'ee\'eb\'fc\'f8\'e5 2 \'e8 \'ec\'e5\'ed\'fc\'f8\'e5 10 (\'f1\'f2\'f0\'ee\'e3\'ee), \'f2\'ee Git \'e1\'f3\'e4\'e5\'f2 \'e8\'ed\'f2\'e5\'f0\'ef\'f0\'e5\'f2\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'fd\'f2\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'ea\'e0\'ea \'e4\'e5\'f1\'ea\'f0\'e8\'ef\'f2\'ee\'f0 \'ee\'f2\'ea\'f0\'fb\'f2\'ee\'e3\'ee \'f4\'e0\'e9\'eb\'e0 \'e8 \'ef\'ee\'ef\'fb\'f2\'e0\'e5\'f2\'f1\'ff \'e7\'e0\'ef\'e8\'f1\'e0\'f2\'fc \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'f2\'f0\'e0\'f1\'f1\'e8\'f0\'ee\'e2\'ea\'e8 \'e2 \'fd\'f2\'ee\'f2 \'e4\'e5\'f1\'ea\'f0\'e8\'ef\'f2\'ee\'f0.\par
+\par
+Alternatively, if the variable is set to an absolute path (starting with a / character), Git will interpret this as a file path and will try to append the trace messages to it.\par
+\par
+Unsetting the variable, or setting it to empty, "0" or "false" (case insensitive) disables trace messages.\par
+\par
+GIT_TRACE_FSMONITOR\par
+Enables trace messages for the filesystem monitor extension. See GIT_TRACE for available trace output options.\par
+\par
+GIT_TRACE_PACK_ACCESS\par
+Enables trace messages for all accesses to any packs. For each access, the pack file name and an offset in the pack is recorded. This may be helpful for troubleshooting some pack-related performance problems. See GIT_TRACE for available trace output options.\par
+\par
+GIT_TRACE_PACKET\par
+Enables trace messages for all packets coming in or out of a given program. This can help with debugging object negotiation or other protocol issues. Tracing is turned off at a packet starting with "PACK" (but see GIT_TRACE_PACKFILE below). See GIT_TRACE for available trace output options.\par
+\par
+GIT_TRACE_PACKFILE\par
+Enables tracing of packfiles sent or received by a given program. Unlike other trace output, this trace is verbatim: no headers, and no quoting of binary data. You almost certainly want to direct into a file (e.g., GIT_TRACE_PACKFILE=/tmp/my.pack) rather than displaying it on the terminal or mixing it with other trace output.\par
+\par
+Note that this is currently only implemented for the client side of clones and fetches.\par
+\par
+GIT_TRACE_PERFORMANCE\par
+Enables performance related trace messages, e.g. total execution time of each Git command. See GIT_TRACE for available trace output options.\par
+\par
+GIT_TRACE_REFS\par
+Enables trace messages for operations on the ref database. See GIT_TRACE for available trace output options.\par
+\par
+GIT_TRACE_SETUP\par
+Enables trace messages printing the .git, working tree and current working directory after Git has completed its setup phase. See GIT_TRACE for available trace output options.\par
+\par
+GIT_TRACE_SHALLOW\par
+Enables trace messages that can help debugging fetching / cloning of shallow repositories. See GIT_TRACE for available trace output options.\par
+\par
+GIT_TRACE_CURL\par
+Enables a curl full trace dump of all incoming and outgoing data, including descriptive information, of the git transport protocol. This is similar to doing curl --trace-ascii on the command line. See GIT_TRACE for available trace output options.\par
+\par
+GIT_TRACE_CURL_NO_DATA\par
+When a curl trace is enabled (see GIT_TRACE_CURL above), do not dump data (that is, only dump info lines and headers).\par
+\par
+GIT_TRACE2\par
+\'c2\'ea\'eb\'fe\'f7\'e0\'e5\'f2 \'e1\'ee\'eb\'e5\'e5 \'ef\'ee\'e4\'f0\'ee\'e1\'ed\'fb\'e5 \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'f2\'f0\'e0\'f1\'f1\'e8\'f0\'ee\'e2\'ea\'e8 \'e8\'e7 \'e1\'e8\'e1\'eb\'e8\'ee\'f2\'e5\'ea\'e8 \f1\lang1033\'abtrace2\'bb. \f0\lang1049\'c2\'fb\'e2\'ee\'e4 \'e8\'e7 GIT_TRACE2 \f2\emdash  \f0\'fd\'f2\'ee \'ef\'f0\'ee\'f1\'f2\'ee\'e9 \'f2\'e5\'ea\'f1\'f2\'ee\'e2\'fb\'e9 \'f4\'ee\'f0\'ec\'e0\'f2 \'e4\'eb\'ff \'f3\'e4\'ee\'e1\'f1\'f2\'e2\'e0 \'f7\'f2\'e5\'ed\'e8\'ff \'f7\'e5\'eb\'ee\'e2\'e5\'ea\'ee\'ec.\par
+\par
+\'c5\'f1\'eb\'e8 \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'e7\'e0\'e4\'e0\'ed\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \f1\lang1033\'ab1\'bb, \'ab2\'bb \f0\lang1049\'e8\'eb\'e8 \f1\lang1033\'ab\f0\lang1049\'e8\'f1\'f2\'e8\'ed\'e0\f1\lang1033\'bb (\f0\lang1049\'f1\'f0\'e0\'e2\'ed\'e5\'ed\'e8\'e5 \'e1\'e5\'e7 \'f3\'f7\'b8\'f2\'e0 \'f0\'e5\'e3\'e8\'f1\'f2\'f0\'e0), \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'f2\'f0\'e0\'f1\'f1\'e8\'f0\'ee\'e2\'ea\'e8 \'e1\'f3\'e4\'f3\'f2 \'e2\'fb\'e2\'ee\'e4\'e8\'f2\'fc\'f1\'ff \'e2 stderr.\par
+\par
+\'c5\'f1\'eb\'e8 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'ef\'f0\'e8\'f1\'e2\'ee\'e5\'ed\'ee \'f6\'e5\'eb\'ee\'f7\'e8\'f1\'eb\'e5\'ed\'ed\'ee\'e5 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'e1\'ee\'eb\'fc\'f8\'e5 2 \'e8 \'ec\'e5\'ed\'fc\'f8\'e5 10 (\'f1\'f2\'f0\'ee\'e3\'ee), \'f2\'ee Git \'e1\'f3\'e4\'e5\'f2 \'e8\'ed\'f2\'e5\'f0\'ef\'f0\'e5\'f2\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'fd\'f2\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'ea\'e0\'ea \'e4\'e5\'f1\'ea\'f0\'e8\'ef\'f2\'ee\'f0 \'ee\'f2\'ea\'f0\'fb\'f2\'ee\'e3\'ee \'f4\'e0\'e9\'eb\'e0 \'e8 \'ef\'ee\'ef\'fb\'f2\'e0\'e5\'f2\'f1\'ff \'e7\'e0\'ef\'e8\'f1\'e0\'f2\'fc \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'f2\'f0\'e0\'f1\'f1\'e8\'f0\'ee\'e2\'ea\'e8 \'e2 \'fd\'f2\'ee\'f2 \'e4\'e5\'f1\'ea\'f0\'e8\'ef\'f2\'ee\'f0.\par
+\par
+\'c2 \'ea\'e0\'f7\'e5\'f1\'f2\'e2\'e5 \'e0\'eb\'fc\'f2\'e5\'f0\'ed\'e0\'f2\'e8\'e2\'fb, \'e5\'f1\'eb\'e8 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'e7\'e0\'e4\'e0\'ed \'e0\'e1\'f1\'ee\'eb\'fe\'f2\'ed\'fb\'e9 \'ef\'f3\'f2\'fc (\'ed\'e0\'f7\'e8\'ed\'e0\'fe\'f9\'e8\'e9\'f1\'ff \'f1 \'f1\'e8\'ec\'e2\'ee\'eb\'e0 /), Git \'e8\'ed\'f2\'e5\'f0\'ef\'f0\'e5\'f2\'e8\'f0\'f3\'e5\'f2 \'e5\'e3\'ee \'ea\'e0\'ea \'ef\'f3\'f2\'fc \'ea \'f4\'e0\'e9\'eb\'f3 \'e8 \'ef\'ee\'ef\'fb\'f2\'e0\'e5\'f2\'f1\'ff \'e4\'ee\'e1\'e0\'e2\'e8\'f2\'fc \'ea \'ed\'e5\'ec\'f3 \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'f2\'f0\'e0\'f1\'f1\'e8\'f0\'ee\'e2\'ea\'e8. \'c5\'f1\'eb\'e8 \'ef\'f3\'f2\'fc \'f3\'e6\'e5 \'f1\'f3\'f9\'e5\'f1\'f2\'e2\'f3\'e5\'f2 \'e8 \'ff\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'ee\'ec, \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'f2\'f0\'e0\'f1\'f1\'e8\'f0\'ee\'e2\'ea\'e8 \'e1\'f3\'e4\'f3\'f2 \'e7\'e0\'ef\'e8\'f1\'e0\'ed\'fb \'e2 \'f4\'e0\'e9\'eb\'fb (\'ef\'ee \'ee\'e4\'ed\'ee\'ec\'f3 \'ed\'e0 \'ef\'f0\'ee\'f6\'e5\'f1\'f1) \'e2 \'fd\'f2\'ee\'ec \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'e5, \'ed\'e0\'e7\'e2\'e0\'ed\'ed\'fb\'e5 \'e2 \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'e8\'e8 \'f1 \'ef\'ee\'f1\'eb\'e5\'e4\'ed\'e8\'ec \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2\'ee\'ec SID \'e8 \'e4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'ec \'f1\'f7\'b8\'f2\'f7\'e8\'ea\'ee\'ec (\'e2\'ee \'e8\'e7\'e1\'e5\'e6\'e0\'ed\'e8\'e5 \'ea\'ee\'ed\'f4\'eb\'e8\'ea\'f2\'ee\'e2 \'e8\'ec\'b8\'ed \'f4\'e0\'e9\'eb\'ee\'e2).\par
+\par
+\'ca\'f0\'ee\'ec\'e5 \'f2\'ee\'e3\'ee, \'e5\'f1\'eb\'e8 \'e4\'eb\'ff \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'e7\'e0\'e4\'e0\'ed\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 af_unix:[<socket-type>:]<absolute-pathname>, Git \'ef\'ee\'ef\'fb\'f2\'e0\'e5\'f2\'f1\'ff \'ee\'f2\'ea\'f0\'fb\'f2\'fc \'ef\'f3\'f2\'fc \'ea\'e0\'ea \'f1\'ee\'ea\'e5\'f2 \'e4\'ee\'ec\'e5\'ed\'e0 Unix. \'d2\'e8\'ef \'f1\'ee\'ea\'e5\'f2\'e0 \'ec\'ee\'e6\'e5\'f2 \'e1\'fb\'f2\'fc stream \'e8\'eb\'e8 dgram.\par
+\par
+\'c5\'f1\'eb\'e8 \'ed\'e5 \'e7\'e0\'e4\'e0\'e2\'e0\'f2\'fc \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'f3\'fe \'e8\'eb\'e8 \'e7\'e0\'e4\'e0\'f2\'fc \'e5\'e9 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \f1\lang1033\'ab0\'bb \f0\lang1049\'e8\'eb\'e8 \f1\lang1033\'abfalse\'bb (\f0\lang1049\'e1\'e5\'e7 \'f3\'f7\'b8\'f2\'e0 \'f0\'e5\'e3\'e8\'f1\'f2\'f0\'e0), \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'f2\'f0\'e0\'f1\'f1\'e8\'f0\'ee\'e2\'ea\'e8 \'e1\'f3\'e4\'f3\'f2 \'ee\'f2\'ea\'eb\'fe\'f7\'e5\'ed\'fb.\par
+\par
+\'d1\'ec\'ee\'f2\'f0\'e8\'f2\'e5 \'e4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\'e0\'f6\'e8\'fe \'ef\'ee Trace2 \'e4\'eb\'ff \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'ff \'ef\'ee\'eb\'ed\'ee\'e9 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8.\par
+\par
+GIT_TRACE2_EVENT\par
+\'dd\'f2\'ee\'f2 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0 \'e7\'e0\'ef\'e8\'f1\'fb\'e2\'e0\'e5\'f2 \'e4\'e0\'ed\'ed\'fb\'e5 \'e2 \'f4\'ee\'f0\'ec\'e0\'f2\'e5 JSON, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ef\'ee\'e4\'f5\'ee\'e4\'e8\'f2 \'e4\'eb\'ff \'ec\'e0\'f8\'e8\'ed\'ed\'ee\'e3\'ee \'e0\'ed\'e0\'eb\'e8\'e7\'e0. \'d1\'ec. GIT_TRACE2 \'e4\'eb\'ff \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'ff \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8 \'ee \'e4\'ee\'f1\'f2\'f3\'ef\'ed\'fb\'f5 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0\'f5 \'e2\'fb\'e2\'ee\'e4\'e0 \'f2\'f0\'e0\'f1\'f1\'e8\'f0\'ee\'e2\'ea\'e8 \'e8 \'e4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\'e0\'f6\'e8\'fe Trace2 \'e4\'eb\'ff \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'ff \'ef\'ee\'eb\'ed\'ee\'e9 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8.\par
+\par
+GIT_TRACE2_PERF\par
+\'c2 \'e4\'ee\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'e5 \'ea \'f2\'e5\'ea\'f1\'f2\'ee\'e2\'fb\'ec \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff\'ec, \'e4\'ee\'f1\'f2\'f3\'ef\'ed\'fb\'ec \'e2 GIT_TRACE2, \'fd\'f2\'ee\'f2 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0 \'e2\'fb\'e2\'ee\'e4\'e8\'f2 \'e4\'e0\'ed\'ed\'fb\'e5 \'e2 \'f4\'ee\'f0\'ec\'e0\'f2\'e5 \'f1\'ee \'f1\'f2\'ee\'eb\'e1\'f6\'e0\'ec\'e8 \'e4\'eb\'ff \'ef\'ee\'ed\'e8\'ec\'e0\'ed\'e8\'ff \'e2\'eb\'ee\'e6\'e5\'ed\'ed\'fb\'f5 \'ee\'e1\'eb\'e0\'f1\'f2\'e5\'e9. \'d1\'ec. GIT_TRACE2 \'e4\'eb\'ff \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'ff \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8 \'ee \'e4\'ee\'f1\'f2\'f3\'ef\'ed\'fb\'f5 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0\'f5 \'e2\'fb\'e2\'ee\'e4\'e0 \'f2\'f0\'e0\'f1\'f1\'e8\'f0\'ee\'e2\'ea\'e8 \'e8 \'e4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\'e0\'f6\'e8\'fe Trace2 \'e4\'eb\'ff \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'ff \'ef\'ee\'eb\'ed\'ee\'e9 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8.\par
+\par
+GIT_TRACE_REDACT\par
+\'cf\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \'ef\'f0\'e8 \'e0\'ea\'f2\'e8\'e2\'e0\'f6\'e8\'e8 \'f2\'f0\'e0\'f1\'f1\'e8\'f0\'ee\'e2\'ea\'e8 Git \'f0\'e5\'e4\'e0\'ea\'f2\'e8\'f0\'f3\'e5\'f2 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff \'f4\'e0\'e9\'eb\'ee\'e2 cookie, \'e7\'e0\'e3\'ee\'eb\'ee\'e2\'ea\'e0 \f1\lang1033\'ab\f0\lang1049\'c0\'e2\'f2\'ee\'f0\'e8\'e7\'e0\'f6\'e8\'ff\f1\lang1033\'bb, \f0\lang1049\'e7\'e0\'e3\'ee\'eb\'ee\'e2\'ea\'e0 \f1\lang1033\'abProxy-Authorization\'bb \f0\lang1049\'e8 URI \'f4\'e0\'e9\'eb\'ee\'e2 \'ef\'e0\'ea\'e5\'f2\'ee\'e2. \'d7\'f2\'ee\'e1\'fb \'ef\'f0\'e5\'e4\'ee\'f2\'e2\'f0\'e0\'f2\'e8\'f2\'fc \'f0\'e5\'e4\'e0\'ea\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5, \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'e5 \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 false.\par
+\par
+GIT_NO_REPLACE_OBJECTS\par
+\'cf\'f0\'e8 \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e5 \'e8 \'fd\'ea\'f1\'ef\'ee\'f0\'f2\'e5 \'fd\'f2\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb Git \'e8\'e3\'ed\'ee\'f0\'e8\'f0\'f3\'e5\'f2 \'f1\'f1\'fb\'eb\'ea\'e8 \'ed\'e0 \'e7\'e0\'ec\'e5\'ed\'f3 \'e8 \'ed\'e5 \'e7\'e0\'ec\'e5\'ed\'ff\'e5\'f2 \'ee\'e1\'fa\'e5\'ea\'f2\'fb Git.\par
+\par
+GIT_LITERAL_PATHSPECS\par
+\'c5\'f1\'eb\'e8 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 true, Git \'e1\'f3\'e4\'e5\'f2 \'e2\'ee\'f1\'ef\'f0\'e8\'ed\'e8\'ec\'e0\'f2\'fc \'e2\'f1\'e5 \'ef\'f3\'f2\'e8 \'e1\'f3\'ea\'e2\'e0\'eb\'fc\'ed\'ee, \'e0 \'ed\'e5 \'ea\'e0\'ea \'f8\'e0\'e1\'eb\'ee\'ed\'fb \'ef\'ee\'e4\'f1\'f2\'e0\'ed\'ee\'e2\'ee\'f7\'ed\'fb\'f5 \'e7\'ed\'e0\'ea\'ee\'e2. \'cd\'e0\'ef\'f0\'e8\'ec\'e5\'f0, \'ef\'f0\'e8 \'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'e8 GIT_LITERAL_PATHSPECS=1 git log -- '*.c' \'e1\'f3\'e4\'f3\'f2 \'ed\'e0\'e9\'e4\'e5\'ed\'fb \'ea\'ee\'ec\'ec\'e8\'f2\'fb, \'e7\'e0\'f2\'f0\'e0\'e3\'e8\'e2\'e0\'fe\'f9\'e8\'e5 \'ef\'f3\'f2\'fc *.c, \'e0 \'ed\'e5 \'eb\'fe\'e1\'fb\'e5 \'ef\'f3\'f2\'e8, \'ea\'ee\'f2\'ee\'f0\'fb\'ec \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'e5\'f2 \'f8\'e0\'e1\'eb\'ee\'ed \'ef\'ee\'e4\'f1\'f2\'e0\'ed\'ee\'e2\'ee\'f7\'ed\'ee\'e3\'ee \'e7\'ed\'e0\'ea\'e0 *.c. \'dd\'f2\'ee \'ec\'ee\'e6\'e5\'f2 \'e1\'fb\'f2\'fc \'ef\'ee\'eb\'e5\'e7\'ed\'ee, \'e5\'f1\'eb\'e8 \'e2\'fb \'ef\'e5\'f0\'e5\'e4\'e0\'b8\'f2\'e5 Git \'e1\'f3\'ea\'e2\'e0\'eb\'fc\'ed\'fb\'e5 \'ef\'f3\'f2\'e8 (\'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, \'ef\'f3\'f2\'e8, \'f0\'e0\'ed\'e5\'e5 \'ef\'e5\'f0\'e5\'e4\'e0\'ed\'ed\'fb\'e5 \'e2\'e0\'ec \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe git ls-tree, --raw \'e2\'fb\'e2\'ee\'e4\'e0 diff \'e8 \'f2. \'e4.).\par
+\par
+GIT_GLOB_PATHSPECS\par
+\'c5\'f1\'eb\'e8 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 true, Git \'e1\'f3\'e4\'e5\'f2 \'f0\'e0\'f1\'f1\'ec\'e0\'f2\'f0\'e8\'e2\'e0\'f2\'fc \'e2\'f1\'e5 \'ef\'f3\'f2\'e8 \'ea\'e0\'ea \'f8\'e0\'e1\'eb\'ee\'ed\'fb \'ef\'ee\'e4\'f1\'f2\'e0\'ed\'ee\'e2\'ea\'e8 (\'f2\'e0\'ea \'ed\'e0\'e7\'fb\'e2\'e0\'e5\'ec\'f3\'fe \'ec\'e0\'e3\'e8\'fe \f1\lang1033\'ab\f0\lang1049\'ef\'ee\'e4\'f1\'f2\'e0\'ed\'ee\'e2\'ea\'e8\f1\lang1033\'bb).\par
+\par
+GIT_NOGLOB_PATHSPECS\par
+\f0\lang1049\'c5\'f1\'eb\'e8 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 true, Git \'e1\'f3\'e4\'e5\'f2 \'f0\'e0\'f1\'f1\'ec\'e0\'f2\'f0\'e8\'e2\'e0\'f2\'fc \'e2\'f1\'e5 \'ef\'f3\'f2\'e8 \'ea\'e0\'ea \'eb\'e8\'f2\'e5\'f0\'e0\'eb\'fb (\'f2\'e0\'ea \'ed\'e0\'e7\'fb\'e2\'e0\'e5\'ec\'e0\'ff \f1\lang1033\'ab\f0\lang1049\'e1\'f3\'ea\'e2\'e0\'eb\'fc\'ed\'e0\'ff\f1\lang1033\'bb \f0\lang1049\'ec\'e0\'e3\'e8\'ff).\par
+\par
+GIT_ICASE_PATHSPECS\par
+\'c5\'f1\'eb\'e8 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 true, Git \'e1\'f3\'e4\'e5\'f2 \'f3\'f7\'e8\'f2\'fb\'e2\'e0\'f2\'fc \'f0\'e5\'e3\'e8\'f1\'f2\'f0 \'f1\'e8\'ec\'e2\'ee\'eb\'ee\'e2 \'e2\'ee \'e2\'f1\'e5\'f5 \'ef\'f3\'f2\'ff\'f5.\par
+\par
+GIT_NO_LAZY_FETCH\par
+\'c5\'f1\'eb\'e8 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 true, Git \'ed\'e5 \'e1\'f3\'e4\'e5\'f2 \'eb\'e5\'ed\'e8\'e2\'ee \'e7\'e0\'e3\'f0\'f3\'e6\'e0\'f2\'fc \'ed\'e5\'e4\'ee\'f1\'f2\'e0\'fe\'f9\'e8\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'f1 \'f3\'e4\'e0\'eb\'b8\'ed\'ed\'ee\'e3\'ee \'f1\'e5\'f0\'e2\'e5\'f0\'e0 \'ef\'ee \'e7\'e0\'ef\'f0\'ee\'f1\'f3.\par
+\par
+GIT_REFLOG_ACTION\par
+\'cf\'f0\'e8 \'ee\'e1\'ed\'ee\'e2\'eb\'e5\'ed\'e8\'e8 \'f1\'f1\'fb\'eb\'ea\'e8 \'f1\'ee\'e7\'e4\'e0\'fe\'f2\'f1\'ff \'e7\'e0\'ef\'e8\'f1\'e8 \'e6\'f3\'f0\'ed\'e0\'eb\'e0 \'f1\'f1\'fb\'eb\'ee\'ea, \'f7\'f2\'ee\'e1\'fb \'ee\'f2\'f1\'eb\'e5\'e6\'e8\'e2\'e0\'f2\'fc \'ef\'f0\'e8\'f7\'e8\'ed\'f3 \'ee\'e1\'ed\'ee\'e2\'eb\'e5\'ed\'e8\'ff \'f1\'f1\'fb\'eb\'ea\'e8 (\'ee\'e1\'fb\'f7\'ed\'ee \'fd\'f2\'ee \'e8\'ec\'ff \'ea\'ee\'ec\'e0\'ed\'e4\'fb \'e2\'fb\'f1\'ee\'ea\'ee\'e3\'ee \'f3\'f0\'ee\'e2\'ed\'ff, \'ea\'ee\'f2\'ee\'f0\'e0\'ff \'ee\'e1\'ed\'ee\'e2\'e8\'eb\'e0 \'f1\'f1\'fb\'eb\'ea\'f3), \'e0 \'f2\'e0\'ea\'e6\'e5 \'f1\'f2\'e0\'f0\'ee\'e5 \'e8 \'ed\'ee\'e2\'ee\'e5 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff \'f1\'f1\'fb\'eb\'ea\'e8. \'ca\'ee\'ec\'e0\'ed\'e4\'e0 Porcelain, \'ed\'e0\'ef\'e8\'f1\'e0\'ed\'ed\'e0\'ff \'ed\'e0 \'f1\'ea\'f0\'e8\'ef\'f2\'ee\'e2\'ee\'ec \'ff\'e7\'fb\'ea\'e5, \'ec\'ee\'e6\'e5\'f2 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'e2\'f1\'ef\'ee\'ec\'ee\'e3\'e0\'f2\'e5\'eb\'fc\'ed\'f3\'fe \'f4\'f3\'ed\'ea\'f6\'e8\'fe set_reflog_action \'e2 git-sh-setup \'e4\'eb\'ff \'ef\'f0\'e8\'f1\'e2\'ee\'e5\'ed\'e8\'ff \'e8\'ec\'e5\'ed\'e8 \'fd\'f2\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9, \'ea\'ee\'e3\'e4\'e0 \'ee\'ed\'e0 \'e2\'fb\'e7\'fb\'e2\'e0\'e5\'f2\'f1\'ff \'ea\'ee\'ed\'e5\'f7\'ed\'fb\'ec \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'e5\'ec \'e2 \'ea\'e0\'f7\'e5\'f1\'f2\'e2\'e5 \'ea\'ee\'ec\'e0\'ed\'e4\'fb \'e2\'e5\'f0\'f5\'ed\'e5\'e3\'ee \'f3\'f0\'ee\'e2\'ed\'ff, \'f7\'f2\'ee\'e1\'fb \'ee\'ed\'ee \'e1\'fb\'eb\'ee \'e7\'e0\'ef\'e8\'f1\'e0\'ed\'ee \'e2 \'e6\'f3\'f0\'ed\'e0\'eb \'f1\'f1\'fb\'eb\'ee\'ea.\par
+\par
+GIT_REF_PARANOIA\par
+\'c5\'f1\'eb\'e8 \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 false, \'e8\'e3\'ed\'ee\'f0\'e8\'f0\'f3\'e9\'f2\'e5 \'ed\'e5\'f0\'e0\'e1\'ee\'f2\'e0\'fe\'f9\'e8\'e5 \'e8\'eb\'e8 \'ed\'e5\'ef\'f0\'e0\'e2\'e8\'eb\'fc\'ed\'ee \'ed\'e0\'e7\'e2\'e0\'ed\'ed\'fb\'e5 \'f1\'f1\'fb\'eb\'ea\'e8 \'ef\'f0\'e8 \'ef\'e5\'f0\'e5\'e1\'ee\'f0\'e5 \'f1\'ef\'e8\'f1\'ea\'ee\'e2 \'f1\'f1\'fb\'eb\'ee\'ea. \'ce\'e1\'fb\'f7\'ed\'ee Git \'ef\'fb\'f2\'e0\'e5\'f2\'f1\'ff \'e2\'ea\'eb\'fe\'f7\'e8\'f2\'fc \'e2\'f1\'e5 \'f2\'e0\'ea\'e8\'e5 \'f1\'f1\'fb\'eb\'ea\'e8, \'f7\'f2\'ee \'ec\'ee\'e6\'e5\'f2 \'ef\'f0\'e8\'e2\'e5\'f1\'f2\'e8 \'ea \'f1\'e1\'ee\'fe \'ed\'e5\'ea\'ee\'f2\'ee\'f0\'fb\'f5 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e9. \'ce\'e1\'fb\'f7\'ed\'ee \'fd\'f2\'ee \'ef\'f0\'e5\'e4\'ef\'ee\'f7\'f2\'e8\'f2\'e5\'eb\'fc\'ed\'e5\'e5, \'f2\'e0\'ea \'ea\'e0\'ea \'ef\'ee\'f2\'e5\'ed\'f6\'e8\'e0\'eb\'fc\'ed\'ee \'f0\'e0\'e7\'f0\'f3\'f8\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'e5 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e8 (\'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, git-prune[1]) \'eb\'f3\'f7\'f8\'e5 \'ef\'f0\'e5\'f0\'e2\'e0\'f2\'fc, \'f7\'e5\'ec \'e8\'e3\'ed\'ee\'f0\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'ed\'e5\'f0\'e0\'e1\'ee\'f2\'e0\'fe\'f9\'e8\'e5 \'f1\'f1\'fb\'eb\'ea\'e8 (\'e8, \'f1\'eb\'e5\'e4\'ee\'e2\'e0\'f2\'e5\'eb\'fc\'ed\'ee, \'f1\'f7\'e8\'f2\'e0\'f2\'fc \'e8\'f1\'f2\'ee\'f0\'e8\'fe, \'ed\'e0 \'ea\'ee\'f2\'ee\'f0\'f3\'fe \'ee\'ed\'e8 \'f3\'ea\'e0\'e7\'fb\'e2\'e0\'fe\'f2, \'ed\'e5 \'e7\'e0\'f1\'eb\'f3\'e6\'e8\'e2\'e0\'fe\'f9\'e5\'e9 \'f1\'ee\'f5\'f0\'e0\'ed\'e5\'ed\'e8\'ff). \'c7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \f2\emdash  1 (\f0\'f2\'ee \'e5\'f1\'f2\'fc \'e1\'f3\'e4\'fc\'f2\'e5 \'ef\'e0\'f0\'e0\'ed\'ee\'e8\'ea\'e0\'ec\'e8 \'e8 \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'e9\'f2\'e5 \'e2\'f1\'e5 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e8). \'ce\'e1\'fb\'f7\'ed\'ee \'ed\'e5\'f2 \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee\'f1\'f2\'e8 \'f3\'f1\'f2\'e0\'ed\'e0\'e2\'eb\'e8\'e2\'e0\'f2\'fc \'e4\'eb\'ff \'fd\'f2\'ee\'e3\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 0, \'ed\'ee \'fd\'f2\'ee \'ec\'ee\'e6\'e5\'f2 \'e1\'fb\'f2\'fc \'ef\'ee\'eb\'e5\'e7\'ed\'ee \'ef\'f0\'e8 \'ef\'ee\'ef\'fb\'f2\'ea\'e5 \'e2\'ee\'f1\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'e4\'e0\'ed\'ed\'fb\'e5 \'e8\'e7 \'ef\'ee\'e2\'f0\'e5\'e6\'e4\'b8\'ed\'ed\'ee\'e3\'ee \'f5\'f0\'e0\'ed\'e8\'eb\'e8\'f9\'e0.\par
+\par
+GIT_COMMIT_GRAPH_PARANOIA\par
+\'cf\'f0\'e8 \'e7\'e0\'e3\'f0\'f3\'e7\'ea\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'e0 \'ea\'ee\'ec\'ec\'e8\'f2\'e0 \'e8\'e7 \'e3\'f0\'e0\'f4\'e0 \'ea\'ee\'ec\'ec\'e8\'f2\'ee\'e2 Git \'ef\'f0\'ee\'e2\'e5\'f0\'ff\'e5\'f2 \'ed\'e0\'eb\'e8\'f7\'e8\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'e0 \'e2 \'e1\'e0\'e7\'e5 \'e4\'e0\'ed\'ed\'fb\'f5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2. \'dd\'f2\'ee \'e4\'e5\'eb\'e0\'e5\'f2\'f1\'ff \'e4\'eb\'ff \'f2\'ee\'e3\'ee, \'f7\'f2\'ee\'e1\'fb \'e8\'e7\'e1\'e5\'e6\'e0\'f2\'fc \'ef\'f0\'ee\'e1\'eb\'e5\'ec \'f1 \'f3\'f1\'f2\'e0\'f0\'e5\'e2\'f8\'e8\'ec\'e8 \'e3\'f0\'e0\'f4\'e0\'ec\'e8 \'ea\'ee\'ec\'ec\'e8\'f2\'ee\'e2, \'f1\'ee\'e4\'e5\'f0\'e6\'e0\'f9\'e8\'ec\'e8 \'f1\'f1\'fb\'eb\'ea\'e8 \'ed\'e0 \'f3\'e6\'e5 \'f3\'e4\'e0\'eb\'b8\'ed\'ed\'fb\'e5 \'ea\'ee\'ec\'ec\'e8\'f2\'fb, \'ed\'ee \'ef\'f0\'e8\'e2\'ee\'e4\'e8\'f2 \'ea \'f1\'ed\'e8\'e6\'e5\'ed\'e8\'fe \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'e8.\par
+\par
+\'c7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \f2\emdash  \f1\lang1033\'abfalse\'bb, \f0\lang1049\'f7\'f2\'ee \'ee\'f2\'ea\'eb\'fe\'f7\'e0\'e5\'f2 \'e2\'fb\'f8\'e5\'f3\'ef\'ee\'ec\'ff\'ed\'f3\'f2\'ee\'e5 \'ef\'ee\'e2\'e5\'e4\'e5\'ed\'e8\'e5. \'c5\'f1\'eb\'e8 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \f1\lang1033\'abtrue\'bb, \f0\lang1049\'e1\'f3\'e4\'e5\'f2 \'e2\'ea\'eb\'fe\'f7\'e5\'ed\'e0 \'ef\'f0\'ee\'e2\'e5\'f0\'ea\'e0 \'f1\'f3\'f9\'e5\'f1\'f2\'e2\'ee\'e2\'e0\'ed\'e8\'ff, \'f7\'f2\'ee\'e1\'fb \'f3\'f1\'f2\'e0\'f0\'e5\'e2\'f8\'e8\'e5 \'ea\'ee\'ec\'ec\'e8\'f2\'fb \'ed\'e8\'ea\'ee\'e3\'e4\'e0 \'ed\'e5 \'e2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'eb\'e8\'f1\'fc \'e8\'e7 \'e3\'f0\'e0\'f4\'e0 \'ea\'ee\'ec\'ec\'e8\'f2\'ee\'e2 \'e7\'e0 \'f1\'f7\'b8\'f2 \'f1\'ed\'e8\'e6\'e5\'ed\'e8\'ff \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'e8.\par
+\par
+GIT_ALLOW_PROTOCOL\par
+\'c5\'f1\'eb\'e8 \'f3\'ea\'e0\'e7\'e0\'ed \'f1\'ef\'e8\'f1\'ee\'ea \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'ee\'e2, \'f0\'e0\'e7\'e4\'e5\'eb\'b8\'ed\'ed\'fb\'f5 \'e4\'e2\'ee\'e5\'f2\'ee\'f7\'e8\'ff\'ec\'e8, \'f2\'ee protocol.allow \'e1\'f3\'e4\'e5\'f2 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed \'ed\'e0 never, \'e8 \'e4\'eb\'ff \'ea\'e0\'e6\'e4\'ee\'e3\'ee \'e8\'e7 \'ef\'e5\'f0\'e5\'f7\'e8\'f1\'eb\'e5\'ed\'ed\'fb\'f5 \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'ee\'e2 protocol.<name>.allow \'e1\'f3\'e4\'e5\'f2 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed \'ed\'e0 always (\'ef\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'ff \'eb\'fe\'e1\'f3\'fe \'f1\'f3\'f9\'e5\'f1\'f2\'e2\'f3\'fe\'f9\'f3\'fe \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'fe). \'cf\'ee\'e4\'f0\'ee\'e1\'ed\'e5\'e5 \'f1\'ec. \'ee\'ef\'e8\'f1\'e0\'ed\'e8\'e5 protocol.allow \'e2 git-config[1].\par
+\par
+GIT_PROTOCOL_FROM_USER\par
+\'d3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'e5 \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 false, \'f7\'f2\'ee\'e1\'fb \'ef\'f0\'e5\'e4\'ee\'f2\'e2\'f0\'e0\'f2\'e8\'f2\'fc \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5 \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'ee\'e2 fetch/push/clone, \'ed\'e0\'f1\'f2\'f0\'ee\'e5\'ed\'ed\'fb\'f5 \'e2 \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'e8 user . \'dd\'f2\'ee \'ef\'ee\'eb\'e5\'e7\'ed\'ee \'e4\'eb\'ff \'ee\'e3\'f0\'e0\'ed\'e8\'f7\'e5\'ed\'e8\'ff \'f0\'e5\'ea\'f3\'f0\'f1\'e8\'e2\'ed\'ee\'e9 \'e8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'e8 \'ef\'ee\'e4\'ec\'ee\'e4\'f3\'eb\'e5\'e9 \'e8\'e7 \'ed\'e5\'ed\'e0\'e4\'b8\'e6\'ed\'ee\'e3\'ee \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff \'e8\'eb\'e8 \'e4\'eb\'ff \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ef\'e5\'f0\'e5\'e4\'e0\'fe\'f2 \'ef\'ee\'f2\'e5\'ed\'f6\'e8\'e0\'eb\'fc\'ed\'ee \'ed\'e5\'ed\'e0\'e4\'b8\'e6\'ed\'fb\'e5 URL-\'e0\'e4\'f0\'e5\'f1\'e0 \'ea\'ee\'ec\'e0\'ed\'e4\'e0\'ec git. \'cf\'ee\'e4\'f0\'ee\'e1\'ed\'e5\'e5 \'f1\'ec. git-config[1].\par
+\par
+GIT_PROTOCOL\par
+\'d2\'ee\'eb\'fc\'ea\'ee \'e4\'eb\'ff \'e2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e5\'e3\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'ff. \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'ef\'f0\'e8 \'ee\'e1\'ec\'e5\'ed\'e5 \'e4\'e0\'ed\'ed\'fb\'ec\'e8 \'ef\'ee \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'f3. \'d1\'ee\'e4\'e5\'f0\'e6\'e8\'f2 \'f0\'e0\'e7\'e4\'e5\'eb\'b8\'ed\'ed\'fb\'e9 \'e4\'e2\'ee\'e5\'f2\'ee\'f7\'e8\'e5\'ec : \'f1\'ef\'e8\'f1\'ee\'ea \'ea\'eb\'fe\'f7\'e5\'e9 \'f1 \'ed\'e5\'ee\'e1\'ff\'e7\'e0\'f2\'e5\'eb\'fc\'ed\'fb\'ec\'e8 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff\'ec\'e8 <\'ea\'eb\'fe\'f7>[=<\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5>]. \'cd\'e0\'eb\'e8\'f7\'e8\'e5 \'ed\'e5\'e8\'e7\'e2\'e5\'f1\'f2\'ed\'fb\'f5 \'ea\'eb\'fe\'f7\'e5\'e9 \'e8 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e9 \'f1\'eb\'e5\'e4\'f3\'e5\'f2 \'e8\'e3\'ed\'ee\'f0\'e8\'f0\'ee\'e2\'e0\'f2\'fc.\par
+\par
+\'ce\'e1\'f0\'e0\'f2\'e8\'f2\'e5 \'e2\'ed\'e8\'ec\'e0\'ed\'e8\'e5, \'f7\'f2\'ee \'e4\'eb\'ff \'ef\'e5\'f0\'e5\'e4\'e0\'f7\'e8 \'fd\'f2\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'ef\'ee \'ed\'e5\'ea\'ee\'f2\'ee\'f0\'fb\'ec \'ea\'e0\'ed\'e0\'eb\'e0\'ec \'f1\'e2\'ff\'e7\'e8 \'ec\'ee\'e6\'e5\'f2 \'ef\'ee\'f2\'f0\'e5\'e1\'ee\'e2\'e0\'f2\'fc\'f1\'ff \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e0 \'f1\'e5\'f0\'e2\'e5\'f0\'ee\'e2. \'ce\'ed\'e0 \'e1\'f3\'e4\'e5\'f2 \'ef\'e5\'f0\'e5\'e4\'e0\'e2\'e0\'f2\'fc\'f1\'ff \'e0\'e2\'f2\'ee\'ec\'e0\'f2\'e8\'f7\'e5\'f1\'ea\'e8 \'ef\'f0\'e8 \'e4\'ee\'f1\'f2\'f3\'ef\'e5 \'ea \'eb\'ee\'ea\'e0\'eb\'fc\'ed\'fb\'ec \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff\'ec (\'f2. \'e5. {{\field{\*\fldinst{HYPERLINK file:// }}{\fldrslt{file://\ul0\cf0}}}}\f0\fs28  \'e8\'eb\'e8 \'ef\'f3\'f2\'e8 \'ea \'f4\'e0\'e9\'eb\'ee\'e2\'ee\'e9 \'f1\'e8\'f1\'f2\'e5\'ec\'e5), \'e0 \'f2\'e0\'ea\'e6\'e5 \'ef\'ee \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'f3 git://. \'c4\'eb\'ff git-over-http \'ee\'ed\'e0 \'e4\'ee\'eb\'e6\'ed\'e0 \'f0\'e0\'e1\'ee\'f2\'e0\'f2\'fc \'e0\'e2\'f2\'ee\'ec\'e0\'f2\'e8\'f7\'e5\'f1\'ea\'e8 \'e2 \'e1\'ee\'eb\'fc\'f8\'e8\'ed\'f1\'f2\'e2\'e5 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e9, \'ed\'ee \'f1\'ec. \'ee\'e1\'f1\'f3\'e6\'e4\'e5\'ed\'e8\'e5 \'e2 git-http-backend[1]. \'c4\'eb\'ff git-over-ssh \'ec\'ee\'e6\'e5\'f2 \'ef\'ee\'f2\'f0\'e5\'e1\'ee\'e2\'e0\'f2\'fc\'f1\'ff \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e0 ssh-\'f1\'e5\'f0\'e2\'e5\'f0\'e0, \'f7\'f2\'ee\'e1\'fb \'ea\'eb\'e8\'e5\'ed\'f2\'fb \'ec\'ee\'e3\'eb\'e8 \'ef\'e5\'f0\'e5\'e4\'e0\'e2\'e0\'f2\'fc \'fd\'f2\'f3 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'f3\'fe (\'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe AcceptEnv GIT_PROTOCOL \'e2 OpenSSH).\par
+\par
+\'dd\'f2\'e0 \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e0 \'ff\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'ed\'e5\'ee\'e1\'ff\'e7\'e0\'f2\'e5\'eb\'fc\'ed\'ee\'e9. \'c5\'f1\'eb\'e8 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'ed\'e5 \'f0\'e0\'f1\'ef\'f0\'ee\'f1\'f2\'f0\'e0\'ed\'ff\'e5\'f2\'f1\'ff, \'f2\'ee \'ea\'eb\'e8\'e5\'ed\'f2\'fb \'e1\'f3\'e4\'f3\'f2 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'e8\'f1\'f5\'ee\'e4\'ed\'fb\'e9 \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb \f1\lang1033\'abv0\'bb (\f0\lang1049\'ed\'ee \'ec\'ee\'e3\'f3\'f2 \'ed\'e5 \'ef\'ee\'eb\'f3\'f7\'e8\'f2\'fc \'ed\'e5\'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'f3\'eb\'f3\'f7\'f8\'e5\'ed\'e8\'ff \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'e8 \'e8\'eb\'e8 \'f4\'f3\'ed\'ea\'f6\'e8\'e8). \'c2 \'ed\'e0\'f1\'f2\'ee\'ff\'f9\'e5\'e5 \'e2\'f0\'e5\'ec\'ff \'fd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'e2\'eb\'e8\'ff\'e5\'f2 \'f2\'ee\'eb\'fc\'ea\'ee \'ed\'e0 \'ea\'eb\'ee\'ed\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5 \'e8 \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'e5 \'e4\'e0\'ed\'ed\'fb\'f5; \'ee\'ed\'e0 \'ef\'ee\'ea\'e0 \'ed\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'e4\'eb\'ff \'ee\'f2\'ef\'f0\'e0\'e2\'ea\'e8 \'e4\'e0\'ed\'ed\'fb\'f5 (\'ed\'ee \'ec\'ee\'e6\'e5\'f2 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc\'f1\'ff \'e2 \'e1\'f3\'e4\'f3\'f9\'e5\'ec).\par
+\par
+GIT_OPTIONAL_LOCKS\par
+\'c5\'f1\'eb\'e8 \'e4\'eb\'ff \'fd\'f2\'ee\'e9 \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'f1\'f0\'e5\'e4\'fb \'e7\'e0\'e4\'e0\'ed\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 false, Git \'e7\'e0\'e2\'e5\'f0\'f8\'e8\'f2 \'eb\'fe\'e1\'f3\'fe \'e7\'e0\'ef\'f0\'ee\'f8\'e5\'ed\'ed\'f3\'fe \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'fe \'e1\'e5\'e7 \'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff \'e4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'f5 \'ef\'ee\'e4-\'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e9, \'f2\'f0\'e5\'e1\'f3\'fe\'f9\'e8\'f5 \'e1\'eb\'ee\'ea\'e8\'f0\'ee\'e2\'ea\'e8. \'cd\'e0\'ef\'f0\'e8\'ec\'e5\'f0, \'fd\'f2\'ee \'ef\'f0\'e5\'e4\'ee\'f2\'e2\'f0\'e0\'f2\'e8\'f2 git status \'ee\'e1\'ed\'ee\'e2\'eb\'e5\'ed\'e8\'e5 \'e8\'ed\'e4\'e5\'ea\'f1\'e0 \'e2 \'ea\'e0\'f7\'e5\'f1\'f2\'e2\'e5 \'ef\'ee\'e1\'ee\'f7\'ed\'ee\'e3\'ee \'fd\'f4\'f4\'e5\'ea\'f2\'e0. \'dd\'f2\'ee \'ef\'ee\'eb\'e5\'e7\'ed\'ee \'e4\'eb\'ff \'ef\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'e2, \'f0\'e0\'e1\'ee\'f2\'e0\'fe\'f9\'e8\'f5 \'e2 \'f4\'ee\'ed\'ee\'e2\'ee\'ec \'f0\'e5\'e6\'e8\'ec\'e5, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ed\'e5 \'f5\'ee\'f2\'ff\'f2 \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'ea\'ee\'ed\'f4\'eb\'e8\'ea\'f2\'fb \'e1\'eb\'ee\'ea\'e8\'f0\'ee\'e2\'ea\'e8 \'f1 \'e4\'f0\'f3\'e3\'e8\'ec\'e8 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'ff\'ec\'e8 \'e2 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e8. \'cf\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 1.\par
+\par
+GIT_REDIRECT_STDIN\par
+GIT_REDIRECT_STDOUT\par
+GIT_REDIRECT_STDERR\par
+\'d2\'ee\'eb\'fc\'ea\'ee \'e4\'eb\'ff Windows: \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ef\'e5\'f0\'e5\'ed\'e0\'ef\'f0\'e0\'e2\'eb\'ff\'f2\'fc \'f1\'f2\'e0\'ed\'e4\'e0\'f0\'f2\'ed\'fb\'e5 \'e4\'e5\'f1\'ea\'f0\'e8\'ef\'f2\'ee\'f0\'fb \'e2\'e2\'ee\'e4\'e0/\'e2\'fb\'e2\'ee\'e4\'e0/\'ee\'f8\'e8\'e1\'ee\'ea \'ed\'e0 \'ef\'f3\'f2\'e8, \'f3\'ea\'e0\'e7\'e0\'ed\'ed\'fb\'e5 \'e2 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'f5 \'f1\'f0\'e5\'e4\'fb. \'dd\'f2\'ee \'ee\'f1\'ee\'e1\'e5\'ed\'ed\'ee \'ef\'ee\'eb\'e5\'e7\'ed\'ee \'e2 \'ec\'ed\'ee\'e3\'ee\'ef\'ee\'f2\'ee\'f7\'ed\'fb\'f5 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff\'f5, \'e3\'e4\'e5 \'ea\'e0\'ed\'ee\'ed\'e8\'f7\'e5\'f1\'ea\'e8\'e9 \'f1\'ef\'ee\'f1\'ee\'e1 \'ef\'e5\'f0\'e5\'e4\'e0\'f7\'e8 \'f1\'f2\'e0\'ed\'e4\'e0\'f0\'f2\'ed\'fb\'f5 \'e4\'e5\'f1\'ea\'f0\'e8\'ef\'f2\'ee\'f0\'ee\'e2 \'f7\'e5\'f0\'e5\'e7 CreateProcess() \'ed\'e5\'e2\'ee\'e7\'ec\'ee\'e6\'e5\'ed, \'ef\'ee\'f1\'ea\'ee\'eb\'fc\'ea\'f3 \'e4\'eb\'ff \'fd\'f2\'ee\'e3\'ee \'e4\'e5\'f1\'ea\'f0\'e8\'ef\'f2\'ee\'f0\'fb \'e4\'ee\'eb\'e6\'ed\'fb \'e1\'fb\'f2\'fc \'ef\'ee\'ec\'e5\'f7\'e5\'ed\'fb \'ea\'e0\'ea \'ed\'e0\'f1\'eb\'e5\'e4\'f3\'e5\'ec\'fb\'e5 (\'e8, \'f1\'eb\'e5\'e4\'ee\'e2\'e0\'f2\'e5\'eb\'fc\'ed\'ee, \'ea\'e0\'e6\'e4\'fb\'e9 \'ef\'ee\'f0\'ee\'e6\'e4\'b8\'ed\'ed\'fb\'e9 \'ef\'f0\'ee\'f6\'e5\'f1\'f1 \'e1\'f3\'e4\'e5\'f2 \'ed\'e0\'f1\'eb\'e5\'e4\'ee\'e2\'e0\'f2\'fc \'e8\'f5, \'f7\'f2\'ee \'ec\'ee\'e6\'e5\'f2 \'e1\'eb\'ee\'ea\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'ee\'e1\'fb\'f7\'ed\'fb\'e5 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e8 Git). \'ce\'f1\'ed\'ee\'e2\'ed\'ee\'e5 \'ed\'e0\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \f2\emdash  \f0\'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5 \'e8\'ec\'e5\'ed\'ee\'e2\'e0\'ed\'ed\'fb\'f5 \'ea\'e0\'ed\'e0\'eb\'ee\'e2 \'e4\'eb\'ff \'f1\'e2\'ff\'e7\'e8 (\'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, {{\field{\*\fldinst{HYPERLINK "\\\\\\\\.\\\\pipe\\\\my-git-stdin-123"}}{\fldrslt{\\\\.\\pipe\\my-git-stdin-123\ul0\cf0}}}}\f0\fs28 ).\par
+\par
+\'cf\'ee\'e4\'e4\'e5\'f0\'e6\'e8\'e2\'e0\'fe\'f2\'f1\'ff \'e4\'e2\'e0 \'f1\'ef\'e5\'f6\'e8\'e0\'eb\'fc\'ed\'fb\'f5 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff: off \'ef\'f0\'ee\'f1\'f2\'ee \'e7\'e0\'ea\'f0\'ee\'e5\'f2 \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e8\'e9 \'f1\'f2\'e0\'ed\'e4\'e0\'f0\'f2\'ed\'fb\'e9 \'ef\'ee\'f2\'ee\'ea, \'e0 \'e5\'f1\'eb\'e8 GIT_REDIRECT_STDERR \'f0\'e0\'e2\'ed\'ee 2>&1, \'f2\'ee \'f1\'f2\'e0\'ed\'e4\'e0\'f0\'f2\'ed\'fb\'e9 \'ef\'ee\'f2\'ee\'ea \'ee\'f8\'e8\'e1\'ee\'ea \'e1\'f3\'e4\'e5\'f2 \'ef\'e5\'f0\'e5\'ed\'e0\'ef\'f0\'e0\'e2\'eb\'e5\'ed \'e2 \'f2\'ee\'f2 \'e6\'e5 \'ef\'ee\'f2\'ee\'ea, \'f7\'f2\'ee \'e8 \'f1\'f2\'e0\'ed\'e4\'e0\'f0\'f2\'ed\'fb\'e9 \'ef\'ee\'f2\'ee\'ea \'e2\'fb\'e2\'ee\'e4\'e0.\par
+\par
+GIT_PRINT_SHA1_ELLIPSIS (\'f3\'f1\'f2\'e0\'f0\'e5\'eb\'ee)\par
+\'c5\'f1\'eb\'e8 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 yes, \'ef\'ee\'f1\'eb\'e5 (\'f1\'ee\'ea\'f0\'e0\'f9\'b8\'ed\'ed\'ee\'e3\'ee) \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff SHA-1 \'e2\'fb\'e2\'ee\'e4\'e8\'f2\'f1\'ff \'ec\'ed\'ee\'e3\'ee\'f2\'ee\'f7\'e8\'e5. \'dd\'f2\'ee \'e2\'eb\'e8\'ff\'e5\'f2 \'ed\'e0 \'ee\'f2\'ee\'e1\'f0\'e0\'e6\'e5\'ed\'e8\'e5 \'ee\'f2\'f1\'ee\'e5\'e4\'e8\'ed\'b8\'ed\'ed\'fb\'f5 HEAD (git-checkout[1]) \'e8 \'ed\'e5\'ee\'e1\'f0\'e0\'e1\'ee\'f2\'e0\'ed\'ed\'fb\'e9 \'e2\'fb\'e2\'ee\'e4 \'f0\'e0\'e7\'eb\'e8\'f7\'e8\'e9 (git-diff[1]). \'c2\'fb\'e2\'ee\'e4 \'ec\'ed\'ee\'e3\'ee\'f2\'ee\'f7\'e8\'ff \'e2 \'f3\'ef\'ee\'ec\'ff\'ed\'f3\'f2\'fb\'f5 \'f1\'eb\'f3\'f7\'e0\'ff\'f5 \'e1\'ee\'eb\'fc\'f8\'e5 \'ed\'e5 \'f1\'f7\'e8\'f2\'e0\'e5\'f2\'f1\'ff \'f6\'e5\'eb\'e5\'f1\'ee\'ee\'e1\'f0\'e0\'e7\'ed\'fb\'ec, \'e8 \'ef\'ee\'e4\'e4\'e5\'f0\'e6\'ea\'e0 \'fd\'f2\'ee\'e3\'ee, \'e2\'e5\'f0\'ee\'ff\'f2\'ed\'ee, \'e1\'f3\'e4\'e5\'f2 \'f3\'e4\'e0\'eb\'e5\'ed\'e0 \'e2 \'ee\'e1\'ee\'e7\'f0\'e8\'ec\'ee\'ec \'e1\'f3\'e4\'f3\'f9\'e5\'ec (\'e2\'ec\'e5\'f1\'f2\'e5 \'f1 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9).\par
+\par
+GIT_ADVICE\par
+\'c5\'f1\'eb\'e8 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 0, \'f2\'ee \'e2\'f1\'e5 \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'f1 \'f0\'e5\'ea\'ee\'ec\'e5\'ed\'e4\'e0\'f6\'e8\'ff\'ec\'e8 \'e1\'f3\'e4\'f3\'f2 \'ee\'f2\'ea\'eb\'fe\'f7\'e5\'ed\'fb. \'dd\'f2\'e8 \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'ef\'f0\'e5\'e4\'ed\'e0\'e7\'ed\'e0\'f7\'e5\'ed\'fb \'e4\'eb\'ff \'f2\'ee\'e3\'ee, \'f7\'f2\'ee\'e1\'fb \'e4\'e0\'e2\'e0\'f2\'fc \'ef\'ee\'e4\'f1\'ea\'e0\'e7\'ea\'e8 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'ff\'ec, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ec\'ee\'e3\'f3\'f2 \'ef\'ee\'ec\'ee\'f7\'fc \'e8\'ec \'e2\'fb\'e9\'f2\'e8 \'e8\'e7 \'e7\'e0\'f2\'f0\'f3\'e4\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'f5 \'f1\'e8\'f2\'f3\'e0\'f6\'e8\'e9 \'e8\'eb\'e8 \'e2\'ee\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc\'f1\'ff \'ed\'ee\'e2\'fb\'ec\'e8 \'f4\'f3\'ed\'ea\'f6\'e8\'ff\'ec\'e8. \'cf\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'e8 \'ec\'ee\'e3\'f3\'f2 \'ee\'f2\'ea\'eb\'fe\'f7\'e0\'f2\'fc \'ee\'f2\'e4\'e5\'eb\'fc\'ed\'fb\'e5 \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe \'ea\'eb\'fe\'f7\'e5\'e9 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8 advice.*. \'dd\'f2\'e8 \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'ec\'ee\'e3\'f3\'f2 \'ec\'e5\'f8\'e0\'f2\'fc \'f0\'e0\'e1\'ee\'f2\'e5 \'e8\'ed\'f1\'f2\'f0\'f3\'ec\'e5\'ed\'f2\'ee\'e2, \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'fe\'f9\'e8\'f5 \'ef\'f0\'ee\'f6\'e5\'f1\'f1\'fb Git, \'ef\'ee\'fd\'f2\'ee\'ec\'f3 \'e4\'eb\'ff \'ee\'f2\'ea\'eb\'fe\'f7\'e5\'ed\'e8\'ff \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'e9 \'e4\'ee\'f1\'f2\'f3\'ef\'ed\'e0 \'fd\'f2\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff. (\'d2\'e0\'ea\'e6\'e5 \'e4\'ee\'f1\'f2\'f3\'ef\'ed\'e0 \'e3\'eb\'ee\'e1\'e0\'eb\'fc\'ed\'e0\'ff \'ee\'ef\'f6\'e8\'ff --no-advice, \'ed\'ee \'f1\'f2\'e0\'f0\'fb\'e5 \'e2\'e5\'f0\'f1\'e8\'e8 Git \'ec\'ee\'e3\'f3\'f2 \'e2\'fb\'e4\'e0\'e2\'e0\'f2\'fc \'ee\'f8\'e8\'e1\'ea\'f3, \'e5\'f1\'eb\'e8 \'fd\'f2\'e0 \'ee\'ef\'f6\'e8\'ff \'ed\'e5 \'ef\'ee\'e4\'e4\'e5\'f0\'e6\'e8\'e2\'e0\'e5\'f2\'f1\'ff. \'cf\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f1\'f0\'e5\'e4\'fb \'e1\'f3\'e4\'e5\'f2 \'e8\'e3\'ed\'ee\'f0\'e8\'f0\'ee\'e2\'e0\'f2\'fc\'f1\'ff \'e2\'e5\'f0\'f1\'e8\'ff\'ec\'e8 Git, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'e5\'e5 \'ed\'e5 \'ef\'ee\'e4\'e4\'e5\'f0\'e6\'e8\'e2\'e0\'fe\'f2.)\par
+\par
+\'ce\'e1\'f1\'f3\'e6\'e4\'e5\'ed\'e8\'e5\par
+\'c1\'ee\'eb\'e5\'e5 \'ef\'ee\'e4\'f0\'ee\'e1\'ed\'f3\'fe \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'fe \'ec\'ee\'e6\'ed\'ee \'ed\'e0\'e9\'f2\'e8 \'e2 \'e3\'eb\'e0\'e2\'e5 \f1\lang1033\'ab\f0\lang1049\'ca\'ee\'ed\'f6\'e5\'ef\'f6\'e8\'e8 Git\f1\lang1033\'bb \f0\lang1049\'f0\'f3\'ea\'ee\'e2\'ee\'e4\'f1\'f2\'e2\'e0 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'ff \'e8 \'f0\'f3\'ea\'ee\'e2\'ee\'e4\'f1\'f2\'e2\'e5 \'ef\'ee gitcore[7].\par
+\par
+\'cf\'f0\'ee\'e5\'ea\'f2 Git \'ee\'e1\'fb\'f7\'ed\'ee \'f1\'ee\'f1\'f2\'ee\'e8\'f2 \'e8\'e7 \'f0\'e0\'e1\'ee\'f7\'e5\'e3\'ee \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'e0 \'f1 \'ef\'ee\'e4\'ea\'e0\'f2\'e0\'eb\'ee\'e3\'ee\'ec .git \'ed\'e0 \'e2\'e5\'f0\'f5\'ed\'e5\'ec \'f3\'f0\'ee\'e2\'ed\'e5. \'ca\'e0\'f2\'e0\'eb\'ee\'e3 .git \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'f2, \'ef\'ee\'ec\'e8\'ec\'ee \'ef\'f0\'ee\'f7\'e5\'e3\'ee, \'f1\'e6\'e0\'f2\'f3\'fe \'e1\'e0\'e7\'f3 \'e4\'e0\'ed\'ed\'fb\'f5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2, \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'ff\'fe\'f9\'f3\'fe \'ef\'ee\'eb\'ed\'f3\'fe \'e8\'f1\'f2\'ee\'f0\'e8\'fe \'ef\'f0\'ee\'e5\'ea\'f2\'e0, \'f4\'e0\'e9\'eb \f1\lang1033\'ab\f0\lang1049\'e8\'ed\'e4\'e5\'ea\'f1\f1\lang1033\'bb, \f0\lang1049\'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'f1\'e2\'ff\'e7\'fb\'e2\'e0\'e5\'f2 \'fd\'f2\'f3 \'e8\'f1\'f2\'ee\'f0\'e8\'fe \'f1 \'f2\'e5\'ea\'f3\'f9\'e8\'ec \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'fb\'ec \'f0\'e0\'e1\'ee\'f7\'e5\'e3\'ee \'e4\'e5\'f0\'e5\'e2\'e0, \'e8 \'e8\'ec\'e5\'ed\'ee\'e2\'e0\'ed\'ed\'fb\'e5 \'f3\'ea\'e0\'e7\'e0\'f2\'e5\'eb\'e8 \'ed\'e0 \'fd\'f2\'f3 \'e8\'f1\'f2\'ee\'f0\'e8\'fe, \'f2\'e0\'ea\'e8\'e5 \'ea\'e0\'ea \'f2\'e5\'e3\'e8 \'e8 \'e7\'e0\'e3\'ee\'eb\'ee\'e2\'ea\'e8 \'e2\'e5\'f2\'ee\'ea.\par
+\par
+\'c1\'e0\'e7\'e0 \'e4\'e0\'ed\'ed\'fb\'f5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'f2 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'f2\'f0\'b8\'f5 \'ee\'f1\'ed\'ee\'e2\'ed\'fb\'f5 \'f2\'e8\'ef\'ee\'e2: \'e1\'eb\'ee\'e1\'fb, \'e2 \'ea\'ee\'f2\'ee\'f0\'fb\'f5 \'f5\'f0\'e0\'ed\'ff\'f2\'f1\'ff \'e4\'e0\'ed\'ed\'fb\'e5 \'f4\'e0\'e9\'eb\'ee\'e2; \'e4\'e5\'f0\'e5\'e2\'fc\'ff, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'f3\'ea\'e0\'e7\'fb\'e2\'e0\'fe\'f2 \'ed\'e0 \'e1\'eb\'ee\'e1\'fb \'e8 \'e4\'f0\'f3\'e3\'e8\'e5 \'e4\'e5\'f0\'e5\'e2\'fc\'ff \'e4\'eb\'ff \'ef\'ee\'f1\'f2\'f0\'ee\'e5\'ed\'e8\'ff \'e8\'e5\'f0\'e0\'f0\'f5\'e8\'e9 \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'ee\'e2; \'e8 \'ea\'ee\'ec\'ec\'e8\'f2\'fb, \'ea\'e0\'e6\'e4\'fb\'e9 \'e8\'e7 \'ea\'ee\'f2\'ee\'f0\'fb\'f5 \'f1\'f1\'fb\'eb\'e0\'e5\'f2\'f1\'ff \'ed\'e0 \'ee\'e4\'ed\'ee \'e4\'e5\'f0\'e5\'e2\'ee \'e8 \'ed\'e5\'ea\'ee\'f2\'ee\'f0\'ee\'e5 \'ea\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee \'f0\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'f1\'ea\'e8\'f5 \'ea\'ee\'ec\'ec\'e8\'f2\'ee\'e2.\par
+\par
+\'ca\'ee\'ec\'ec\'e8\'f2, \'fd\'ea\'e2\'e8\'e2\'e0\'eb\'e5\'ed\'f2\'ed\'fb\'e9 \'f2\'ee\'ec\'f3, \'f7\'f2\'ee \'e2 \'e4\'f0\'f3\'e3\'e8\'f5 \'f1\'e8\'f1\'f2\'e5\'ec\'e0\'f5 \'ed\'e0\'e7\'fb\'e2\'e0\'e5\'f2\'f1\'ff \f1\lang1033\'ab\f0\lang1049\'ed\'e0\'e1\'ee\'f0\'ee\'ec \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e9\f1\lang1033\'bb \f0\lang1049\'e8\'eb\'e8 \f1\lang1033\'ab\f0\lang1049\'e2\'e5\'f0\'f1\'e8\'e5\'e9\f1\lang1033\'bb, \f0\lang1049\'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 \'f1\'ee\'e1\'ee\'e9 \'fd\'f2\'e0\'ef \'e2 \'e8\'f1\'f2\'ee\'f0\'e8\'e8 \'ef\'f0\'ee\'e5\'ea\'f2\'e0, \'e0 \'ea\'e0\'e6\'e4\'fb\'e9 \'f0\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'f1\'ea\'e8\'e9 \'ea\'ee\'ec\'ec\'e8\'f2 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 \'f1\'ee\'e1\'ee\'e9 \'ed\'e5\'ef\'ee\'f1\'f0\'e5\'e4\'f1\'f2\'e2\'e5\'ed\'ed\'ee \'ef\'f0\'e5\'e4\'f8\'e5\'f1\'f2\'e2\'f3\'fe\'f9\'e8\'e9 \'fd\'f2\'e0\'ef. \'ca\'ee\'ec\'ec\'e8\'f2\'fb \'f1 \'ed\'e5\'f1\'ea\'ee\'eb\'fc\'ea\'e8\'ec\'e8 \'f0\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'f1\'ea\'e8\'ec\'e8 \'ea\'ee\'ec\'ec\'e8\'f2\'e0\'ec\'e8 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'ff\'fe\'f2 \'f1\'ee\'e1\'ee\'e9 \'f1\'eb\'e8\'ff\'ed\'e8\'ff \'ed\'e5\'e7\'e0\'e2\'e8\'f1\'e8\'ec\'fb\'f5 \'eb\'e8\'ed\'e8\'e9 \'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'ea\'e8.\par
+\par
+\'c2\'f1\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'ed\'e0\'e7\'fb\'e2\'e0\'fe\'f2\'f1\'ff \'ef\'ee SHA-1-\'f5\'e5\'f8\'f3 \'e8\'f5 \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'ee\'e3\'ee, \'ee\'e1\'fb\'f7\'ed\'ee \'e7\'e0\'ef\'e8\'f1\'fb\'e2\'e0\'e5\'ec\'ee\'ec\'f3 \'e2 \'e2\'e8\'e4\'e5 \'f1\'f2\'f0\'ee\'ea\'e8 \'e8\'e7 40 \'f8\'e5\'f1\'f2\'ed\'e0\'e4\'f6\'e0\'f2\'e5\'f0\'e8\'f7\'ed\'fb\'f5 \'f6\'e8\'f4\'f0. \'d2\'e0\'ea\'e8\'e5 \'e8\'ec\'e5\'ed\'e0 \'f3\'ed\'e8\'ea\'e0\'eb\'fc\'ed\'fb \'e2\'ee \'e2\'f1\'b8\'ec \'ec\'e8\'f0\'e5. \'c2\'f1\'fe \'e8\'f1\'f2\'ee\'f0\'e8\'fe, \'ef\'f0\'e5\'e4\'f8\'e5\'f1\'f2\'e2\'f3\'fe\'f9\'f3\'fe \'ea\'ee\'ec\'ec\'e8\'f2\'f3, \'ec\'ee\'e6\'ed\'ee \'ef\'ee\'e4\'f2\'e2\'e5\'f0\'e4\'e8\'f2\'fc, \'ef\'ee\'e4\'ef\'e8\'f1\'e0\'e2 \'f2\'ee\'eb\'fc\'ea\'ee \'fd\'f2\'ee\'f2 \'ea\'ee\'ec\'ec\'e8\'f2. \'c4\'eb\'ff \'fd\'f2\'ee\'e3\'ee \'ef\'f0\'e5\'e4\'f3\'f1\'ec\'ee\'f2\'f0\'e5\'ed \'f7\'e5\'f2\'e2\'b8\'f0\'f2\'fb\'e9 \'f2\'e8\'ef \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \f2\emdash  \f0\'f2\'e5\'e3\'e8.\par
+\par
+\'cf\'f0\'e8 \'ef\'e5\'f0\'e2\'ee\'ec \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'e8 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'f5\'f0\'e0\'ed\'ff\'f2\'f1\'ff \'e2 \'ee\'f2\'e4\'e5\'eb\'fc\'ed\'fb\'f5 \'f4\'e0\'e9\'eb\'e0\'f5, \'ed\'ee \'e4\'eb\'ff \'ef\'ee\'e2\'fb\'f8\'e5\'ed\'e8\'ff \'fd\'f4\'f4\'e5\'ea\'f2\'e8\'e2\'ed\'ee\'f1\'f2\'e8 \'ee\'ed\'e8 \'ec\'ee\'e3\'f3\'f2 \'e1\'fb\'f2\'fc \'ee\'e1\'fa\'e5\'e4\'e8\'ed\'e5\'ed\'fb \'e2 \f1\lang1033\'ab\f0\lang1049\'ef\'e0\'ea\'e5\'f2\'fb \'f4\'e0\'e9\'eb\'ee\'e2\f1\lang1033\'bb.\par
+\par
+\f0\lang1049\'c8\'ec\'e5\'ed\'ee\'e2\'e0\'ed\'ed\'fb\'e5 \'f3\'ea\'e0\'e7\'e0\'f2\'e5\'eb\'e8, \'ed\'e0\'e7\'fb\'e2\'e0\'e5\'ec\'fb\'e5 \'f1\'f1\'fb\'eb\'ea\'e0\'ec\'e8, \'ee\'f2\'ec\'e5\'f7\'e0\'fe\'f2 \'e8\'ed\'f2\'e5\'f0\'e5\'f1\'ed\'fb\'e5 \'ec\'ee\'ec\'e5\'ed\'f2\'fb \'e2 \'e8\'f1\'f2\'ee\'f0\'e8\'e8. \'d1\'f1\'fb\'eb\'ea\'e0 \'ec\'ee\'e6\'e5\'f2 \'f1\'ee\'e4\'e5\'f0\'e6\'e0\'f2\'fc \'e8\'ec\'ff SHA-1 \'ee\'e1\'fa\'e5\'ea\'f2\'e0 \'e8\'eb\'e8 \'e8\'ec\'ff \'e4\'f0\'f3\'e3\'ee\'e9 \'f1\'f1\'fb\'eb\'ea\'e8 (\'ef\'ee\'f1\'eb\'e5\'e4\'ed\'ff\'ff \'ed\'e0\'e7\'fb\'e2\'e0\'e5\'f2\'f1\'ff \f1\lang1033\'ab\f0\lang1049\'f1\'e8\'ec\'e2\'ee\'eb\'e8\'f7\'e5\'f1\'ea\'ee\'e9 \'f1\'f1\'fb\'eb\'ea\'ee\'e9\f1\lang1033\'bb). \f0\lang1049\'d1\'f1\'fb\'eb\'ea\'e8 \'f1 \'e8\'ec\'e5\'ed\'e0\'ec\'e8, \'ed\'e0\'f7\'e8\'ed\'e0\'fe\'f9\'e8\'ec\'e8\'f1\'ff \'f1 refs/head/, \'f1\'ee\'e4\'e5\'f0\'e6\'e0\'f2 \'e8\'ec\'ff SHA-1 \'ef\'ee\'f1\'eb\'e5\'e4\'ed\'e5\'e3\'ee \'ea\'ee\'ec\'ec\'e8\'f2\'e0 (\'e8\'eb\'e8 \f1\lang1033\'ab\f0\lang1049\'e3\'ee\'eb\'ee\'e2\'ed\'ee\'e9\f1\lang1033\'bb \f0\lang1049\'ea\'ee\'ec\'ec\'e8\'f2) \'f0\'e0\'e7\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'ec\'ee\'e9 \'e2\'e5\'f2\'ea\'e8. \'c8\'ec\'e5\'ed\'e0 SHA-1 \'e8\'ed\'f2\'e5\'f0\'e5\'f1\'f3\'fe\'f9\'e8\'f5 \'f2\'e5\'e3\'ee\'e2 \'f5\'f0\'e0\'ed\'ff\'f2\'f1\'ff \'e2 refs/tags/. \'d1\'e8\'ec\'e2\'ee\'eb\'e8\'f7\'e5\'f1\'ea\'e0\'ff \'f1\'f1\'fb\'eb\'ea\'e0 \'f1 \'e8\'ec\'e5\'ed\'e5\'ec HEAD \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'f2 \'e8\'ec\'ff \'f2\'e5\'ea\'f3\'f9\'e5\'e9 \'e2\'e5\'f2\'ea\'e8.\par
+\par
+\'d4\'e0\'e9\'eb \'e8\'ed\'e4\'e5\'ea\'f1\'e0 \'e8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e8\'f0\'f3\'e5\'f2\'f1\'ff \'f1\'ef\'e8\'f1\'ea\'ee\'ec \'e2\'f1\'e5\'f5 \'ef\'f3\'f2\'e5\'e9 \'e8 \'e4\'eb\'ff \'ea\'e0\'e6\'e4\'ee\'e3\'ee \'ef\'f3\'f2\'e8 \f2\emdash  \f0\'ee\'e1\'fa\'e5\'ea\'f2\'ee\'ec BLOB-\'ee\'e1\'fa\'e5\'ea\'f2\'ee\'ec \'e8 \'ed\'e0\'e1\'ee\'f0\'ee\'ec \'e0\'f2\'f0\'e8\'e1\'f3\'f2\'ee\'e2. \'ce\'e1\'fa\'e5\'ea\'f2 BLOB-\'ee\'e1\'fa\'e5\'ea\'f2\'e0 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'ee\'e5 \'f4\'e0\'e9\'eb\'e0 \'ed\'e0 \'ec\'ee\'ec\'e5\'ed\'f2 \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'ff \'f2\'e5\'ea\'f3\'f9\'e5\'e9 \'e2\'e5\'f2\'ea\'e8. \'c0\'f2\'f0\'e8\'e1\'f3\'f2\'fb (\'e2\'f0\'e5\'ec\'ff \'ef\'ee\'f1\'eb\'e5\'e4\'ed\'e5\'e3\'ee \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff, \'f0\'e0\'e7\'ec\'e5\'f0 \'e8 \'f2. \'e4.) \'e1\'e5\'f0\'f3\'f2\'f1\'ff \'e8\'e7 \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e5\'e3\'ee \'f4\'e0\'e9\'eb\'e0 \'e2 \'f0\'e0\'e1\'ee\'f7\'e5\'ec \'e4\'e5\'f0\'e5\'e2\'e5. \'cf\'ee\'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e8\'e5 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff \'e2 \'f0\'e0\'e1\'ee\'f7\'e5\'ec \'e4\'e5\'f0\'e5\'e2\'e5 \'ec\'ee\'e6\'ed\'ee \'ed\'e0\'e9\'f2\'e8, \'f1\'f0\'e0\'e2\'ed\'e8\'e2 \'fd\'f2\'e8 \'e0\'f2\'f0\'e8\'e1\'f3\'f2\'fb. \'c8\'ed\'e4\'e5\'ea\'f1 \'ec\'ee\'e6\'ed\'ee \'ee\'e1\'ed\'ee\'e2\'eb\'ff\'f2\'fc \'ed\'ee\'e2\'fb\'ec \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'fb\'ec, \'e0 \'ed\'ee\'e2\'fb\'e5 \'ea\'ee\'ec\'ec\'e8\'f2\'fb \'ec\'ee\'e6\'ed\'ee \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'ed\'e0 \'ee\'f1\'ed\'ee\'e2\'e5 \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'ee\'e3\'ee, \'f5\'f0\'e0\'ed\'ff\'f9\'e5\'e3\'ee\'f1\'ff \'e2 \'e8\'ed\'e4\'e5\'ea\'f1\'e5.\par
+\par
+\'c8\'ed\'e4\'e5\'ea\'f1 \'f2\'e0\'ea\'e6\'e5 \'ec\'ee\'e6\'e5\'f2 \'f5\'f0\'e0\'ed\'e8\'f2\'fc \'ed\'e5\'f1\'ea\'ee\'eb\'fc\'ea\'ee \'e7\'e0\'ef\'e8\'f1\'e5\'e9 (\'ed\'e0\'e7\'fb\'e2\'e0\'e5\'ec\'fb\'f5 \f1\lang1033\'ab\f0\lang1049\'fd\'f2\'e0\'ef\'e0\'ec\'e8\f1\lang1033\'bb) \f0\lang1049\'e4\'eb\'ff \'e7\'e0\'e4\'e0\'ed\'ed\'ee\'e3\'ee \'ef\'f3\'f2\'e8. \'dd\'f2\'e8 \'fd\'f2\'e0\'ef\'fb \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'fe\'f2\'f1\'ff \'e4\'eb\'ff \'f5\'f0\'e0\'ed\'e5\'ed\'e8\'ff \'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'f5 \'ed\'e5\'f1\'ec\'e5\'e6\'ed\'fb\'f5 \'e2\'e5\'f0\'f1\'e8\'e9 \'f4\'e0\'e9\'eb\'e0 \'e2\'ee \'e2\'f0\'e5\'ec\'ff \'f1\'eb\'e8\'ff\'ed\'e8\'ff.\par
+\par
+\'c1\'e5\'e7\'ee\'ef\'e0\'f1\'ed\'ee\'f1\'f2\'fc\par
+\'cd\'e5\'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8 \'e8 \'f4\'e0\'e9\'eb\'fb-\'e7\'e0\'e3\'eb\'f3\'f8\'ea\'e8 \'ec\'ee\'e3\'f3\'f2 \'e7\'e0\'f1\'f2\'e0\'e2\'e8\'f2\'fc Git \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'f2\'fc \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'eb\'fc\'ed\'fb\'e5 \'ea\'ee\'ec\'e0\'ed\'e4\'fb \'ee\'e1\'ee\'eb\'ee\'f7\'ea\'e8. \'cf\'ee\'f1\'ea\'ee\'eb\'fc\'ea\'f3 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'ff \'e8 \'e7\'e0\'e3\'eb\'f3\'f8\'ea\'e8 \'ed\'e5 \'ea\'ee\'ef\'e8\'f0\'f3\'fe\'f2\'f1\'ff \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe git clone, \'ee\'e1\'fb\'f7\'ed\'ee \'e1\'e5\'e7\'ee\'ef\'e0\'f1\'ed\'ee \'ea\'eb\'ee\'ed\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'f3\'e4\'e0\'eb\'b8\'ed\'ed\'fb\'e5 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e8 \'f1 \'ed\'e5\'ed\'e0\'e4\'b8\'e6\'ed\'fb\'ec \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'fb\'ec, \'ef\'f0\'ee\'e2\'e5\'f0\'ff\'f2\'fc \'e8\'f5 \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe git log \'e8 \'f2\'e0\'ea \'e4\'e0\'eb\'e5\'e5.\par
+\par
+\'ce\'e4\'ed\'e0\'ea\'ee \'ed\'e5\'e1\'e5\'e7\'ee\'ef\'e0\'f1\'ed\'ee \'e7\'e0\'ef\'f3\'f1\'ea\'e0\'f2\'fc \'ea\'ee\'ec\'e0\'ed\'e4\'fb Git \'e2 \'ea\'e0\'f2\'e0\'eb\'ee\'e3\'e5 .git (\'e8\'eb\'e8 \'e2 \'f0\'e0\'e1\'ee\'f7\'e5\'ec \'e4\'e5\'f0\'e5\'e2\'e5, \'ea\'ee\'f2\'ee\'f0\'ee\'e5 \'e5\'e3\'ee \'ee\'ea\'f0\'f3\'e6\'e0\'e5\'f2), \'e5\'f1\'eb\'e8 \'f1\'e0\'ec \'fd\'f2\'ee\'f2 \'ea\'e0\'f2\'e0\'eb\'ee\'e3 .git \'ef\'ee\'eb\'f3\'f7\'e5\'ed \'e8\'e7 \'ed\'e5\'ed\'e0\'e4\'b8\'e6\'ed\'ee\'e3\'ee \'e8\'f1\'f2\'ee\'f7\'ed\'e8\'ea\'e0. \'ca\'ee\'ec\'e0\'ed\'e4\'fb \'e2 \'e5\'e3\'ee \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e8 \'e8 \'f5\'f3\'ea\'e0\'f5 \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'fe\'f2\'f1\'ff \'ee\'e1\'fb\'f7\'ed\'fb\'ec \'ee\'e1\'f0\'e0\'e7\'ee\'ec.\par
+\par
+\'cf\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe Git \'ee\'f2\'ea\'e0\'e6\'e5\'f2\'f1\'ff \'e7\'e0\'ef\'f3\'f1\'ea\'e0\'f2\'fc\'f1\'ff, \'e5\'f1\'eb\'e8 \'e2\'eb\'e0\'e4\'e5\'eb\'fc\'f6\'e5\'ec \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff \'ff\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'ea\'f2\'ee-\'f2\'ee \'e4\'f0\'f3\'e3\'ee\'e9, \'e0 \'ed\'e5 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'fc, \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'fe\'f9\'e8\'e9 \'ea\'ee\'ec\'e0\'ed\'e4\'f3. \'d1\'ec. \'e7\'e0\'ef\'e8\'f1\'fc safe.directory \'e2 git-config[1]. \'d5\'ee\'f2\'ff \'fd\'f2\'ee \'ec\'ee\'e6\'e5\'f2 \'ef\'ee\'ec\'ee\'f7\'fc \'e7\'e0\'f9\'e8\'f2\'e8\'f2\'fc \'e2\'e0\'f1 \'e2 \'ec\'ed\'ee\'e3\'ee\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'fc\'f1\'ea\'ee\'e9 \'f1\'f0\'e5\'e4\'e5, \'ee\'e1\'f0\'e0\'f2\'e8\'f2\'e5 \'e2\'ed\'e8\'ec\'e0\'ed\'e8\'e5, \'f7\'f2\'ee \'e2\'fb \'f2\'e0\'ea\'e6\'e5 \'ec\'ee\'e6\'e5\'f2\'e5 \'ef\'ee\'eb\'f3\'f7\'e8\'f2\'fc \'e4\'ee\'f1\'f2\'f3\'ef \'ea \'ed\'e5\'ed\'e0\'e4\'b8\'e6\'ed\'fb\'ec \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'ff\'ec, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ef\'f0\'e8\'ed\'e0\'e4\'eb\'e5\'e6\'e0\'f2 \'e2\'e0\'ec (\'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, \'e5\'f1\'eb\'e8 \'e2\'fb \'f0\'e0\'f1\'ef\'e0\'ea\'f3\'e5\'f2\'e5 zip-\'f4\'e0\'e9\'eb \'e8\'eb\'e8 tar-\'e0\'f0\'f5\'e8\'e2 \'e8\'e7 \'ed\'e5\'ed\'e0\'e4\'b8\'e6\'ed\'ee\'e3\'ee \'e8\'f1\'f2\'ee\'f7\'ed\'e8\'ea\'e0). \'c2 \'f2\'e0\'ea\'e8\'f5 \'f1\'eb\'f3\'f7\'e0\'ff\'f5 \'e2\'e0\'ec \'ed\'f3\'e6\'ed\'ee \'f1\'ed\'e0\'f7\'e0\'eb\'e0 \f1\lang1033\'ab\f0\lang1049\'ee\'f7\'e8\'f1\'f2\'e8\'f2\'fc\f1\lang1033\'bb \f0\lang1049\'ed\'e5\'ed\'e0\'e4\'b8\'e6\'ed\'fb\'e9 \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e9.\par
+\par
+\'c5\'f1\'eb\'e8 \'f3 \'e2\'e0\'f1 \'e5\'f1\'f2\'fc \'ed\'e5\'ed\'e0\'e4\'b8\'e6\'ed\'fb\'e9 \'ea\'e0\'f2\'e0\'eb\'ee\'e3 .git, \'e2\'e0\'ec \'f1\'eb\'e5\'e4\'f3\'e5\'f2 \'f1\'ed\'e0\'f7\'e0\'eb\'e0 \'ea\'eb\'ee\'ed\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'e5\'e3\'ee \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe git clone --no-local \'e4\'eb\'ff \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'ff \'f7\'e8\'f1\'f2\'ee\'e9 \'ea\'ee\'ef\'e8\'e8. Git \'ee\'e3\'f0\'e0\'ed\'e8\'f7\'e8\'e2\'e0\'e5\'f2 \'ed\'e0\'e1\'ee\'f0 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2 \'e8 \'f5\'f3\'ea\'ee\'e2, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'e1\'f3\'e4\'f3\'f2 \'e7\'e0\'ef\'f3\'f1\'ea\'e0\'f2\'fc\'f1\'ff \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe upload-pack, \'f7\'f2\'ee \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'f3\'ef\'f0\'e0\'e2\'eb\'ff\'f2\'fc \'f1\'e5\'f0\'e2\'e5\'f0\'ed\'ee\'e9 \'f7\'e0\'f1\'f2\'fc\'fe \'ea\'eb\'ee\'ed\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'e8\'eb\'e8 \'e8\'e7\'e2\'eb\'e5\'f7\'e5\'ed\'e8\'ff, \'ed\'ee \'e8\'ec\'e5\'e9\'f2\'e5 \'e2 \'e2\'e8\'e4\'f3, \'f7\'f2\'ee \'ef\'ee\'e2\'e5\'f0\'f5\'ed\'ee\'f1\'f2\'fc \'e0\'f2\'e0\'ea\'e8 \'ed\'e0 upload-pack \'e2\'e5\'eb\'e8\'ea\'e0, \'ef\'ee\'fd\'f2\'ee\'ec\'f3 \'fd\'f2\'ee \'f1\'ee\'ef\'f0\'ff\'e6\'e5\'ed\'ee \'f1 \'ed\'e5\'ea\'ee\'f2\'ee\'f0\'fb\'ec \'f0\'e8\'f1\'ea\'ee\'ec. \'c1\'e5\'e7\'ee\'ef\'e0\'f1\'ed\'e5\'e5 \'e2\'f1\'e5\'e3\'ee \'ee\'e1\'f1\'eb\'f3\'e6\'e8\'e2\'e0\'f2\'fc \'f0\'e5\'ef\'ee\'e7\'e8\'f2\'ee\'f0\'e8\'e9 \'ea\'e0\'ea \'ed\'e5\'ef\'f0\'e8\'e2\'e8\'eb\'e5\'e3\'e8\'f0\'ee\'e2\'e0\'ed\'ed\'fb\'e9 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'fc (\'eb\'e8\'e1\'ee \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe git-daemon[1], ssh, \'eb\'e8\'e1\'ee \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe \'e4\'f0\'f3\'e3\'e8\'f5 \'e8\'ed\'f1\'f2\'f0\'f3\'ec\'e5\'ed\'f2\'ee\'e2 \'e4\'eb\'ff \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0\'ee\'e2 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'e5\'e9). \'d1\'ec\'ee\'f2\'f0\'e8\'f2\'e5 \'ee\'e1\'f1\'f3\'e6\'e4\'e5\'ed\'e8\'e5 \'e2 \'f0\'e0\'e7\'e4\'e5\'eb\'e5 SECURITYgit-upload-pack[1].\par
+\par
+\'c4\'ce\'cf\'ce\'cb\'cd\'c8\'d2\'c5\'cb\'dc\'cd\'c0\'df \'c4\'ce\'ca\'d3\'cc\'c5\'cd\'d2\'c0\'d6\'c8\'df\par
+\'d7\'f2\'ee\'e1\'fb \'ed\'e0\'f7\'e0\'f2\'fc \'f0\'e0\'e1\'ee\'f2\'f3 \'f1 Git, \'f1\'ec. \'f1\'f1\'fb\'eb\'ea\'e8 \'e2 \'f0\'e0\'e7\'e4\'e5\'eb\'e5 \f1\lang1033\'ab\f0\lang1049\'ce\'ef\'e8\'f1\'e0\'ed\'e8\'e5\f1\lang1033\'bb. \f0\lang1049\'c4\'e0\'eb\'e5\'e5 \'ef\'f0\'e8\'e2\'ee\'e4\'e8\'f2\'f1\'ff \'e1\'ee\'eb\'fc\'f8\'e5 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8, \'f7\'e5\'ec \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee \'e4\'eb\'ff \'ed\'e0\'f7\'e8\'ed\'e0\'fe\'f9\'e5\'e3\'ee \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'ff.\par
+\par
+\'c2 \'e3\'eb\'e0\'e2\'e5 \f1\lang1033\'ab\f0\lang1049\'ca\'ee\'ed\'f6\'e5\'ef\'f6\'e8\'e8 Git\f1\lang1033\'bb \f0\lang1049\'f0\'f3\'ea\'ee\'e2\'ee\'e4\'f1\'f2\'e2\'e0 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'ff \'e8 \'f0\'f3\'ea\'ee\'e2\'ee\'e4\'f1\'f2\'e2\'e5 \'ef\'ee gitcore[7] \'ef\'f0\'e8\'e2\'ee\'e4\'e8\'f2\'f1\'ff \'ee\'e1\'e7\'ee\'f0 \'e1\'e0\'e7\'ee\'e2\'ee\'e9 \'e0\'f0\'f5\'e8\'f2\'e5\'ea\'f2\'f3\'f0\'fb Git.\par
+\par
+\'d1\'ec\'ee\'f2\'f0\'e8\'f2\'e5 gitworkflows[7] \'e4\'eb\'ff \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'ff \'ee\'e1\'e7\'ee\'f0\'e0 \'f0\'e5\'ea\'ee\'ec\'e5\'ed\'e4\'f3\'e5\'ec\'fb\'f5 \'f0\'e0\'e1\'ee\'f7\'e8\'f5 \'ef\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'e2.\par
+\par
+\'d1\'ec\'ee\'f2\'f0\'e8\'f2\'e5 \'f2\'e0\'ea\'e6\'e5 \'e4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\'fb howto \'e4\'eb\'ff \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'ff \'ed\'e5\'ea\'ee\'f2\'ee\'f0\'fb\'f5 \'ef\'ee\'eb\'e5\'e7\'ed\'fb\'f5 \'ef\'f0\'e8\'ec\'e5\'f0\'ee\'e2.\par
+\par
+\'c2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e8\'e5 \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2\'fb \'e7\'e0\'e4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'fb \'e2 \'e4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\'e0\'f6\'e8\'e8 \'ef\'ee Git API.\par
+\par
+\'cf\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'e8, \'ef\'e5\'f0\'e5\'f5\'ee\'e4\'ff\'f9\'e8\'e5 \'f1 CVS, \'f2\'e0\'ea\'e6\'e5 \'ec\'ee\'e3\'f3\'f2 \'ee\'e7\'ed\'e0\'ea\'ee\'ec\'e8\'f2\'fc\'f1\'ff \'f1 gitcvs-migration[7].\f3\fs22\lang1033\par
+}
+ 
